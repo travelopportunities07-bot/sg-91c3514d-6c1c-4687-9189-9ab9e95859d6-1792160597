@@ -2,6 +2,7 @@ import { SEO } from "@/components/SEO";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { ScrollingBanner } from "@/components/ScrollingBanner";
 import Link from "next/link";
 import { Calendar, User, ArrowRight, BookOpen, Globe, Target } from "lucide-react";
 
@@ -100,6 +101,8 @@ export default function Blog() {
             </div>
           </div>
         </section>
+
+        <ScrollingBanner />
 
         <section className="py-20 bg-gradient-to-br from-white via-gray-50 to-blue-50">
           <div className="container mx-auto px-4 lg:px-8">
