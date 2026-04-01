@@ -75,6 +75,9 @@ export function Header() {
                 </div>
               )}
             </div>
+            <Link href="/blog" className="text-navy hover:text-gold transition-colors font-medium">
+              Blog
+            </Link>
             <Link href="/#contact" className="text-navy hover:text-gold transition-colors font-medium">
               Contactez-Nous
             </Link>
