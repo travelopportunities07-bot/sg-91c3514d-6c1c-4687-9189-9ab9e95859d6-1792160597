@@ -14,8 +14,8 @@ export function ServicesSection() {
         "Méthodologie d'apprentissage"
       ],
       link: "/prestations/soutien-scolaire",
-      gradient: "from-blue-500 to-blue-600",
-      bgColor: "bg-blue-50"
+      gradient: "from-gray-500 to-gray-600",
+      bgColor: "bg-gray-50"
     },
     {
       title: "Préparation aux Certifications",
@@ -27,8 +27,8 @@ export function ServicesSection() {
         "Stratégies de réussite"
       ],
       link: "/prestations/preparation-certifications",
-      gradient: "from-amber-500 to-amber-600",
-      bgColor: "bg-amber-50"
+      gradient: "from-gray-500 to-gray-600",
+      bgColor: "bg-gray-50"
     },
     {
       title: "Langues & Carrière Professionnelle",
@@ -40,8 +40,8 @@ export function ServicesSection() {
         "Rédaction emails/CV"
       ],
       link: "/prestations/langues-carriere",
-      gradient: "from-emerald-500 to-emerald-600",
-      bgColor: "bg-emerald-50"
+      gradient: "from-gray-500 to-gray-600",
+      bgColor: "bg-gray-50"
     }
   ];
 

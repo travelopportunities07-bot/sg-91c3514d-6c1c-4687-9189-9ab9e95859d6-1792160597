@@ -6,20 +6,20 @@ export function HeroSection() {
     {
       name: "DELF",
       language: "Français",
-      color: "from-blue-600 to-blue-400",
-      borderColor: "border-blue-500"
+      color: "from-amber-600 to-amber-400",
+      borderColor: "border-amber-500"
     },
     {
       name: "TOEFL",
       language: "Anglais",
-      color: "from-red-600 to-red-400",
-      borderColor: "border-red-500"
+      color: "from-amber-600 to-amber-400",
+      borderColor: "border-amber-500"
     },
     {
       name: "Goethe-Institut",
       language: "Allemand",
-      color: "from-gray-800 to-gray-600",
-      borderColor: "border-gray-700"
+      color: "from-amber-600 to-amber-400",
+      borderColor: "border-amber-500"
     },
     {
       name: "DELE",
@@ -30,8 +30,8 @@ export function HeroSection() {
     {
       name: "HSK",
       language: "Chinois",
-      color: "from-red-700 to-red-500",
-      borderColor: "border-red-600"
+      color: "from-amber-600 to-amber-400",
+      borderColor: "border-amber-500"
     }
   ];
 
