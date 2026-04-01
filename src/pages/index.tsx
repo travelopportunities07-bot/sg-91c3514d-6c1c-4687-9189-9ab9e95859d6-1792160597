@@ -4,6 +4,7 @@ import { HeroSection } from "@/components/HeroSection";
 import { ServicesSection } from "@/components/ServicesSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { FAQSection } from "@/components/FAQSection";
+import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 
@@ -21,6 +22,7 @@ export default function Home() {
         <ServicesSection />
         <TestimonialsSection />
         <FAQSection />
+        <ContactSection />
       </main>
       <Footer />
       <WhatsAppButton />

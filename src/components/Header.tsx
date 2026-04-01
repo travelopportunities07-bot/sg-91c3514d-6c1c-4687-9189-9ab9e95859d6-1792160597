@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 export function Header() {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
@@ -76,11 +75,10 @@ export function Header() {
                 </div>
               )}
             </div>
+            <Link href="/#contact" className="text-navy hover:text-gold transition-colors font-medium">
+              Contactez-Nous
+            </Link>
           </div>
-          
-          <Button size="lg" className="bg-gold hover:bg-gold/90 text-navy font-semibold rounded-full px-8 shadow-lg">
-            Contactez-Nous
-          </Button>
         </div>
       </nav>
     </header>
