@@ -13,7 +13,9 @@ export function ServicesSection() {
         "Préparation BAC/Brevet",
         "Méthodologie d'apprentissage"
       ],
-      link: "/prestations/soutien-scolaire"
+      link: "/prestations/soutien-scolaire",
+      gradient: "from-blue-500 to-blue-600",
+      bgColor: "bg-blue-50"
     },
     {
       title: "Préparation aux Certifications",
@@ -24,7 +26,9 @@ export function ServicesSection() {
         "Correction personnalisée",
         "Stratégies de réussite"
       ],
-      link: "/prestations/preparation-certifications"
+      link: "/prestations/preparation-certifications",
+      gradient: "from-amber-500 to-amber-600",
+      bgColor: "bg-amber-50"
     },
     {
       title: "Langues & Carrière Professionnelle",
@@ -35,21 +39,23 @@ export function ServicesSection() {
         "Prise de parole en public",
         "Rédaction emails/CV"
       ],
-      link: "/prestations/langues-carriere"
+      link: "/prestations/langues-carriere",
+      gradient: "from-emerald-500 to-emerald-600",
+      bgColor: "bg-emerald-50"
     }
   ];
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-gradient-to-br from-white via-gray-50 to-blue-50">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-navy mb-4">
             Notre Expertise
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-2xl font-semibold text-gold mb-2">
             Des Solutions sur Mesure
           </p>
-          <p className="text-lg text-gray-500 mt-4 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-700 mt-4 max-w-2xl mx-auto">
             Que vous soyez étudiant ou professionnel, nous avons le programme idéal pour transformer votre avenir.
           </p>
         </div>
@@ -60,32 +66,32 @@ export function ServicesSection() {
             return (
               <div
                 key={index}
-                className="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100"
+                className={`group ${service.bgColor} rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border-2 border-white`}
               >
                 <div className="p-8">
-                  <div className="w-16 h-16 rounded-2xl bg-gold flex items-center justify-center mb-6 transform group-hover:scale-110 transition-transform">
-                    <Icon className="w-8 h-8 text-navy" />
+                  <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${service.gradient} flex items-center justify-center mb-6 transform group-hover:scale-110 group-hover:rotate-6 transition-all shadow-lg`}>
+                    <Icon className="w-8 h-8 text-white" />
                   </div>
                   
                   <h3 className="text-2xl font-heading font-bold text-navy mb-4">
                     {service.title}
                   </h3>
                   
-                  <p className="text-gray-600 mb-6 leading-relaxed">
+                  <p className="text-gray-700 font-medium mb-6 leading-relaxed">
                     {service.description}
                   </p>
                   
                   <ul className="space-y-3 mb-8">
                     {service.features.map((feature, idx) => (
                       <li key={idx} className="flex items-start gap-2">
-                        <span className="w-1.5 h-1.5 rounded-full bg-gold mt-2 flex-shrink-0"></span>
-                        <span className="text-sm text-gray-600">{feature}</span>
+                        <span className={`w-2 h-2 rounded-full bg-gradient-to-r ${service.gradient} mt-2 flex-shrink-0`}></span>
+                        <span className="text-sm text-gray-700 font-medium">{feature}</span>
                       </li>
                     ))}
                   </ul>
                   
                   <Link href={service.link}>
-                    <Button className="w-full bg-gold hover:bg-gold/90 text-navy font-semibold rounded-full py-6 text-base shadow-lg transform hover:scale-105 transition-all">
+                    <Button className={`w-full bg-gradient-to-r ${service.gradient} hover:opacity-90 text-white font-semibold rounded-full py-6 text-base shadow-lg transform hover:scale-105 transition-all`}>
                       En savoir plus
                     </Button>
                   </Link>

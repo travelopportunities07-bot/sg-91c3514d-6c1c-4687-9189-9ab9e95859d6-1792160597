@@ -1,6 +1,40 @@
 import { Button } from "@/components/ui/button";
+import { Award } from "lucide-react";
 
 export function HeroSection() {
+  const certifications = [
+    {
+      name: "DELF",
+      language: "Français",
+      color: "from-blue-600 to-blue-400",
+      borderColor: "border-blue-500"
+    },
+    {
+      name: "TOEFL",
+      language: "Anglais",
+      color: "from-red-600 to-red-400",
+      borderColor: "border-red-500"
+    },
+    {
+      name: "Goethe-Institut",
+      language: "Allemand",
+      color: "from-gray-800 to-gray-600",
+      borderColor: "border-gray-700"
+    },
+    {
+      name: "DELE",
+      language: "Espagnol",
+      color: "from-amber-600 to-amber-400",
+      borderColor: "border-amber-500"
+    },
+    {
+      name: "HSK",
+      language: "Chinois",
+      color: "from-red-700 to-red-500",
+      borderColor: "border-red-600"
+    }
+  ];
+
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-navy via-navy to-navy-dark overflow-hidden pt-32 pb-20">
       <div className="absolute inset-0 bg-[url('/team-hero.png')] bg-cover bg-center opacity-10"></div>
@@ -22,35 +56,31 @@ export function HeroSection() {
           </div>
           
           <div className="fade-in-up stagger-3">
-            <p className="text-gold font-semibold text-sm uppercase tracking-wider mb-6">
-              Nos Certifications
-            </p>
+            <div className="flex items-center justify-center gap-2 mb-8">
+              <Award className="w-6 h-6 text-gold" />
+              <p className="text-gold font-semibold text-lg uppercase tracking-wider">
+                Nos Certifications
+              </p>
+            </div>
             
-            <div className="flex flex-wrap justify-center gap-8 items-center">
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl px-8 py-4 border border-white/20 hover:bg-white/20 transition-all">
-                <p className="text-white font-semibold text-lg">DELF</p>
-                <p className="text-white/70 text-sm">Français</p>
-              </div>
-              
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl px-8 py-4 border border-white/20 hover:bg-white/20 transition-all">
-                <p className="text-white font-semibold text-lg">TOEFL</p>
-                <p className="text-white/70 text-sm">Anglais</p>
-              </div>
-              
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl px-8 py-4 border border-white/20 hover:bg-white/20 transition-all">
-                <p className="text-white font-semibold text-lg">Goethe-Institut</p>
-                <p className="text-white/70 text-sm">Allemand</p>
-              </div>
-              
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl px-8 py-4 border border-white/20 hover:bg-white/20 transition-all">
-                <p className="text-white font-semibold text-lg">DELE</p>
-                <p className="text-white/70 text-sm">Espagnol</p>
-              </div>
-              
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl px-8 py-4 border border-white/20 hover:bg-white/20 transition-all">
-                <p className="text-white font-semibold text-lg">HSK</p>
-                <p className="text-white/70 text-sm">Chinois</p>
-              </div>
+            <div className="flex flex-wrap justify-center gap-6 items-center">
+              {certifications.map((cert, index) => (
+                <div 
+                  key={index}
+                  className={`group relative bg-white rounded-2xl p-6 ${cert.borderColor} border-2 hover:scale-110 transition-all duration-300 shadow-2xl hover:shadow-gold/50 min-w-[140px]`}
+                >
+                  <div className={`absolute inset-0 bg-gradient-to-br ${cert.color} opacity-5 rounded-2xl`}></div>
+                  <div className="relative">
+                    <div className={`w-16 h-16 mx-auto mb-3 rounded-full bg-gradient-to-br ${cert.color} flex items-center justify-center shadow-lg`}>
+                      <Award className="w-8 h-8 text-white" />
+                    </div>
+                    <p className="text-navy font-bold text-lg mb-1">{cert.name}</p>
+                    <p className={`text-sm font-semibold bg-gradient-to-r ${cert.color} bg-clip-text text-transparent`}>
+                      {cert.language}
+                    </p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>

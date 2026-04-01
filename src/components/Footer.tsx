@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Facebook, Instagram, Music } from "lucide-react";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -18,6 +19,36 @@ export function Footer() {
               Votre partenaire d'excellence pour l'apprentissage des langues. 
               Nous transformons votre potentiel linguistique en réussite professionnelle et académique.
             </p>
+            
+            <div className="mb-6">
+              <h3 className="font-heading font-semibold text-lg mb-4">Suivez-nous</h3>
+              <div className="flex gap-4">
+                <a 
+                  href="https://facebook.com/vocalisacademy" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-white/10 hover:bg-gold flex items-center justify-center transition-all group"
+                >
+                  <Facebook className="w-5 h-5 text-white group-hover:text-navy" />
+                </a>
+                <a 
+                  href="https://instagram.com/vocalisacademy" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-white/10 hover:bg-gold flex items-center justify-center transition-all group"
+                >
+                  <Instagram className="w-5 h-5 text-white group-hover:text-navy" />
+                </a>
+                <a 
+                  href="https://tiktok.com/@vocalisacademy" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full bg-white/10 hover:bg-gold flex items-center justify-center transition-all group"
+                >
+                  <Music className="w-5 h-5 text-white group-hover:text-navy" />
+                </a>
+              </div>
+            </div>
           </div>
           
           <div>
@@ -34,12 +65,12 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-white/70 hover:text-gold transition-colors">
-                  Nos Prestations
+                <Link href="/blog" className="text-white/70 hover:text-gold transition-colors">
+                  Blog
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-white/70 hover:text-gold transition-colors">
+                <Link href="/#contact" className="text-white/70 hover:text-gold transition-colors">
                   Contact
                 </Link>
               </li>
@@ -65,13 +96,13 @@ export function Footer() {
             </p>
             
             <div className="flex gap-6 text-sm">
-              <Link href="/legal" className="text-white/60 hover:text-gold transition-colors">
+              <Link href="/mentions-legales" className="text-white/60 hover:text-gold transition-colors">
                 Mentions Légales
               </Link>
-              <Link href="/privacy" className="text-white/60 hover:text-gold transition-colors">
+              <Link href="/politique-confidentialite" className="text-white/60 hover:text-gold transition-colors">
                 Politique de Confidentialité (RGPD)
               </Link>
-              <Link href="/terms" className="text-white/60 hover:text-gold transition-colors">
+              <Link href="/cgv" className="text-white/60 hover:text-gold transition-colors">
                 CGV
               </Link>
             </div>
