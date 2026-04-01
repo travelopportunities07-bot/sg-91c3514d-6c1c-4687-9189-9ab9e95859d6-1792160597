@@ -22,9 +22,9 @@ export function Header() {
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center gap-3 group">
             <div className="w-12 h-12 rounded-full bg-navy flex items-center justify-center transition-transform group-hover:scale-105">
-              <span className="text-gold text-2xl font-serif font-bold">V</span>
+              <span className="text-gold text-2xl font-heading font-bold">V</span>
             </div>
-            <span className="text-xl font-serif font-semibold text-navy">Vocalis Academy</span>
+            <span className="text-xl font-heading font-semibold text-navy">Vocalis Academy</span>
           </Link>
           
           <div className="hidden lg:flex items-center gap-8">
@@ -40,7 +40,7 @@ export function Header() {
             </button>
           </div>
           
-          <Button size="lg" className="bg-navy hover:bg-navy/90 text-white rounded-full px-8">
+          <Button size="lg" className="bg-gold hover:bg-gold/90 text-navy font-semibold rounded-full px-8 shadow-lg">
             Contactez-Nous
           </Button>
         </div>

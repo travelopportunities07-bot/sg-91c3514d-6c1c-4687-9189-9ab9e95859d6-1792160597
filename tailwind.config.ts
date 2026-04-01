@@ -45,7 +45,6 @@ const config: Config = {
         ring: "hsl(var(--ring))",
         navy: "hsl(var(--navy))",
         gold: "hsl(var(--gold))",
-        cream: "hsl(var(--cream))",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -54,7 +53,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["Inter", "system-ui", "sans-serif"],
-        serif: ["Playfair Display", "Georgia", "serif"],
+        heading: ["Poppins", "system-ui", "sans-serif"],
       },
       animation: {
         "fade-in-up": "fadeInUp 0.8s ease-out forwards",

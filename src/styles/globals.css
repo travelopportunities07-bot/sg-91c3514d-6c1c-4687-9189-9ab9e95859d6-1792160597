@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,42 +6,40 @@
 
 :root {
   /* shadcn base colors */
-  --background: 45 40% 98%;
-  --foreground: 222 47% 11%;
+  --background: 0 0% 100%;
+  --foreground: 210 100% 9%;
   
   --card: 0 0% 100%;
-  --card-foreground: 222 47% 11%;
+  --card-foreground: 210 100% 9%;
   
   --popover: 0 0% 100%;
-  --popover-foreground: 222 47% 11%;
+  --popover-foreground: 210 100% 9%;
   
-  --primary: 222 47% 11%;
-  --primary-foreground: 210 40% 98%;
+  --primary: 210 100% 9%;
+  --primary-foreground: 0 0% 100%;
   
   --secondary: 210 40% 96%;
-  --secondary-foreground: 222 47% 11%;
+  --secondary-foreground: 210 100% 9%;
   
   --muted: 210 40% 96%;
   --muted-foreground: 215 16% 47%;
   
   --accent: 43 74% 49%;
-  --accent-foreground: 222 47% 11%;
+  --accent-foreground: 210 100% 9%;
   
   --destructive: 0 84% 60%;
-  --destructive-foreground: 210 40% 98%;
+  --destructive-foreground: 0 0% 100%;
   
   --border: 214 32% 91%;
   --input: 214 32% 91%;
-  --ring: 222 47% 11%;
+  --ring: 210 100% 9%;
   
   --radius: 0.5rem;
   
-  /* Custom brand colors */
-  --navy: 222 47% 11%;
+  /* Custom brand colors - Vocalis Academy */
+  --navy: 210 100% 9%;
   --gold: 43 74% 49%;
-  --cream: 45 40% 98%;
-  --gray-light: 210 40% 96%;
-  --gray-text: 215 16% 47%;
+  --white: 0 0% 100%;
 }
 
 @layer base {
@@ -49,10 +47,10 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply bg-white text-foreground font-sans antialiased;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply font-serif;
+    @apply font-semibold;
   }
 }
 
