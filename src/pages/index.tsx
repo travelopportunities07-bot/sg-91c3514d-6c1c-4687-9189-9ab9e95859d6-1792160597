@@ -1,12 +1,23 @@
-import React from 'react'
+import { SEO } from "@/components/SEO";
+import { Header } from "@/components/Header";
+import { Hero } from "@/components/Hero";
+import { LocationsSection } from "@/components/LocationsSection";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background flex items-center justify-center">
-      <div className="text-center space-y-4">
-        <h1 className="text-4xl font-bold text-foreground">Hello World</h1>
-        <p className="text-lg text-muted-foreground">This is going to be your softgen app, start by describing your project.</p>
-      </div>
-    </main>
-  )
+    <>
+      <SEO
+        title="Vocalis Academy - Maîtrisez les Langues avec des Experts"
+        description="Apprenez le Français, l'Anglais, l'Allemand et le Chinois avec des experts. Accompagnement personnalisé pour écoliers, étudiants et professionnels en Afrique et en Europe."
+        image="/og-image.png"
+      />
+      <Header />
+      <main>
+        <Hero />
+        <LocationsSection />
+      </main>
+      <WhatsAppButton />
+    </>
+  );
 }
