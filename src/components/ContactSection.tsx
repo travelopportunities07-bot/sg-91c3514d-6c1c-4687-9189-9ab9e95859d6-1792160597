@@ -1,11 +1,9 @@
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Mail, Phone, MapPin } from "lucide-react";
+import Image from "next/image";
+import { Phone, Mail, MapPin } from "lucide-react";
 
 export function ContactSection() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-gradient-to-b from-white to-gray-50">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -13,84 +11,60 @@ export function ContactSection() {
               Contactez-Nous
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Prêt à commencer votre parcours linguistique ? Notre équipe est à votre écoute
+              Notre équipe est à votre écoute pour répondre à toutes vos questions
             </p>
           </div>
           
-          <div className="grid lg:grid-cols-2 gap-12">
-            <div className="space-y-8">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-2xl bg-gold/10 flex items-center justify-center flex-shrink-0">
-                  <Mail className="w-6 h-6 text-gold" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-navy mb-2">Email</h3>
-                  <p className="text-gray-600">contact@vocalisacademy.com</p>
-                  <p className="text-gray-600">info@vocalisacademy.com</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-2xl bg-gold/10 flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-6 h-6 text-gold" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-navy mb-2">Téléphone</h3>
-                  <p className="text-gray-600">+33 1 23 45 67 89</p>
-                  <p className="text-gray-600">+237 6 XX XX XX XX</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-2xl bg-gold/10 flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-6 h-6 text-gold" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-navy mb-2">Nos Bureaux</h3>
-                  <p className="text-gray-600 mb-2">Paris, France</p>
-                  <p className="text-gray-600">Douala, Cameroun</p>
-                </div>
-              </div>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="relative h-[400px] lg:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+              <Image
+                src="/consultation.png"
+                alt="Équipe Vocalis Academy en consultation"
+                fill
+                className="object-cover"
+                priority
+              />
             </div>
             
-            <div className="bg-gray-50 rounded-3xl p-8">
-              <form className="space-y-6">
-                <div>
-                  <label className="block text-sm font-medium text-navy mb-2">
-                    Nom complet
-                  </label>
-                  <Input
-                    placeholder="Votre nom"
-                    className="h-12 rounded-xl border-gray-300 focus:border-gold focus:ring-gold"
-                  />
+            <div className="space-y-10">
+              <div className="flex items-start gap-6">
+                <div className="w-14 h-14 rounded-2xl bg-gold/10 flex items-center justify-center flex-shrink-0">
+                  <Phone className="w-7 h-7 text-gold" />
                 </div>
-                
                 <div>
-                  <label className="block text-sm font-medium text-navy mb-2">
-                    Email
-                  </label>
-                  <Input
-                    type="email"
-                    placeholder="votre@email.com"
-                    className="h-12 rounded-xl border-gray-300 focus:border-gold focus:ring-gold"
-                  />
+                  <h3 className="font-semibold text-xl text-navy mb-2">Téléphone</h3>
+                  <p className="text-lg text-gray-700 font-medium">+44 7537 10 6060</p>
+                  <p className="text-sm text-gray-500 mt-1">(uniquement joignable via WhatsApp)</p>
                 </div>
-                
+              </div>
+              
+              <div className="flex items-start gap-6">
+                <div className="w-14 h-14 rounded-2xl bg-gold/10 flex items-center justify-center flex-shrink-0">
+                  <Mail className="w-7 h-7 text-gold" />
+                </div>
                 <div>
-                  <label className="block text-sm font-medium text-navy mb-2">
-                    Message
-                  </label>
-                  <Textarea
-                    placeholder="Comment pouvons-nous vous aider ?"
-                    rows={5}
-                    className="rounded-xl border-gray-300 focus:border-gold focus:ring-gold resize-none"
-                  />
+                  <h3 className="font-semibold text-xl text-navy mb-2">Email</h3>
+                  <a 
+                    href="mailto:contact@vocalis-academy.com"
+                    className="text-lg text-gray-700 font-medium hover:text-gold transition-colors"
+                  >
+                    contact@vocalis-academy.com
+                  </a>
                 </div>
-                
-                <Button className="w-full bg-gold hover:bg-gold/90 text-navy font-semibold rounded-full py-6 text-base shadow-lg transform hover:scale-105 transition-all">
-                  Envoyer le message
-                </Button>
-              </form>
+              </div>
+              
+              <div className="flex items-start gap-6">
+                <div className="w-14 h-14 rounded-2xl bg-gold/10 flex items-center justify-center flex-shrink-0">
+                  <MapPin className="w-7 h-7 text-gold" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-xl text-navy mb-2">Siège Social</h3>
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    71-75, Shelton Street, Covent Garden,<br />
+                    WC2H 9JQ, Londres, Royaume-Uni
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
