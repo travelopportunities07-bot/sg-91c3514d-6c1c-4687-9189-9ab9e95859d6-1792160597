@@ -1,6 +1,12 @@
-export function ScrollingBanner() {
+interface ScrollingBannerProps {
+  variant?: "blue" | "silver";
+}
+
+export function ScrollingBanner({ variant = "blue" }: ScrollingBannerProps) {
+  const bgColor = variant === "blue" ? "bg-blue-600" : "bg-gray-500";
+  
   return (
-    <div className="bg-navy text-white py-4 overflow-hidden">
+    <div className={`${bgColor} text-white py-4 overflow-hidden`}>
       <div className="marquee">
         <div className="marquee-content">
           <span className="text-sm uppercase tracking-wider font-medium">
