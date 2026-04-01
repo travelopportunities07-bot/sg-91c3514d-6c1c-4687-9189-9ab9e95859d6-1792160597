@@ -32,7 +32,7 @@ export default function About() {
           </div>
         </section>
 
-        <ScrollingBanner />
+        <ScrollingBanner variant="blue" />
 
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4 lg:px-8">
@@ -50,7 +50,7 @@ export default function About() {
           </div>
         </section>
 
-        <ScrollingBanner />
+        <ScrollingBanner variant="blue" />
 
         <section className="py-20 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
           <div className="container mx-auto px-4 lg:px-8">
@@ -99,7 +99,7 @@ export default function About() {
           </div>
         </section>
 
-        <ScrollingBanner />
+        <ScrollingBanner variant="blue" />
 
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4 lg:px-8">

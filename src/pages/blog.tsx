@@ -102,7 +102,7 @@ export default function Blog() {
           </div>
         </section>
 
-        <ScrollingBanner />
+        <ScrollingBanner variant="silver" />
 
         <section className="py-20 bg-gradient-to-br from-white via-gray-50 to-blue-50">
           <div className="container mx-auto px-4 lg:px-8">
