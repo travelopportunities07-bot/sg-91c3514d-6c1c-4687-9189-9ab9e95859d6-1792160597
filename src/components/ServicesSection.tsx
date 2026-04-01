@@ -14,7 +14,7 @@ export function ServicesSection() {
         "Méthodologie d'apprentissage"
       ],
       link: "/prestations/soutien-scolaire",
-      gradient: "from-gray-500 to-gray-600",
+      gradient: "from-blue-600 to-blue-500",
       bgColor: "bg-gray-50"
     },
     {
@@ -27,7 +27,7 @@ export function ServicesSection() {
         "Stratégies de réussite"
       ],
       link: "/prestations/preparation-certifications",
-      gradient: "from-gray-500 to-gray-600",
+      gradient: "from-blue-600 to-blue-500",
       bgColor: "bg-gray-50"
     },
     {
@@ -40,7 +40,7 @@ export function ServicesSection() {
         "Rédaction emails/CV"
       ],
       link: "/prestations/langues-carriere",
-      gradient: "from-gray-500 to-gray-600",
+      gradient: "from-blue-600 to-blue-500",
       bgColor: "bg-gray-50"
     }
   ];

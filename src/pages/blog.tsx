@@ -15,7 +15,7 @@ export default function Blog() {
       date: "15 Mars 2026",
       author: "Dr. Marie Dubois",
       icon: Target,
-      gradient: "from-gray-500 to-gray-600",
+      gradient: "from-blue-600 to-blue-500",
       readTime: "8 min"
     },
     {
@@ -26,7 +26,7 @@ export default function Blog() {
       date: "10 Mars 2026",
       author: "Prof. John Smith",
       icon: BookOpen,
-      gradient: "from-gray-500 to-gray-600",
+      gradient: "from-blue-600 to-blue-500",
       readTime: "12 min"
     },
     {
@@ -37,7 +37,7 @@ export default function Blog() {
       date: "5 Mars 2026",
       author: "Sophie Martin",
       icon: Globe,
-      gradient: "from-gray-500 to-gray-600",
+      gradient: "from-blue-600 to-blue-500",
       readTime: "10 min"
     },
     {
@@ -48,7 +48,7 @@ export default function Blog() {
       date: "1 Mars 2026",
       author: "Dr. Marie Dubois",
       icon: BookOpen,
-      gradient: "from-gray-500 to-gray-600",
+      gradient: "from-blue-600 to-blue-500",
       readTime: "7 min"
     },
     {
@@ -59,7 +59,7 @@ export default function Blog() {
       date: "25 Février 2026",
       author: "Li Wei",
       icon: Globe,
-      gradient: "from-gray-500 to-gray-600",
+      gradient: "from-blue-600 to-blue-500",
       readTime: "15 min"
     },
     {
@@ -70,7 +70,7 @@ export default function Blog() {
       date: "20 Février 2026",
       author: "Prof. John Smith",
       icon: Target,
-      gradient: "from-gray-500 to-gray-600",
+      gradient: "from-blue-600 to-blue-500",
       readTime: "6 min"
     }
   ];

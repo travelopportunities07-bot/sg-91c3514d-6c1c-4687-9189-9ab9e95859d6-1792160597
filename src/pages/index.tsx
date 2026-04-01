@@ -2,6 +2,7 @@ import { SEO } from "@/components/SEO";
 import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
 import { ServicesSection } from "@/components/ServicesSection";
+import { ScrollingBanner } from "@/components/ScrollingBanner";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { FAQSection } from "@/components/FAQSection";
 import { ContactSection } from "@/components/ContactSection";
@@ -19,9 +20,13 @@ export default function Home() {
       <Header />
       <main>
         <HeroSection />
+        <ScrollingBanner />
         <ServicesSection />
+        <ScrollingBanner />
         <TestimonialsSection />
+        <ScrollingBanner />
         <FAQSection />
+        <ScrollingBanner />
         <ContactSection />
       </main>
       <Footer />
