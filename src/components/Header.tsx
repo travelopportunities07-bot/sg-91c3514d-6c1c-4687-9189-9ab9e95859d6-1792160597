@@ -1,8 +1,11 @@
 import Link from "next/link";
+import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function Header() {
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border">
       <div className="bg-navy text-white py-2 overflow-hidden">
@@ -34,10 +37,45 @@ export function Header() {
             <Link href="/about" className="text-navy hover:text-gold transition-colors font-medium">
               À Propos
             </Link>
-            <button className="flex items-center gap-1 text-navy hover:text-gold transition-colors font-medium group">
-              Nos Prestations
-              <ChevronDown className="w-4 h-4 transition-transform group-hover:translate-y-0.5" />
-            </button>
+            <div 
+              className="relative"
+              onMouseEnter={() => setIsServicesOpen(true)}
+              onMouseLeave={() => setIsServicesOpen(false)}
+            >
+              <button className="flex items-center gap-1 text-navy hover:text-gold transition-colors font-medium group">
+                Nos Prestations
+                <ChevronDown className="w-4 h-4 transition-transform group-hover:translate-y-0.5" />
+              </button>
+              
+              {isServicesOpen && (
+                <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-2xl shadow-2xl border border-gray-100 py-2 animate-in fade-in slide-in-from-top-2 duration-200">
+                  <Link 
+                    href="/prestations/soutien-scolaire"
+                    className="block px-6 py-3 text-navy hover:bg-gold/10 hover:text-gold transition-colors font-medium"
+                  >
+                    Soutien Scolaire
+                  </Link>
+                  <Link 
+                    href="/prestations/preparation-certifications"
+                    className="block px-6 py-3 text-navy hover:bg-gold/10 hover:text-gold transition-colors font-medium"
+                  >
+                    Préparation Certifications
+                  </Link>
+                  <Link 
+                    href="/prestations/langues-carriere"
+                    className="block px-6 py-3 text-navy hover:bg-gold/10 hover:text-gold transition-colors font-medium"
+                  >
+                    Langues & Carrière
+                  </Link>
+                  <Link 
+                    href="/prestations/conseils-orientation"
+                    className="block px-6 py-3 text-navy hover:bg-gold/10 hover:text-gold transition-colors font-medium"
+                  >
+                    Conseils en Orientation
+                  </Link>
+                </div>
+              )}
+            </div>
           </div>
           
           <Button size="lg" className="bg-gold hover:bg-gold/90 text-navy font-semibold rounded-full px-8 shadow-lg">

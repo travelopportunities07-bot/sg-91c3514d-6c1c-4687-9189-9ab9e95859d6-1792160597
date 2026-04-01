@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { GraduationCap, Award, Briefcase } from "lucide-react";
 
@@ -6,51 +6,51 @@ export function ServicesSection() {
   const services = [
     {
       title: "Soutien Scolaire & Étudiants",
-      description: "Accompagnement personnalisé pour la réussite aux examens et l'excellence académique. Nos experts vous préparent aux défis scolaires et universitaires.",
-      image: "/services-overview.png",
+      description: "Focus sur la réussite aux examens et le renforcement des bases académiques pour tous les niveaux.",
       icon: GraduationCap,
       features: [
-        "Cours individuels et en petits groupes",
-        "Préparation aux examens (Bac, Brevet, etc.)",
-        "Méthodologie et techniques d'apprentissage",
-        "Suivi personnalisé et bilans réguliers"
-      ]
+        "Aide aux devoirs",
+        "Préparation BAC/Brevet",
+        "Méthodologie d'apprentissage"
+      ],
+      link: "/prestations/soutien-scolaire"
     },
     {
-      title: "Préparation aux Certifications Internationales",
-      description: "Formation intensive et ciblée pour obtenir vos certifications linguistiques reconnues mondialement : TOEFL, DELF, TestDaF, DELE, HSK.",
-      image: "/career-services.png",
+      title: "Préparation aux Certifications",
+      description: "Maximisez vos chances de réussite au TOEFL, DELF, TestDaF, HSK avec nos programmes intensifs.",
       icon: Award,
       features: [
-        "Entraînement aux épreuves officielles",
-        "Stratégies et techniques d'examen",
-        "Tests blancs et corrections détaillées",
-        "Garantie de résultats"
-      ]
+        "Examens de langues",
+        "Correction personnalisée",
+        "Stratégies de réussite"
+      ],
+      link: "/prestations/preparation-certifications"
     },
     {
       title: "Langues & Carrière Professionnelle",
-      description: "Développez vos compétences linguistiques professionnelles en Français, Anglais, Allemand, Espagnol et Chinois. Incluant conseil et orientation professionnelle.",
-      image: "/professional-services.png",
+      description: "Anglais, Allemand et Chinois des affaires pour booster votre profil international.",
       icon: Briefcase,
       features: [
-        "Business English/Français professionnel",
-        "Communication interculturelle",
-        "Préparation aux entretiens",
-        "Conseil et orientation de carrière"
-      ]
+        "Vocabulaire métier",
+        "Prise de parole en public",
+        "Rédaction emails/CV"
+      ],
+      link: "/prestations/langues-carriere"
     }
   ];
 
   return (
-    <section className="py-24 bg-gray-50">
+    <section className="py-24 bg-white">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-navy mb-4">
-            Nos Prestations
+            Notre Expertise
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Des solutions sur-mesure pour tous vos besoins en apprentissage des langues
+            Des Solutions sur Mesure
+          </p>
+          <p className="text-lg text-gray-500 mt-4 max-w-2xl mx-auto">
+            Que vous soyez étudiant ou professionnel, nous avons le programme idéal pour transformer votre avenir.
           </p>
         </div>
         
@@ -60,24 +60,13 @@ export function ServicesSection() {
             return (
               <div
                 key={index}
-                className="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
+                className="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100"
               >
-                <div className="relative h-64 overflow-hidden">
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent"></div>
-                  <div className="absolute bottom-6 left-6">
-                    <div className="w-16 h-16 rounded-2xl bg-gold flex items-center justify-center mb-3 transform group-hover:scale-110 transition-transform">
-                      <Icon className="w-8 h-8 text-navy" />
-                    </div>
-                  </div>
-                </div>
-                
                 <div className="p-8">
+                  <div className="w-16 h-16 rounded-2xl bg-gold flex items-center justify-center mb-6 transform group-hover:scale-110 transition-transform">
+                    <Icon className="w-8 h-8 text-navy" />
+                  </div>
+                  
                   <h3 className="text-2xl font-heading font-bold text-navy mb-4">
                     {service.title}
                   </h3>
@@ -95,9 +84,11 @@ export function ServicesSection() {
                     ))}
                   </ul>
                   
-                  <Button className="w-full bg-gold hover:bg-gold/90 text-navy font-semibold rounded-full py-6 text-base shadow-lg transform hover:scale-105 transition-all">
-                    En savoir plus
-                  </Button>
+                  <Link href={service.link}>
+                    <Button className="w-full bg-gold hover:bg-gold/90 text-navy font-semibold rounded-full py-6 text-base shadow-lg transform hover:scale-105 transition-all">
+                      En savoir plus
+                    </Button>
+                  </Link>
                 </div>
               </div>
             );
