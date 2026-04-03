@@ -79,7 +79,7 @@ export default function Blog() {
   return (
     <>
       <SEO
-        title="Blog - Vocalis Academy | Conseils d'Apprentissage des Langues"
+        title="Blog - PowerLingua | Conseils d'Apprentissage des Langues"
         description="Découvrez nos articles, conseils et stratégies pour apprendre efficacement les langues étrangères. Guides, astuces et ressources par nos experts."
         image="/og-image.png"
       />

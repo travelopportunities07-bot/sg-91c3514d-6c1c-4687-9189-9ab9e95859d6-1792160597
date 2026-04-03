@@ -9,8 +9,8 @@ export default function About() {
   return (
     <>
       <SEO
-        title="À Propos - Vocalis Academy"
-        description="Découvrez l'histoire et la mission de Vocalis Academy, votre partenaire pour l'apprentissage des langues étrangères."
+        title="À Propos - PowerLingua"
+        description="Découvrez l'histoire et la mission de PowerLingua, votre partenaire pour l'apprentissage des langues étrangères."
         image="/og-image.png"
       />
       <Header />
@@ -23,7 +23,7 @@ export default function About() {
                 <span className="text-gold font-semibold uppercase tracking-wider text-sm">Notre Histoire</span>
               </div>
               <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6">
-                À Propos de Vocalis Academy
+                À Propos de PowerLingua
               </h1>
               <p className="text-xl text-white/90">
                 Votre partenaire de confiance pour maîtriser les langues étrangères et réussir vos certifications internationales.
@@ -32,7 +32,7 @@ export default function About() {
           </div>
         </section>
 
-        <ScrollingBanner variant="blue" />
+        <ScrollingBanner />
 
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4 lg:px-8">
@@ -41,7 +41,7 @@ export default function About() {
                 Notre Mission
               </h2>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                Chez Vocalis Academy, nous croyons que l'apprentissage des langues ouvre des portes vers de nouvelles opportunités professionnelles et personnelles. Notre mission est de rendre l'apprentissage des langues accessible, efficace et agréable pour tous.
+                Chez PowerLingua, nous croyons que l'apprentissage des langues ouvre des portes vers de nouvelles opportunités professionnelles et personnelles. Notre mission est de rendre l'apprentissage des langues accessible, efficace et agréable pour tous.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
                 Nous proposons des cours personnalisés de Français, Anglais, Allemand, Espagnol et Chinois, adaptés à tous les niveaux et tous les objectifs, qu'il s'agisse de réussir un examen, de progresser dans sa carrière ou simplement de découvrir une nouvelle culture.
@@ -50,7 +50,7 @@ export default function About() {
           </div>
         </section>
 
-        <ScrollingBanner variant="blue" />
+        <ScrollingBanner />
 
         <section className="py-20 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
           <div className="container mx-auto px-4 lg:px-8">
@@ -99,13 +99,13 @@ export default function About() {
           </div>
         </section>
 
-        <ScrollingBanner variant="blue" />
+        <ScrollingBanner />
 
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4 lg:px-8">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-navy mb-6">
-                Pourquoi Choisir Vocalis Academy ?
+                Pourquoi Choisir PowerLingua ?
               </h2>
               <div className="space-y-6 text-left">
                 <div className="flex gap-4">
