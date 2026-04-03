@@ -92,7 +92,7 @@ export function ServicesSection() {
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <div className="flex justify-center mb-6">
-            <div className="relative w-32 h-32">
+            <div className="relative w-48 h-48 md:w-64 md:h-64">
               <Image
                 src="/logo-large.png"
                 alt="PowerLingua Logo"

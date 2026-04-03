@@ -18,8 +18,18 @@ export default function PreparationCertifications() {
       />
       <Header />
       <main>
-        <section className="pt-32 pb-20 bg-gradient-to-br from-navy via-navy to-navy-dark">
-          <div className="container mx-auto px-4 lg:px-8">
+        <section className="relative pt-32 pb-20 overflow-hidden">
+          <div className="absolute inset-0">
+            <Image
+              src="/800x800.png"
+              alt="Préparation aux Certifications"
+              fill
+              className="object-cover"
+              priority
+            />
+            <div className="absolute inset-0 bg-navy/80"></div>
+          </div>
+          <div className="container mx-auto px-4 lg:px-8 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
               <div className="w-20 h-20 rounded-2xl bg-gold flex items-center justify-center mx-auto mb-6">
                 <Award className="w-10 h-10 text-navy" />

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Facebook, Instagram, Music } from "lucide-react";
 
 export function Footer() {
@@ -9,9 +10,14 @@ export function Footer() {
       <div className="container mx-auto px-4 lg:px-8 py-16">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div className="md:col-span-2">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 rounded-full bg-gold flex items-center justify-center">
-                <span className="text-navy text-2xl font-heading font-bold">P</span>
+            <div className="flex items-center gap-4 mb-6">
+              <div className="relative w-16 h-16 bg-white rounded-full p-2 flex items-center justify-center">
+                <Image
+                  src="/logo-large.png"
+                  alt="PowerLingua Logo"
+                  fill
+                  className="object-contain p-1"
+                />
               </div>
               <span className="text-2xl font-heading font-semibold">PowerLingua</span>
             </div>
