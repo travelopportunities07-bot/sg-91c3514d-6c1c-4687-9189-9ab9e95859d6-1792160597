@@ -113,16 +113,14 @@ export function HeroSection() {
       
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-7xl font-heading font-bold text-white mb-6 fade-in-up">
-            Maîtrisez le Français, l'Anglais, l'Allemand, l'Espagnol et le Chinois avec des Experts
-          </h1>
-          
-          <p className="text-xl md:text-2xl text-white/90 mb-8 fade-in-up stagger-1 max-w-3xl mx-auto">
-            Accompagnement personnalisé pour écoliers, étudiants et professionnels
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 fade-in-up stagger-2">
-            <Button size="lg" className="bg-gold hover:bg-gold/90 text-navy font-semibold rounded-full px-10 py-6 text-lg shadow-2xl transform hover:scale-105 transition-all">
+          <div className="relative z-10 text-center">
+            <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto">
+              Accompagnement personnalisé pour écoliers, étudiants et professionnels.
+            </p>
+            <Button 
+              size="lg" 
+              className="bg-gold hover:bg-gold/90 text-navy font-semibold text-lg px-8 py-6 rounded-full shadow-2xl hover:shadow-gold/50 transition-all hover:scale-105"
+            >
               Réserver un cours d'essai
             </Button>
           </div>
