@@ -20,13 +20,13 @@ export default function Home() {
       <Header />
       <main>
         <HeroSection />
-        <ScrollingBanner variant="blue" />
+        <ScrollingBanner />
         <ServicesSection />
-        <ScrollingBanner variant="silver" />
+        <ScrollingBanner />
         <TestimonialsSection />
-        <ScrollingBanner variant="blue" />
+        <ScrollingBanner />
         <FAQSection />
-        <ScrollingBanner variant="silver" />
+        <ScrollingBanner />
         <ContactSection />
       </main>
       <Footer />
