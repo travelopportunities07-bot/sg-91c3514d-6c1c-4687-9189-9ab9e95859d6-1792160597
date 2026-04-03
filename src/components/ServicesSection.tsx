@@ -46,8 +46,16 @@ export function ServicesSection() {
   ];
 
   return (
-    <section className="py-24 bg-gradient-to-br from-white via-gray-50 to-blue-50">
-      <div className="container mx-auto px-4 lg:px-8">
+    <section className="py-24 bg-gradient-to-br from-white via-gray-50 to-blue-50 relative">
+      <div 
+        className="absolute inset-0 bg-center bg-no-repeat opacity-5"
+        style={{
+          backgroundImage: "url('/logo-large.png')",
+          backgroundSize: "400px 400px"
+        }}
+      ></div>
+      
+      <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-navy mb-4">
             Notre Expertise
@@ -55,7 +63,10 @@ export function ServicesSection() {
           <p className="text-2xl font-semibold text-gold mb-2">
             Des Solutions sur Mesure
           </p>
-          <p className="text-lg text-gray-700 mt-4 max-w-2xl mx-auto">
+          <p className="text-sm text-gray-700 mt-4 max-w-2xl mx-auto leading-relaxed">
+            Maîtrisez le Français, l'Anglais, l'Allemand, l'Espagnol et le Chinois avec des Experts
+          </p>
+          <p className="text-lg text-gray-700 mt-2 max-w-2xl mx-auto">
             Que vous soyez étudiant ou professionnel, nous avons le programme idéal pour transformer votre avenir.
           </p>
         </div>

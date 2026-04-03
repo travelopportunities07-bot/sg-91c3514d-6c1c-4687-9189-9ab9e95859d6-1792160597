@@ -130,8 +130,8 @@ export function ContactSection() {
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div className="relative h-[400px] lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="/consultation.png"
-                alt="Équipe Vocalis Academy en consultation"
+                src="/contact-hero.png"
+                alt="PowerLingua - Hall d'accueil"
                 fill
                 className="object-cover"
                 priority

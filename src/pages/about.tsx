@@ -4,6 +4,7 @@ import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { ScrollingBanner } from "@/components/ScrollingBanner";
 import { Award, Users, Globe, Target } from "lucide-react";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -15,9 +16,20 @@ export default function About() {
       />
       <Header />
       <main className="pt-32">
-        <section className="py-20 bg-gradient-to-br from-navy via-navy to-navy-dark text-white">
-          <div className="container mx-auto px-4 lg:px-8">
-            <div className="max-w-4xl mx-auto text-center">
+        <section className="relative py-20 overflow-hidden">
+          <div className="absolute inset-0">
+            <Image
+              src="/about-hero.jpg"
+              alt="Équipe PowerLingua"
+              fill
+              className="object-cover"
+              priority
+            />
+            <div className="absolute inset-0 bg-navy/70"></div>
+          </div>
+          
+          <div className="container mx-auto px-4 lg:px-8 relative z-10">
+            <div className="max-w-4xl mx-auto text-center text-white">
               <div className="inline-flex items-center gap-2 bg-gold/20 rounded-full px-6 py-2 mb-6">
                 <Users className="w-5 h-5 text-gold" />
                 <span className="text-gold font-semibold uppercase tracking-wider text-sm">Notre Histoire</span>

@@ -24,9 +24,9 @@ export function Header() {
       <nav className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="relative w-14 h-14 transition-transform group-hover:scale-105">
+            <div className="relative w-12 h-12 transition-transform group-hover:scale-105">
               <Image
-                src="/powerlingua-logo.jpg"
+                src="/logo-large.png"
                 alt="PowerLingua Logo"
                 fill
                 className="object-contain"
