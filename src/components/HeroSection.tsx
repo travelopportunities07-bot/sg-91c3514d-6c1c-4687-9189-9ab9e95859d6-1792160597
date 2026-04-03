@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Award, ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
@@ -14,7 +14,7 @@ export function HeroSection() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000);
+    }, 7000);
     return () => clearInterval(timer);
   }, [slides.length]);
 
@@ -25,39 +25,6 @@ export function HeroSection() {
   const prevSlide = () => {
     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
   };
-
-  const certifications = [
-    {
-      name: "DELF",
-      language: "Français",
-      color: "from-amber-600 to-amber-400",
-      borderColor: "border-amber-500"
-    },
-    {
-      name: "TOEFL",
-      language: "Anglais",
-      color: "from-amber-600 to-amber-400",
-      borderColor: "border-amber-500"
-    },
-    {
-      name: "Goethe-Institut",
-      language: "Allemand",
-      color: "from-amber-600 to-amber-400",
-      borderColor: "border-amber-500"
-    },
-    {
-      name: "DELE",
-      language: "Espagnol",
-      color: "from-amber-600 to-amber-400",
-      borderColor: "border-amber-500"
-    },
-    {
-      name: "HSK",
-      language: "Chinois",
-      color: "from-amber-600 to-amber-400",
-      borderColor: "border-amber-500"
-    }
-  ];
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 pb-20">
@@ -123,35 +90,6 @@ export function HeroSection() {
             >
               Réserver un cours d'essai
             </Button>
-          </div>
-          
-          <div className="fade-in-up stagger-3">
-            <div className="flex items-center justify-center gap-2 mb-8">
-              <Award className="w-6 h-6 text-gold" />
-              <p className="text-gold font-semibold text-lg uppercase tracking-wider">
-                Nos Certifications
-              </p>
-            </div>
-            
-            <div className="flex flex-wrap justify-center gap-6 items-center">
-              {certifications.map((cert, index) => (
-                <div 
-                  key={index}
-                  className={`group relative bg-white rounded-2xl p-6 ${cert.borderColor} border-2 hover:scale-110 transition-all duration-300 shadow-2xl hover:shadow-gold/50 min-w-[140px]`}
-                >
-                  <div className={`absolute inset-0 bg-gradient-to-br ${cert.color} opacity-5 rounded-2xl`}></div>
-                  <div className="relative">
-                    <div className={`w-16 h-16 mx-auto mb-3 rounded-full bg-gradient-to-br ${cert.color} flex items-center justify-center shadow-lg`}>
-                      <Award className="w-8 h-8 text-white" />
-                    </div>
-                    <p className="text-navy font-bold text-lg mb-1">{cert.name}</p>
-                    <p className={`text-sm font-semibold bg-gradient-to-r ${cert.color} bg-clip-text text-transparent`}>
-                      {cert.language}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { GraduationCap, Award, Briefcase } from "lucide-react";
 
@@ -45,6 +46,39 @@ export function ServicesSection() {
     }
   ];
 
+  const certifications = [
+    {
+      name: "DELF",
+      language: "Français",
+      color: "from-amber-600 to-amber-400",
+      borderColor: "border-amber-500"
+    },
+    {
+      name: "TOEFL",
+      language: "Anglais",
+      color: "from-amber-600 to-amber-400",
+      borderColor: "border-amber-500"
+    },
+    {
+      name: "Goethe-Institut",
+      language: "Allemand",
+      color: "from-amber-600 to-amber-400",
+      borderColor: "border-amber-500"
+    },
+    {
+      name: "DELE",
+      language: "Espagnol",
+      color: "from-amber-600 to-amber-400",
+      borderColor: "border-amber-500"
+    },
+    {
+      name: "HSK",
+      language: "Chinois",
+      color: "from-amber-600 to-amber-400",
+      borderColor: "border-amber-500"
+    }
+  ];
+
   return (
     <section className="py-24 bg-gradient-to-br from-white via-gray-50 to-blue-50 relative">
       <div 
@@ -57,6 +91,17 @@ export function ServicesSection() {
       
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
         <div className="text-center mb-16">
+          <div className="flex justify-center mb-6">
+            <div className="relative w-32 h-32">
+              <Image
+                src="/logo-large.png"
+                alt="PowerLingua Logo"
+                fill
+                className="object-contain"
+              />
+            </div>
+          </div>
+          
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-navy mb-4">
             Notre Expertise
           </h2>
@@ -71,7 +116,7 @@ export function ServicesSection() {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 mb-20">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
@@ -110,6 +155,35 @@ export function ServicesSection() {
               </div>
             );
           })}
+        </div>
+
+        <div className="mt-16">
+          <div className="flex items-center justify-center gap-2 mb-8">
+            <Award className="w-6 h-6 text-gold" />
+            <p className="text-gold font-semibold text-lg uppercase tracking-wider">
+              Nos Certifications
+            </p>
+          </div>
+          
+          <div className="flex flex-wrap justify-center gap-6 items-center">
+            {certifications.map((cert, index) => (
+              <div 
+                key={index}
+                className={`group relative bg-white rounded-2xl p-6 ${cert.borderColor} border-2 hover:scale-110 transition-all duration-300 shadow-2xl hover:shadow-gold/50 min-w-[140px]`}
+              >
+                <div className={`absolute inset-0 bg-gradient-to-br ${cert.color} opacity-5 rounded-2xl`}></div>
+                <div className="relative">
+                  <div className={`w-16 h-16 mx-auto mb-3 rounded-full bg-gradient-to-br ${cert.color} flex items-center justify-center shadow-lg`}>
+                    <Award className="w-8 h-8 text-white" />
+                  </div>
+                  <p className="text-navy font-bold text-lg mb-1">{cert.name}</p>
+                  <p className={`text-sm font-semibold bg-gradient-to-r ${cert.color} bg-clip-text text-transparent`}>
+                    {cert.language}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
