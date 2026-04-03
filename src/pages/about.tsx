@@ -44,8 +44,6 @@ export default function About() {
           </div>
         </section>
 
-        <ScrollingBanner />
-
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4 lg:px-8">
             <div className="max-w-4xl mx-auto">
@@ -61,8 +59,6 @@ export default function About() {
             </div>
           </div>
         </section>
-
-        <ScrollingBanner />
 
         <section className="py-20 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
           <div className="container mx-auto px-4 lg:px-8">
@@ -111,8 +107,6 @@ export default function About() {
           </div>
         </section>
 
-        <ScrollingBanner />
-
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4 lg:px-8">
             <div className="max-w-4xl mx-auto text-center">
@@ -148,6 +142,8 @@ export default function About() {
             </div>
           </div>
         </section>
+
+        <ScrollingBanner />
       </main>
       <Footer />
       <WhatsAppButton />
