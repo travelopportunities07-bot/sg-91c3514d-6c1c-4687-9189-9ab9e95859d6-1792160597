@@ -34,7 +34,7 @@ export default function LanguesCarriere() {
           </div>
         </section>
 
-        <ScrollingBanner variant="blue" />
+        <ScrollingBanner />
 
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4 lg:px-8">
