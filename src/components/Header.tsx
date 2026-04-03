@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 
@@ -10,12 +11,12 @@ export function Header() {
       <div className="bg-navy text-white py-2 overflow-hidden">
         <div className="marquee">
           <div className="marquee-content">
-            <span className="text-sm uppercase tracking-wider">PARLEZ AVEC ASSURANCE. APPRENEZ AVEC MÉTHODE. RÉUSSISSEZ AVEC VOCALIS ACADEMY.</span>
-            <span className="text-sm uppercase tracking-wider">PARLEZ AVEC ASSURANCE. APPRENEZ AVEC MÉTHODE. RÉUSSISSEZ AVEC VOCALIS ACADEMY.</span>
+            <span className="text-sm uppercase tracking-wider">PARLEZ AVEC ASSURANCE. APPRENEZ AVEC MÉTHODE. RÉUSSISSEZ AVEC POWERLINGUA.</span>
+            <span className="text-sm uppercase tracking-wider">PARLEZ AVEC ASSURANCE. APPRENEZ AVEC MÉTHODE. RÉUSSISSEZ AVEC POWERLINGUA.</span>
           </div>
           <div className="marquee-content" aria-hidden="true">
-            <span className="text-sm uppercase tracking-wider">PARLEZ AVEC ASSURANCE. APPRENEZ AVEC MÉTHODE. RÉUSSISSEZ AVEC VOCALIS ACADEMY.</span>
-            <span className="text-sm uppercase tracking-wider">PARLEZ AVEC ASSURANCE. APPRENEZ AVEC MÉTHODE. RÉUSSISSEZ AVEC VOCALIS ACADEMY.</span>
+            <span className="text-sm uppercase tracking-wider">PARLEZ AVEC ASSURANCE. APPRENEZ AVEC MÉTHODE. RÉUSSISSEZ AVEC POWERLINGUA.</span>
+            <span className="text-sm uppercase tracking-wider">PARLEZ AVEC ASSURANCE. APPRENEZ AVEC MÉTHODE. RÉUSSISSEZ AVEC POWERLINGUA.</span>
           </div>
         </div>
       </div>
@@ -23,10 +24,16 @@ export function Header() {
       <nav className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-12 h-12 rounded-full bg-navy flex items-center justify-center transition-transform group-hover:scale-105">
-              <span className="text-gold text-2xl font-heading font-bold">V</span>
+            <div className="relative w-14 h-14 transition-transform group-hover:scale-105">
+              <Image
+                src="/powerlingua-logo.jpg"
+                alt="PowerLingua Logo"
+                fill
+                className="object-contain"
+                priority
+              />
             </div>
-            <span className="text-xl font-heading font-semibold text-navy">Vocalis Academy</span>
+            <span className="text-xl font-heading font-semibold text-navy">PowerLingua</span>
           </Link>
           
           <div className="hidden lg:flex items-center gap-8">
