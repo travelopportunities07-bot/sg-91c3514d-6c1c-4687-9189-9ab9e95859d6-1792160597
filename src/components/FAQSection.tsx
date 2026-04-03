@@ -9,7 +9,7 @@ import { HelpCircle } from "lucide-react";
 export function FAQSection() {
   const faqs = [
     {
-      question: "Quelles langues enseignez-vous chez Vocalis Academy ?",
+      question: "Quelles langues enseignez-vous chez PowerLingua ?",
       answer: "Nous proposons des cours de Français, Anglais, Allemand, Espagnol et Chinois (Mandarin). Chaque programme est conçu pour tous les niveaux, du débutant (A1) au niveau avancé (C2), avec des formateurs natifs ou bilingues certifiés."
     },
     {

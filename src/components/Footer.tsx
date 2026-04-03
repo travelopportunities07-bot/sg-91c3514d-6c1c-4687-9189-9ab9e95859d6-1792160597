@@ -11,9 +11,9 @@ export function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 rounded-full bg-gold flex items-center justify-center">
-                <span className="text-navy text-2xl font-heading font-bold">V</span>
+                <span className="text-navy text-2xl font-heading font-bold">P</span>
               </div>
-              <span className="text-2xl font-heading font-semibold">Vocalis Academy</span>
+              <span className="text-2xl font-heading font-semibold">PowerLingua</span>
             </div>
             <p className="text-white/70 mb-6 max-w-md leading-relaxed">
               Votre partenaire d'excellence pour l'apprentissage des langues. 
@@ -24,7 +24,7 @@ export function Footer() {
               <h3 className="font-heading font-semibold text-lg mb-4">Suivez-nous</h3>
               <div className="flex gap-4">
                 <a 
-                  href="https://facebook.com/vocalisacademy" 
+                  href="https://facebook.com/powerlingua" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-white/10 hover:bg-gold flex items-center justify-center transition-all group"
@@ -32,7 +32,7 @@ export function Footer() {
                   <Facebook className="w-5 h-5 text-white group-hover:text-navy" />
                 </a>
                 <a 
-                  href="https://instagram.com/vocalisacademy" 
+                  href="https://instagram.com/powerlingua" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-white/10 hover:bg-gold flex items-center justify-center transition-all group"
@@ -40,7 +40,7 @@ export function Footer() {
                   <Instagram className="w-5 h-5 text-white group-hover:text-navy" />
                 </a>
                 <a 
-                  href="https://tiktok.com/@vocalisacademy" 
+                  href="https://tiktok.com/@powerlingua" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-white/10 hover:bg-gold flex items-center justify-center transition-all group"
@@ -92,7 +92,7 @@ export function Footer() {
         <div className="border-t border-white/10 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-white/60 text-sm">
-              © {currentYear} Vocalis Academy. Tous droits réservés.
+              © {currentYear} PowerLingua. Tous droits réservés.
             </p>
             
             <div className="flex gap-6 text-sm">

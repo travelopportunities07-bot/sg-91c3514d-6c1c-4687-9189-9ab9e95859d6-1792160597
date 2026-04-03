@@ -82,7 +82,7 @@ export function TestimonialsSection() {
         <div className="text-center mt-12">
           <p className="text-slate-600 text-lg">
             Rejoignez des milliers d'étudiants qui ont fait confiance à{" "}
-            <span className="font-semibold text-navy">Vocalis Academy</span>
+            <span className="font-semibold text-navy">PowerLingua</span>
           </p>
         </div>
       </div>

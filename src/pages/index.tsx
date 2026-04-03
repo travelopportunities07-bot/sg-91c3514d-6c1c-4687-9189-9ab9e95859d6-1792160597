@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="Vocalis Academy - Maîtrisez les Langues avec des Experts"
+        title="PowerLingua - Maîtrisez les Langues avec des Experts"
         description="Apprenez le Français, l'Anglais, l'Allemand, l'Espagnol et le Chinois avec des experts. Accompagnement personnalisé pour écoliers, étudiants et professionnels."
         image="/og-image.png"
       />

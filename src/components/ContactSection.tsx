@@ -353,10 +353,10 @@ export function ContactSection() {
                   <div>
                     <h3 className="font-semibold text-lg text-navy mb-1">Email</h3>
                     <a 
-                      href="mailto:contact@vocalis-academy.com"
+                      href="mailto:contact@powerlingua.com"
                       className="text-gray-700 font-medium hover:text-gold transition-colors"
                     >
-                      contact@vocalis-academy.com
+                      contact@powerlingua.com
                     </a>
                   </div>
                 </div>
