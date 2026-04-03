@@ -8,8 +8,8 @@ export default function CGV() {
   return (
     <>
       <SEO 
-        title="Conditions Générales de Vente - Vocalis Academy"
-        description="Conditions générales de vente des cours de langues en ligne de Vocalis Academy"
+        title="Conditions Générales de Vente - PowerLingua"
+        description="Conditions générales de vente des cours de langues en ligne de PowerLingua"
       />
       <Header />
       <main className="min-h-screen bg-gradient-to-b from-white to-gray-50 pt-32 pb-20">
@@ -28,10 +28,10 @@ export default function CGV() {
               Article 1 - Objet
             </h2>
             <p className="text-gray-700 mb-4 leading-relaxed">
-              Les présentes Conditions Générales de Vente (CGV) ont pour objet de définir les droits et obligations des parties dans le cadre de la vente de cours de langues en ligne par Vocalis Academy.
+              Les présentes Conditions Générales de Vente (CGV) ont pour objet de définir les droits et obligations des parties dans le cadre de la vente de cours de langues en ligne par PowerLingua.
             </p>
             <p className="text-gray-700 leading-relaxed">
-              Vocalis Academy propose des formations linguistiques en Français, Anglais, Allemand, Espagnol et Chinois, sous forme de cours particuliers en ligne, de préparation aux certifications internationales et de soutien scolaire.
+              PowerLingua propose des formations linguistiques en Français, Anglais, Allemand, Espagnol et Chinois, sous forme de cours particuliers en ligne, de préparation aux certifications internationales et de soutien scolaire.
             </p>
           </section>
 
@@ -165,7 +165,7 @@ export default function CGV() {
             <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-xl mb-4">
               <h3 className="text-lg font-semibold text-navy mb-3">Limitation de responsabilité</h3>
               <p className="text-gray-700 mb-3">
-                Vocalis Academy s'engage à fournir un enseignement de qualité mais ne peut être tenue responsable de l'échec du candidat aux examens officiels (DELF, DALF, TOEFL, TestDaF, HSK, etc.).
+                PowerLingua s'engage à fournir un enseignement de qualité mais ne peut être tenue responsable de l'échec du candidat aux examens officiels (DELF, DALF, TOEFL, TestDaF, HSK, etc.).
               </p>
               <p className="text-gray-700">
                 Nos formations visent à vous préparer au mieux aux examens, mais le succès dépend de votre assiduité, de votre travail personnel et de vos capacités individuelles.
@@ -179,7 +179,7 @@ export default function CGV() {
               Article 7 - Garanties
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              Vocalis Academy garantit un enseignement dispensé par des enseignants qualifiés et certifiés. Nous nous engageons à remplacer tout enseignant qui ne répondrait pas à vos attentes après évaluation.
+              PowerLingua garantit un enseignement dispensé par des enseignants qualifiés et certifiés. Nous nous engageons à remplacer tout enseignant qui ne répondrait pas à vos attentes après évaluation.
             </p>
           </section>
 
@@ -199,7 +199,7 @@ export default function CGV() {
               Article 9 - Propriété intellectuelle
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              L'ensemble des supports pédagogiques (cours, exercices, vidéos, documents) reste la propriété exclusive de Vocalis Academy. Toute reproduction ou diffusion est interdite sans autorisation écrite.
+              L'ensemble des supports pédagogiques (cours, exercices, vidéos, documents) reste la propriété exclusive de PowerLingua. Toute reproduction ou diffusion est interdite sans autorisation écrite.
             </p>
           </section>
 

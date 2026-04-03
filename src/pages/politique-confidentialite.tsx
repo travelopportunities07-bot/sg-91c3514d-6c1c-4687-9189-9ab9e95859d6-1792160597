@@ -8,7 +8,7 @@ export default function PolitiqueConfidentialite() {
   return (
     <>
       <SEO 
-        title="Politique de Confidentialité - Vocalis Academy"
+        title="Politique de Confidentialité - PowerLingua"
         description="Notre politique de confidentialité et protection des données personnelles (RGPD)"
       />
       <Header />
@@ -130,7 +130,7 @@ export default function PolitiqueConfidentialite() {
             <div className="bg-gold/10 border-l-4 border-gold p-6 mt-8 rounded-r-xl">
               <p className="text-navy font-semibold flex items-start gap-3">
                 <Shield className="w-5 h-5 flex-shrink-0 mt-0.5" />
-                <span>Important : Ces droits peuvent être exercés à tout moment et gratuitement en nous contactant à l'adresse : <a href="mailto:contact@vocalis-academy.com" className="text-gold hover:underline">contact@vocalis-academy.com</a></span>
+                <span>Important : Ces droits peuvent être exercés à tout moment et gratuitement en nous contactant à l'adresse : <a href="mailto:contact@powerlingua.com" className="text-gold hover:underline">contact@powerlingua.com</a></span>
               </p>
             </div>
           </section>
@@ -148,7 +148,7 @@ export default function PolitiqueConfidentialite() {
               Pour toute question concernant notre politique de confidentialité ou pour exercer vos droits, vous pouvez nous contacter à :
             </p>
             <p className="text-gold font-semibold text-lg mb-6">
-              <a href="mailto:contact@vocalis-academy.com" className="hover:underline">contact@vocalis-academy.com</a>
+              <a href="mailto:contact@powerlingua.com" className="hover:underline">contact@powerlingua.com</a>
             </p>
             <div className="border-t border-gray-200 pt-6 mt-6">
               <p className="text-gray-600">
