@@ -219,7 +219,7 @@ export default function CGV() {
           <div className="bg-navy text-white p-8 rounded-2xl text-center shadow-xl">
             <h3 className="text-2xl font-bold mb-4">Vous avez des questions sur nos conditions ?</h3>
             <a 
-              href="/#contact" 
+              href="/contact" 
               className="inline-block bg-gold hover:bg-gold/90 text-navy px-8 py-3 rounded-full font-semibold transition-all hover:scale-105"
             >
               Nous contacter

@@ -130,7 +130,7 @@ export default function PolitiqueConfidentialite() {
             <div className="bg-gold/10 border-l-4 border-gold p-6 mt-8 rounded-r-xl">
               <p className="text-navy font-semibold flex items-start gap-3">
                 <Shield className="w-5 h-5 flex-shrink-0 mt-0.5" />
-                <span>Important : Ces droits peuvent être exercés à tout moment et gratuitement en nous contactant à l'adresse : <a href="mailto:contact@powerlingua.com" className="text-gold hover:underline">contact@powerlingua.com</a></span>
+                <span>Important : Ces droits peuvent être exercés à tout moment et gratuitement en nous contactant à l'adresse : <a href="mailto:aissointerltd@gmail.com" className="text-gold hover:underline">aissointerltd@gmail.com</a></span>
               </p>
             </div>
           </section>
@@ -148,14 +148,14 @@ export default function PolitiqueConfidentialite() {
               Pour toute question concernant notre politique de confidentialité ou pour exercer vos droits, vous pouvez nous contacter à :
             </p>
             <p className="text-gold font-semibold text-lg mb-6">
-              <a href="mailto:contact@powerlingua.com" className="hover:underline">contact@powerlingua.com</a>
+              <a href="mailto:aissointerltd@gmail.com" className="hover:underline">aissointerltd@gmail.com</a>
             </p>
             <div className="border-t border-gray-200 pt-6 mt-6">
               <p className="text-gray-600">
                 Cette politique de confidentialité peut être mise à jour à tout moment. La dernière date de mise à jour est indiquée ci-dessous.
               </p>
               <p className="text-gray-600 mt-3">
-                <strong className="text-navy">Dernière mise à jour :</strong> Mars 2026
+                <strong className="text-navy">Dernière mise à jour :</strong> Avril 2026
               </p>
             </div>
           </section>
@@ -163,7 +163,7 @@ export default function PolitiqueConfidentialite() {
           <div className="bg-navy text-white p-8 rounded-2xl text-center shadow-xl">
             <h3 className="text-2xl font-bold mb-4">Vous avez des questions concernant vos données ?</h3>
             <a 
-              href="/#contact" 
+              href="/contact" 
               className="inline-block bg-gold hover:bg-gold/90 text-navy px-8 py-3 rounded-full font-semibold transition-all hover:scale-105"
             >
               Nous contacter
