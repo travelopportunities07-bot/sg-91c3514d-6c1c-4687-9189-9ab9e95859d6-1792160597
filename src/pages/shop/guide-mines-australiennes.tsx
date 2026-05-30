@@ -309,6 +309,24 @@ export default function GuideMinesAustraliennes() {
                   <ArrowRight className="w-7 h-7 ml-3 group-hover:translate-x-2 transition-transform" />
                 </Button>
 
+                <div className="mt-6 flex justify-center">
+                  <div className="inline-block bg-gradient-to-r from-emerald-50 to-teal-50 px-6 py-3 rounded-2xl border-2 border-emerald-200 shadow-md">
+                    <div className="flex items-center gap-3">
+                      <Image
+                        src="/secure-payment-badges.png"
+                        alt="Paiement Sécurisé"
+                        width={120}
+                        height={40}
+                        className="object-contain"
+                      />
+                      <div className="text-left">
+                        <p className="text-sm font-bold text-emerald-700">Paiement 100% Sécurisé</p>
+                        <p className="text-xs text-emerald-600">Avec Stripe</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                 <p className="text-sm text-navy/60 mt-6 flex items-center justify-center gap-2">
                   🔒 Paiement sécurisé • ⚡ Accès instantané
                 </p>
@@ -350,6 +368,23 @@ export default function GuideMinesAustraliennes() {
               Je veux commencer maintenant
               <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-2 transition-transform" />
             </Button>
+            <div className="mt-6 flex justify-center">
+              <div className="inline-block bg-gradient-to-r from-emerald-50 to-teal-50 px-6 py-3 rounded-2xl border-2 border-emerald-200 shadow-md">
+                <div className="flex items-center gap-3">
+                  <Image
+                    src="/secure-payment-badges.png"
+                    alt="Paiement Sécurisé"
+                    width={120}
+                    height={40}
+                    className="object-contain"
+                  />
+                  <div className="text-left">
+                    <p className="text-sm font-bold text-emerald-700">Paiement 100% Sécurisé</p>
+                    <p className="text-xs text-emerald-600">Avec Stripe</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>
