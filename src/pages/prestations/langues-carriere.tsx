@@ -6,7 +6,7 @@ import { ScrollingBanner } from "@/components/ScrollingBanner";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import { Briefcase, Globe, TrendingUp, Target, Users, MessageSquare } from "lucide-react";
+import { Briefcase, Globe, TrendingUp, Target, Users, MessageSquare, ArrowRight } from "lucide-react";
 
 export default function LanguesCarriere() {
   return (
@@ -48,7 +48,7 @@ export default function LanguesCarriere() {
                     Dans un monde professionnel globalisé, la maîtrise des langues étrangères est devenue un atout indispensable pour accéder aux meilleures opportunités de carrière, négocier avec des partenaires internationaux et évoluer dans des environnements multiculturels.
                   </p>
                   <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                    Nos formations professionnelles en Français, Anglais, Allemand, Espagnol et Chinois vous préparent à communiquer avec impact dans votre secteur d'activité, que vous soyez cadre, entrepreneur, consultant ou professionnel en reconversion.
+                    Nos formations professionnelles en Français, Anglais, Allemand et Chinois vous préparent à communiquer avec impact dans votre secteur d'activité, que vous soyez cadre, entrepreneur, consultant ou professionnel en reconversion.
                   </p>
                   <Link href="/#contact">
                     <Button size="lg" className="bg-gold hover:bg-gold/90 text-navy font-semibold rounded-full px-10 py-6 text-lg shadow-xl">
@@ -83,7 +83,7 @@ export default function LanguesCarriere() {
                         <p className="text-white/80">Langue des Affaires Internationales</p>
                       </div>
                     </div>
-                    <ul className="space-y-3 text-white/90">
+                    <ul className="space-y-3 text-white/90 mb-6">
                       <li className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 rounded-full bg-gold mt-2 flex-shrink-0"></span>
                         <span>Vocabulaire financier, marketing, RH, juridique</span>
@@ -101,6 +101,12 @@ export default function LanguesCarriere() {
                         <span>Emails, rapports et documents business</span>
                       </li>
                     </ul>
+                    <Link href="/professional/business-english">
+                      <Button className="w-full bg-gold hover:bg-gold/90 text-navy font-semibold rounded-full group">
+                        Learn More
+                        <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                      </Button>
+                    </Link>
                   </div>
 
                   <div className="bg-white rounded-3xl p-8 shadow-lg border-2 border-gray-100 hover:border-gold transition-all">
@@ -113,7 +119,7 @@ export default function LanguesCarriere() {
                         <p className="text-gray-600">Langue de Travail Internationale</p>
                       </div>
                     </div>
-                    <ul className="space-y-3 text-gray-600">
+                    <ul className="space-y-3 text-gray-600 mb-6">
                       <li className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 rounded-full bg-gold mt-2 flex-shrink-0"></span>
                         <span>Français des affaires et de l'administration</span>
@@ -131,6 +137,12 @@ export default function LanguesCarriere() {
                         <span>Insertion dans le marché du travail francophone</span>
                       </li>
                     </ul>
+                    <Link href="/professional/francais-professionnel">
+                      <Button className="w-full bg-gold hover:bg-gold/90 text-navy font-semibold rounded-full group">
+                        En savoir Plus
+                        <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                      </Button>
+                    </Link>
                   </div>
 
                   <div className="bg-white rounded-3xl p-8 shadow-lg border-2 border-gray-100 hover:border-gold transition-all">
@@ -139,28 +151,34 @@ export default function LanguesCarriere() {
                         <span className="text-2xl font-bold text-gold">🇩🇪</span>
                       </div>
                       <div>
-                        <h4 className="text-2xl font-heading font-bold text-navy">Deutsch für Beruf</h4>
-                        <p className="text-gray-600">Allemand Professionnel</p>
+                        <h4 className="text-2xl font-heading font-bold text-navy">Deutsch für Pflegeberufe</h4>
+                        <p className="text-gray-600">Allemand pour Soins Infirmiers</p>
                       </div>
                     </div>
-                    <ul className="space-y-3 text-gray-600">
+                    <ul className="space-y-3 text-gray-600 mb-6">
                       <li className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 rounded-full bg-gold mt-2 flex-shrink-0"></span>
-                        <span>Allemand technique et industriel</span>
+                        <span>Vocabulaire médical et soins infirmiers</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 rounded-full bg-gold mt-2 flex-shrink-0"></span>
-                        <span>Culture d'entreprise allemande</span>
+                        <span>Documentation et transmissions médicales</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 rounded-full bg-gold mt-2 flex-shrink-0"></span>
-                        <span>Préparation aux entretiens d'embauche</span>
+                        <span>Préparation Fachsprachprüfung B2</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 rounded-full bg-gold mt-2 flex-shrink-0"></span>
-                        <span>Travailler en Allemagne, Autriche, Suisse</span>
+                        <span>Travailler en Allemagne dans le secteur santé</span>
                       </li>
                     </ul>
+                    <Link href="/professional/deutsch-pflegeberufe">
+                      <Button className="w-full bg-gold hover:bg-gold/90 text-navy font-semibold rounded-full group">
+                        Mehr wissen
+                        <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                      </Button>
+                    </Link>
                   </div>
 
                   <div className="bg-white rounded-3xl p-8 shadow-lg border-2 border-gray-100 hover:border-gold transition-all">
@@ -173,7 +191,7 @@ export default function LanguesCarriere() {
                         <p className="text-gray-600">Chinois des Affaires</p>
                       </div>
                     </div>
-                    <ul className="space-y-3 text-gray-600">
+                    <ul className="space-y-3 text-gray-600 mb-6">
                       <li className="flex items-start gap-2">
                         <span className="w-1.5 h-1.5 rounded-full bg-gold mt-2 flex-shrink-0"></span>
                         <span>Mandarin business et étiquette chinoise</span>
@@ -191,6 +209,84 @@ export default function LanguesCarriere() {
                         <span>Opportunités professionnelles en Chine</span>
                       </li>
                     </ul>
+                    <Link href="/professional/business-chinese">
+                      <Button className="w-full bg-gold hover:bg-gold/90 text-navy font-semibold rounded-full group">
+                        Learn More
+                        <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                      </Button>
+                    </Link>
+                  </div>
+
+                  <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-8 shadow-lg border-2 border-gray-200 hover:border-gold transition-all">
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className="w-16 h-16 rounded-2xl bg-gold/20 flex items-center justify-center">
+                        <span className="text-2xl font-bold text-gold">📋</span>
+                      </div>
+                      <div>
+                        <h4 className="text-2xl font-heading font-bold text-navy">Fachsprachprüfung</h4>
+                        <p className="text-gray-600">Examen Langue Spécialisée B2</p>
+                      </div>
+                    </div>
+                    <ul className="space-y-3 text-gray-600 mb-6">
+                      <li className="flex items-start gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-gold mt-2 flex-shrink-0"></span>
+                        <span>Préparation intensive à l'examen FSP</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-gold mt-2 flex-shrink-0"></span>
+                        <span>Simulations orales et écrites</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-gold mt-2 flex-shrink-0"></span>
+                        <span>Cas cliniques et documentation médicale</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-gold mt-2 flex-shrink-0"></span>
+                        <span>Reconnaissance professionnelle en Allemagne</span>
+                      </li>
+                    </ul>
+                    <Link href="/professional/fachsprachpruefung">
+                      <Button className="w-full bg-gold hover:bg-gold/90 text-navy font-semibold rounded-full group">
+                        Mehr wissen
+                        <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                      </Button>
+                    </Link>
+                  </div>
+
+                  <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-8 shadow-lg border-2 border-gray-200 hover:border-gold transition-all">
+                    <div className="flex items-center gap-4 mb-6">
+                      <div className="w-16 h-16 rounded-2xl bg-gold/20 flex items-center justify-center">
+                        <span className="text-2xl font-bold text-gold">✏️</span>
+                      </div>
+                      <div>
+                        <h4 className="text-2xl font-heading font-bold text-navy">Alphabetisierung & Integration</h4>
+                        <p className="text-gray-600">Alphabétisation en Allemand</p>
+                      </div>
+                    </div>
+                    <ul className="space-y-3 text-gray-600 mb-6">
+                      <li className="flex items-start gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-gold mt-2 flex-shrink-0"></span>
+                        <span>Apprentissage alphabet latin et lecture</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-gold mt-2 flex-shrink-0"></span>
+                        <span>Allemand quotidien et administratif</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-gold mt-2 flex-shrink-0"></span>
+                        <span>Intégration professionnelle en Allemagne</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-gold mt-2 flex-shrink-0"></span>
+                        <span>Préparation test DTZ (A1 à B1)</span>
+                      </li>
+                    </ul>
+                    <Link href="/professional/alphabetisierung-integration">
+                      <Button className="w-full bg-gold hover:bg-gold/90 text-navy font-semibold rounded-full group">
+                        Mehr wissen
+                        <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                      </Button>
+                    </Link>
                   </div>
                 </div>
               </div>
