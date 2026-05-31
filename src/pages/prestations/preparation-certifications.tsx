@@ -93,7 +93,7 @@ export default function PreparationCertifications() {
                         <p className="text-gray-600">Anglais Académique</p>
                       </div>
                     </div>
-                    <ul className="space-y-3 text-gray-600">
+                    <ul className="space-y-3 text-gray-600 mb-6">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-5 h-5 text-gold mt-0.5 flex-shrink-0" />
                         <span>Compréhension orale et écrite intensive</span>
@@ -111,6 +111,11 @@ export default function PreparationCertifications() {
                         <span>Tests blancs chronométrés et corrigés</span>
                       </li>
                     </ul>
+                    <Link href="/certifications/english">
+                      <Button className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold rounded-xl py-6 shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                        Learn More
+                      </Button>
+                    </Link>
                   </div>
 
                   <div className="bg-white rounded-3xl p-8 shadow-lg border-2 border-gray-100 hover:border-gold transition-all">
@@ -123,7 +128,7 @@ export default function PreparationCertifications() {
                         <p className="text-gray-600">Français Langue Étrangère</p>
                       </div>
                     </div>
-                    <ul className="space-y-3 text-gray-600">
+                    <ul className="space-y-3 text-gray-600 mb-6">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-5 h-5 text-gold mt-0.5 flex-shrink-0" />
                         <span>Préparation A1 à C2 selon votre niveau</span>
@@ -141,6 +146,11 @@ export default function PreparationCertifications() {
                         <span>Entraînement aux épreuves officielles</span>
                       </li>
                     </ul>
+                    <Link href="/certifications/francais">
+                      <Button className="w-full bg-gradient-to-r from-indigo-600 to-indigo-700 hover:from-indigo-700 hover:to-indigo-800 text-white font-semibold rounded-xl py-6 shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                        En Savoir Plus
+                      </Button>
+                    </Link>
                   </div>
 
                   <div className="bg-white rounded-3xl p-8 shadow-lg border-2 border-gray-100 hover:border-gold transition-all">
@@ -153,7 +163,7 @@ export default function PreparationCertifications() {
                         <p className="text-gray-600">Allemand Certification</p>
                       </div>
                     </div>
-                    <ul className="space-y-3 text-gray-600">
+                    <ul className="space-y-3 text-gray-600 mb-6">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-5 h-5 text-gold mt-0.5 flex-shrink-0" />
                         <span>Niveaux A1 à C2 Goethe-Zertifikat</span>
@@ -171,6 +181,11 @@ export default function PreparationCertifications() {
                         <span>Simulations d'examen intensives</span>
                       </li>
                     </ul>
+                    <Link href="/certifications/deutsch">
+                      <Button className="w-full bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-semibold rounded-xl py-6 shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                        Mehr Erfahren
+                      </Button>
+                    </Link>
                   </div>
 
                   <div className="bg-white rounded-3xl p-8 shadow-lg border-2 border-gray-100 hover:border-gold transition-all">
@@ -183,7 +198,7 @@ export default function PreparationCertifications() {
                         <p className="text-gray-600">Chinois Mandarin</p>
                       </div>
                     </div>
-                    <ul className="space-y-3 text-gray-600">
+                    <ul className="space-y-3 text-gray-600 mb-6">
                       <li className="flex items-start gap-2">
                         <CheckCircle className="w-5 h-5 text-gold mt-0.5 flex-shrink-0" />
                         <span>Préparation HSK 1 à HSK 6</span>
@@ -201,6 +216,11 @@ export default function PreparationCertifications() {
                         <span>Stratégies pour maximiser votre score</span>
                       </li>
                     </ul>
+                    <Link href="/certifications/chinese">
+                      <Button className="w-full bg-gradient-to-r from-rose-600 to-rose-700 hover:from-rose-700 hover:to-rose-800 text-white font-semibold rounded-xl py-6 shadow-lg hover:shadow-xl transition-all transform hover:scale-105">
+                        了解更多
+                      </Button>
+                    </Link>
                   </div>
                 </div>
               </div>
