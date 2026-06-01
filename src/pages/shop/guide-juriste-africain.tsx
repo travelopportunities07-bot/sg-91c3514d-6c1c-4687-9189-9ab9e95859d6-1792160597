@@ -9,7 +9,7 @@ export default function GuideJuristeAfricain() {
   return (
     <>
       <SEO 
-        title="Guide du Juriste Africain - PowerLingua Shop"
+        title="Le Juriste en Europe - PowerLingua Shop"
         description="Le guide complet et pratique pour les juristes africains vers l'Europe et le Canada"
       />
       <Header />
@@ -21,25 +21,25 @@ export default function GuideJuristeAfricain() {
           <div className="max-w-6xl mx-auto relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="space-y-6">
-                <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-gold/20 backdrop-blur-sm rounded-full border border-gold/30">
+                <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-gold/20 backdrop-blur-sm rounded-full border-2 border-gold/30 hover:border-gold/50 transition-colors">
                   <Scale className="w-4 h-4 text-gold" />
                   <span className="font-bold text-sm text-gold">GUIDE DU JURISTE AFRICAIN • IMMIGRATION & CARRIÈRE</span>
                 </div>
                 <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl leading-tight">
-                  Le Guide du <span className="bg-gradient-to-r from-gold via-amber-400 to-gold bg-clip-text text-transparent">Juriste Africain</span>
+                  Le Juriste en <span className="bg-gradient-to-r from-gold via-amber-400 to-gold bg-clip-text text-transparent">Europe</span>
                 </h1>
                 <h2 className="text-2xl md:text-3xl text-white/90 leading-relaxed">
-                  vers l'Europe et le Canada
+                  Guide Complet & Pratique — Immigration & Carrière
                 </h2>
                 <p className="text-xl text-gold font-semibold">
-                  GUIDE COMPLET & PRATIQUE
+                  POUR JURISTES AFRICAINS
                 </p>
                 <p className="text-lg text-white/80">
                   Comment obtenir un emploi qualifié, immigrer légalement et construire une carrière internationale durable
                 </p>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                   {["DROIT", "IMMIGRATION", "EMPLOI", "CARRIÈRE"].map((item, index) => (
-                    <div key={index} className="text-center p-4 bg-gold/10 backdrop-blur-sm rounded-xl border border-gold/20">
+                    <div key={index} className="text-center p-4 bg-gold/10 backdrop-blur-sm rounded-xl border-2 border-gold/20 hover:border-gold/40 transition-colors">
                       <div className="text-xl font-bold text-gold">{item}</div>
                     </div>
                   ))}
@@ -49,10 +49,10 @@ export default function GuideJuristeAfricain() {
                 <div className="absolute -inset-4 bg-gradient-to-r from-gold to-amber-500 rounded-3xl blur-2xl opacity-40 animate-pulse"></div>
                 <div className="relative aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl border-4 border-gold/50">
                   <Image
-                    src="/Le_Juriste.png"
-                    alt="Le Guide du Juriste Africain"
+                    src="/guide-juriste-europe.png"
+                    alt="Le Juriste en Europe"
                     fill
-                    className="object-cover"
+                    className="object-contain p-4"
                   />
                 </div>
               </div>
@@ -295,13 +295,16 @@ export default function GuideJuristeAfricain() {
             <h2 className="font-serif text-5xl md:text-6xl text-navy mb-6">
               9 897 FCFA
             </h2>
+            <p className="text-2xl text-navy font-bold mb-3">
+              (≈15€)
+            </p>
             <p className="text-3xl text-navy/70 mb-12 font-semibold">
               Le prix d'une plaidoirie... pour transformer ta carrière
             </p>
 
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-gold via-amber-500 to-gold rounded-3xl blur-2xl opacity-30"></div>
-              <div className="relative bg-white rounded-3xl shadow-2xl p-10 md:p-14 border-4 border-gold/20">
+              <div className="relative bg-white rounded-3xl shadow-2xl p-10 md:p-14 border-4 border-gold/30 hover:border-gold/40 transition-colors">
                 <div className="mb-10">
                   <div className="inline-block">
                     <span className="text-7xl md:text-8xl font-bold bg-gradient-to-r from-slate-700 via-navy to-slate-700 bg-clip-text text-transparent">
@@ -309,6 +312,7 @@ export default function GuideJuristeAfricain() {
                     </span>
                     <span className="text-3xl font-bold text-navy ml-2">FCFA</span>
                   </div>
+                  <p className="text-gold font-bold text-xl mt-2">(≈15€)</p>
                   <p className="text-navy/60 mt-3 text-lg">Investissement unique, impact à vie</p>
                 </div>
 
@@ -322,7 +326,7 @@ export default function GuideJuristeAfricain() {
                     "Mises à jour juridiques 2026"
                   ].map((item, index) => (
                     <div key={index} className="flex items-center gap-4 group">
-                      <div className="w-10 h-10 bg-gradient-to-br from-slate-700 to-navy rounded-full flex items-center justify-center flex-shrink-0 shadow-md group-hover:scale-110 transition-transform">
+                      <div className="w-10 h-10 bg-gradient-to-br from-slate-700 to-navy rounded-full flex items-center justify-center flex-shrink-0 shadow-md group-hover:scale-110 transition-transform border-2 border-navy/30">
                         <Check className="w-6 h-6 text-white" />
                       </div>
                       <span className="text-navy/80 text-lg font-medium">{item}</span>
@@ -330,7 +334,7 @@ export default function GuideJuristeAfricain() {
                   ))}
                 </div>
 
-                <Button className="w-full bg-gradient-to-r from-slate-700 via-navy to-slate-700 hover:from-navy hover:via-slate-700 hover:to-navy text-white font-bold py-8 text-2xl rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 group">
+                <Button className="w-full bg-gradient-to-r from-slate-700 via-navy to-slate-700 hover:from-navy hover:via-slate-700 hover:to-navy text-white font-bold py-8 text-2xl rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 group border-3 border-navy/50 hover:border-navy">
                   Ajouter au Panier
                   <ArrowRight className="w-7 h-7 ml-3 group-hover:translate-x-2 transition-transform" />
                 </Button>

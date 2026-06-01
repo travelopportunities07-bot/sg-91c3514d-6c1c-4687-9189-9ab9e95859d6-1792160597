@@ -9,7 +9,7 @@ export default function GuideMinesAustraliennes() {
   return (
     <>
       <SEO 
-        title="Guide Mines Australiennes - PowerLingua Shop"
+        title="Mine Your Future - PowerLingua Shop"
         description="Le guide complet pour décrocher un emploi bien rémunéré dans les mines australiennes"
       />
       <Header />
@@ -35,15 +35,15 @@ export default function GuideMinesAustraliennes() {
                   Pour Africains et Européens qui veulent décrocher un emploi bien rémunéré dans les mines australiennes — de zéro à ton premier shift FIFO
                 </p>
                 <div className="grid grid-cols-3 gap-4 pt-4">
-                  <div className="text-center p-4 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
+                  <div className="text-center p-4 bg-white/10 backdrop-blur-sm rounded-2xl border-2 border-gold/30 hover:border-gold/50 transition-colors">
                     <div className="text-4xl font-bold text-gold mb-1">25</div>
                     <div className="text-sm text-white/70">Chapitres</div>
                   </div>
-                  <div className="text-center p-4 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
+                  <div className="text-center p-4 bg-white/10 backdrop-blur-sm rounded-2xl border-2 border-gold/30 hover:border-gold/50 transition-colors">
                     <div className="text-4xl font-bold text-gold mb-1">150+</div>
                     <div className="text-sm text-white/70">Agences</div>
                   </div>
-                  <div className="text-center p-4 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
+                  <div className="text-center p-4 bg-white/10 backdrop-blur-sm rounded-2xl border-2 border-gold/30 hover:border-gold/50 transition-colors">
                     <div className="text-4xl font-bold text-gold mb-1">300+</div>
                     <div className="text-sm text-white/70">Employeurs</div>
                   </div>
@@ -53,10 +53,10 @@ export default function GuideMinesAustraliennes() {
                 <div className="absolute -inset-4 bg-gradient-to-r from-gold to-amber-500 rounded-3xl blur-2xl opacity-30 animate-pulse"></div>
                 <div className="relative aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl border-4 border-gold/50">
                   <Image
-                    src="/mine_austra.png"
-                    alt="Guide Mines Australiennes"
+                    src="/mine-your-future.png"
+                    alt="Mine Your Future"
                     fill
-                    className="object-cover"
+                    className="object-contain p-4"
                   />
                 </div>
               </div>
@@ -158,9 +158,9 @@ export default function GuideMinesAustraliennes() {
               ].map((problem, index) => (
                 <div key={index} className="group relative">
                   <div className="absolute -inset-1 bg-gradient-to-r from-red-500 to-red-600 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-300"></div>
-                  <div className="relative p-8 bg-white rounded-2xl border-2 border-red-200 shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="relative p-8 bg-white rounded-2xl border-3 border-red-300 hover:border-red-400 shadow-lg hover:shadow-xl transition-all duration-300">
                     <div className="flex items-start gap-4">
-                      <div className="flex-shrink-0 w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center text-2xl">
+                      <div className="flex-shrink-0 w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center text-2xl border-2 border-red-200">
                         ❌
                       </div>
                       <div>
@@ -202,8 +202,8 @@ export default function GuideMinesAustraliennes() {
               ].map((benefit, index) => (
                 <div key={index} className="group relative">
                   <div className="absolute -inset-1 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-xl blur opacity-20 group-hover:opacity-30 transition duration-300"></div>
-                  <div className="relative flex items-start gap-3 p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
-                    <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-full flex items-center justify-center">
+                  <div className="relative flex items-start gap-3 p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border-2 border-emerald-200 hover:border-emerald-300">
+                    <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-full flex items-center justify-center border-2 border-emerald-300">
                       <Check className="w-5 h-5 text-white" />
                     </div>
                     <p className="text-navy/80 leading-relaxed">{benefit}</p>
@@ -267,22 +267,26 @@ export default function GuideMinesAustraliennes() {
               OFFRE LIMITÉE
             </div>
             <h2 className="font-serif text-5xl md:text-6xl text-navy mb-6">
-              Investis 8 997 FCFA aujourd'hui
+              Investis 9 897 FCFA aujourd'hui
             </h2>
+            <p className="text-2xl text-gold font-bold mb-3">
+              (≈15€)
+            </p>
             <p className="text-3xl text-navy/70 mb-12 font-semibold">
               Pour potentiellement gagner 5 à 8 millions FCFA par mois
             </p>
 
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-gold via-amber-500 to-gold rounded-3xl blur-2xl opacity-30"></div>
-              <div className="relative bg-white rounded-3xl shadow-2xl p-10 md:p-14 border-4 border-gold/20">
+              <div className="relative bg-white rounded-3xl shadow-2xl p-10 md:p-14 border-4 border-gold/30 hover:border-gold/50 transition-colors">
                 <div className="mb-10">
                   <div className="inline-block">
                     <span className="text-7xl md:text-8xl font-bold bg-gradient-to-r from-gold via-amber-500 to-gold bg-clip-text text-transparent">
-                      8 997
+                      9 897
                     </span>
                     <span className="text-3xl font-bold text-navy ml-2">FCFA</span>
                   </div>
+                  <p className="text-gold font-bold text-xl mt-2">(≈15€)</p>
                   <p className="text-navy/60 mt-3 text-lg">Soit moins qu'un repas au restaurant</p>
                 </div>
 
@@ -296,7 +300,7 @@ export default function GuideMinesAustraliennes() {
                     "Mises à jour gratuites à vie"
                   ].map((item, index) => (
                     <div key={index} className="flex items-center gap-4 group">
-                      <div className="w-10 h-10 bg-gradient-to-br from-gold to-amber-500 rounded-full flex items-center justify-center flex-shrink-0 shadow-md group-hover:scale-110 transition-transform">
+                      <div className="w-10 h-10 bg-gradient-to-br from-gold to-amber-500 rounded-full flex items-center justify-center flex-shrink-0 shadow-md group-hover:scale-110 transition-transform border-2 border-gold/30">
                         <Check className="w-6 h-6 text-white" />
                       </div>
                       <span className="text-navy/80 text-lg font-medium">{item}</span>
@@ -304,7 +308,7 @@ export default function GuideMinesAustraliennes() {
                   ))}
                 </div>
 
-                <Button className="w-full bg-gradient-to-r from-gold via-amber-500 to-gold hover:from-amber-600 hover:via-gold hover:to-amber-600 text-navy font-bold py-8 text-2xl rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 group border-2 border-amber-600">
+                <Button className="w-full bg-gradient-to-r from-gold via-amber-500 to-gold hover:from-amber-600 hover:via-gold hover:to-amber-600 text-navy font-bold py-8 text-2xl rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 group border-3 border-amber-600/50 hover:border-amber-600">
                   Ajouter au Panier
                   <ArrowRight className="w-7 h-7 ml-3 group-hover:translate-x-2 transition-transform" />
                 </Button>
