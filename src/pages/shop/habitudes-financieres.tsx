@@ -124,13 +124,14 @@ export default function HabitudesFinancieres() {
                   </div>
                 </div>
 
-                <div className="bg-white rounded-2xl p-6 shadow-lg border border-gold/20 mb-8">
-                  <div className="flex items-center justify-between mb-4">
+                <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-gold/30 hover:border-gold/50 transition-colors mb-8">
+                  <div className="flex items-center justify-between mb-2">
                     <span className="text-navy/60">Prix</span>
                     <span className="text-3xl font-bold text-gold">9 897 FCFA</span>
                   </div>
+                  <p className="text-center text-gold font-semibold mb-4">(≈15€)</p>
                   <Button 
-                    className="w-full bg-gradient-to-r from-navy to-navy/90 hover:from-gold hover:to-gold/90 text-white font-bold py-6 rounded-2xl text-lg shadow-lg hover:shadow-xl transition-all group"
+                    className="w-full bg-gradient-to-r from-navy to-navy/90 hover:from-gold hover:to-gold/90 text-white font-bold py-6 rounded-2xl text-lg shadow-lg hover:shadow-xl transition-all group border-2 border-navy hover:border-gold"
                   >
                     Obtenir le Guide Maintenant
                     <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -203,9 +204,9 @@ export default function HabitudesFinancieres() {
               {habits.map((habit, index) => (
                 <div 
                   key={index}
-                  className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all border border-gray-100 hover:border-gold/30 group"
+                  className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all border-2 border-gold/20 hover:border-gold/40 group"
                 >
-                  <div className="w-16 h-16 bg-gradient-to-br from-gold to-gold/70 rounded-2xl flex items-center justify-center mb-6 text-white group-hover:scale-110 transition-transform">
+                  <div className="w-16 h-16 bg-gradient-to-br from-gold to-gold/70 rounded-2xl flex items-center justify-center mb-6 text-white group-hover:scale-110 transition-transform shadow-md border-2 border-gold/30">
                     {habit.icon}
                   </div>
                   <h3 className="text-2xl font-bold text-navy mb-3">{habit.title}</h3>
@@ -229,9 +230,9 @@ export default function HabitudesFinancieres() {
               {features.map((feature, index) => (
                 <div 
                   key={index}
-                  className="flex items-start gap-4 bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all"
+                  className="flex items-start gap-4 bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all border-2 border-navy/10 hover:border-gold/30"
                 >
-                  <div className="flex-shrink-0 w-8 h-8 bg-gold rounded-full flex items-center justify-center">
+                  <div className="flex-shrink-0 w-8 h-8 bg-gold rounded-full flex items-center justify-center shadow-md border-2 border-gold/30">
                     <Check className="w-5 h-5 text-white" />
                   </div>
                   <span className="text-navy/80 text-lg">{feature}</span>
@@ -254,7 +255,7 @@ export default function HabitudesFinancieres() {
               {testimonials.map((testimonial, index) => (
                 <div 
                   key={index}
-                  className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all border border-gray-100"
+                  className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all border-2 border-gold/20 hover:border-gold/40"
                 >
                   <div className="flex gap-1 mb-4">
                     {Array.from({ length: testimonial.rating }).map((_, i) => (
@@ -284,17 +285,18 @@ export default function HabitudesFinancieres() {
               <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
                 Rejoignez les centaines d'Africains qui ont décidé de prendre en main leur avenir financier
               </p>
-              <div className="bg-white/10 backdrop-blur rounded-2xl p-6 mb-8 max-w-md mx-auto">
-                <div className="flex items-center justify-between mb-4">
+              <div className="bg-white/10 backdrop-blur rounded-2xl p-6 mb-8 max-w-md mx-auto border-2 border-gold/30 hover:border-gold/50 transition-colors">
+                <div className="flex items-center justify-between mb-2">
                   <span className="text-white/80">Prix du Guide</span>
                   <span className="text-4xl font-bold text-gold">9 897 FCFA</span>
                 </div>
+                <p className="text-gold font-semibold mb-2 text-center">(≈15€)</p>
                 <p className="text-white/60 text-sm">
                   Un investissement qui peut changer toute votre trajectoire
                 </p>
               </div>
               <Button 
-                className="bg-gold hover:bg-gold/90 text-navy font-bold py-6 px-12 rounded-2xl text-lg shadow-xl hover:shadow-2xl transition-all group"
+                className="bg-gold hover:bg-gold/90 text-navy font-bold py-6 px-12 rounded-2xl text-lg shadow-xl hover:shadow-2xl transition-all group border-2 border-gold/50 hover:border-amber-400"
               >
                 Obtenir le Guide Maintenant
                 <ArrowRight className="w-6 h-6 ml-2 group-hover:translate-x-1 transition-transform" />
