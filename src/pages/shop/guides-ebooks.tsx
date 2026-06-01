@@ -10,33 +10,43 @@ export default function GuidesEbooks() {
   const guides = [
     {
       id: 1,
-      title: "Le Guide Stratégique Complet",
-      subtitle: "Pour Africains et Européens qui veulent décrocher un emploi bien rémunéré dans les mines australiennes",
-      description: "De zéro à ton premier shift FIFO",
-      price: "8 997 FCFA",
-      image: "/mine_austra.png",
+      title: "Mine Your Future",
+      subtitle: "Le Guide Stratégique Complet des Mines Australiennes",
+      description: "De zéro à ton premier shift FIFO - Stratégies éprouvées pour décrocher un emploi bien rémunéré en Australie",
+      price: "9 897 FCFA",
+      image: "/mine-your-future.png",
       link: "/shop/guide-mines-australiennes",
       tag: "BESTSELLER"
     },
     {
       id: 2,
-      title: "PASSEPORT AFRICAIN",
-      subtitle: "Le Guide Ultime 2026 pour Immigrer, Trouver un Job et Réussir dans 15 Pays Stratégiques",
-      description: "Stratégies, Secteurs Porteurs, Démarches Rapides & Conseils d'Expatriés",
-      price: "6 997 FCFA",
-      image: "/Screenshot_2026-05-30_03.05.02.png",
+      title: "Votre Visa pour Demain",
+      subtitle: "Le Guide Ultime 2026 de l'Immigration Stratégique",
+      description: "15 Pays, 50+ Visas Décryptés - Votre Feuille de Route Complète vers la Mobilité Internationale",
+      price: "9 897 FCFA",
+      image: "/visa-pour-demain.png",
       link: "/shop/passeport-africain",
       tag: "NOUVEAU"
     },
     {
       id: 3,
-      title: "Le Guide du Juriste Africain",
-      subtitle: "vers l'Europe et le Canada",
-      description: "GUIDE COMPLET & PRATIQUE • IMMIGRATION & CARRIÈRE INTERNATIONALE",
+      title: "Le Juriste en Europe",
+      subtitle: "Guide Complet & Pratique - Immigration & Carrière",
+      description: "Stratégies d'Immigration, Reconnaissance des Diplômes & Opportunités de Carrière pour Juristes Africains",
       price: "9 897 FCFA",
-      image: "/Le_Juriste.png",
+      image: "/guide-juriste-europe.png",
       link: "/shop/guide-juriste-africain",
       tag: "PREMIUM"
+    },
+    {
+      id: 4,
+      title: "Les 7 Habitudes Financières",
+      subtitle: "Qui Transforment les Africains Ordinaires en Millionnaires",
+      description: "Stratégies Éprouvées, Mindset Gagnant & Actions Concrètes pour Bâtir Votre Fortune",
+      price: "9 897 FCFA",
+      image: "/habitudes-financieres.png",
+      link: "/shop/habitudes-financieres",
+      tag: "EXCLUSIF"
     }
   ];
 
@@ -44,7 +54,7 @@ export default function GuidesEbooks() {
     <>
       <SEO 
         title="Guides & Ebooks - PowerLingua Shop"
-        description="Découvrez nos guides exclusifs pour booster votre carrière internationale"
+        description="Découvrez nos guides exclusifs pour booster votre carrière internationale et votre réussite financière"
       />
       <Header />
       
@@ -62,7 +72,7 @@ export default function GuidesEbooks() {
               Transformez votre carrière avec nos guides stratégiques exclusifs
             </p>
             <p className="text-lg text-navy/60 max-w-2xl mx-auto">
-              Des ressources éprouvées pour réussir votre mobilité internationale
+              Des ressources éprouvées pour réussir votre mobilité internationale et votre liberté financière
             </p>
           </div>
         </section>
@@ -70,14 +80,14 @@ export default function GuidesEbooks() {
         {/* Products Grid */}
         <section className="py-16 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
               {guides.map((guide) => (
                 <div 
                   key={guide.id}
                   className="group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-gold/30"
                 >
                   {/* Image Container */}
-                  <div className="relative aspect-[3/4] overflow-hidden bg-gray-50">
+                  <div className="relative aspect-[3/4] overflow-hidden bg-gradient-to-br from-navy/5 to-gold/5">
                     <div className="absolute top-4 right-4 z-10">
                       <span className="px-4 py-2 bg-gold text-white text-xs font-bold rounded-full shadow-lg">
                         {guide.tag}
@@ -87,7 +97,7 @@ export default function GuidesEbooks() {
                       src={guide.image}
                       alt={guide.title}
                       fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="object-contain p-4 group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
 
@@ -99,7 +109,7 @@ export default function GuidesEbooks() {
                     <p className="text-navy/70 mb-2 font-medium">
                       {guide.subtitle}
                     </p>
-                    <p className="text-navy/60 text-sm mb-6">
+                    <p className="text-navy/60 text-sm mb-6 line-clamp-2">
                       {guide.description}
                     </p>
 
@@ -113,7 +123,7 @@ export default function GuidesEbooks() {
                     {/* CTA */}
                     <Link href={guide.link}>
                       <Button 
-                        className="w-full bg-navy hover:bg-gold text-white font-semibold py-6 rounded-2xl group/btn transition-all duration-300"
+                        className="w-full bg-gradient-to-r from-navy to-navy/90 hover:from-gold hover:to-gold/90 text-white font-semibold py-6 rounded-2xl group/btn transition-all duration-300 shadow-lg hover:shadow-xl"
                       >
                         Découvrir
                         <ArrowRight className="w-5 h-5 ml-2 group-hover/btn:translate-x-1 transition-transform" />
@@ -127,14 +137,14 @@ export default function GuidesEbooks() {
         </section>
 
         {/* Trust Section */}
-        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-navy/5">
+        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-navy/5 to-gold/5">
           <div className="max-w-5xl mx-auto text-center">
-            <h2 className="font-serif text-3xl md:text-4xl text-navy mb-8">
+            <h2 className="font-serif text-3xl md:text-4xl text-navy mb-12">
               Pourquoi choisir nos guides ?
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="p-6">
-                <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow">
+                <div className="w-16 h-16 bg-gradient-to-br from-gold to-gold/70 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                   <span className="text-3xl">✓</span>
                 </div>
                 <h3 className="font-semibold text-xl text-navy mb-2">Expertise Avérée</h3>
@@ -142,8 +152,8 @@ export default function GuidesEbooks() {
                   Rédigés par des experts de l'immigration et de la mobilité internationale
                 </p>
               </div>
-              <div className="p-6">
-                <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow">
+                <div className="w-16 h-16 bg-gradient-to-br from-gold to-gold/70 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                   <span className="text-3xl">📚</span>
                 </div>
                 <h3 className="font-semibold text-xl text-navy mb-2">Contenu Actionable</h3>
@@ -151,8 +161,8 @@ export default function GuidesEbooks() {
                   Des stratégies concrètes et des actions immédiates à mettre en place
                 </p>
               </div>
-              <div className="p-6">
-                <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow">
+                <div className="w-16 h-16 bg-gradient-to-br from-gold to-gold/70 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                   <span className="text-3xl">🎯</span>
                 </div>
                 <h3 className="font-semibold text-xl text-navy mb-2">Résultats Prouvés</h3>
@@ -160,6 +170,25 @@ export default function GuidesEbooks() {
                   Des centaines de professionnels ont déjà réussi avec nos guides
                 </p>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="py-20 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto text-center bg-gradient-to-br from-navy to-navy/90 rounded-3xl p-12 shadow-2xl">
+            <h2 className="font-serif text-3xl md:text-4xl text-white mb-6">
+              Prêt à Transformer Votre Avenir ?
+            </h2>
+            <p className="text-xl text-white/80 mb-8">
+              Chaque guide est un investissement dans votre succès international
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button 
+                className="bg-gold hover:bg-gold/90 text-navy font-bold py-6 px-8 rounded-2xl text-lg shadow-lg hover:shadow-xl transition-all"
+              >
+                Parcourir les Guides
+              </Button>
             </div>
           </div>
         </section>
