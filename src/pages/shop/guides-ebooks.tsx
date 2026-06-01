@@ -14,6 +14,7 @@ export default function GuidesEbooks() {
       subtitle: "Le Guide Stratégique Complet des Mines Australiennes",
       description: "De zéro à ton premier shift FIFO - Stratégies éprouvées pour décrocher un emploi bien rémunéré en Australie",
       price: "9 897 FCFA",
+      priceEur: "15€",
       image: "/mine-your-future.png",
       link: "/shop/guide-mines-australiennes",
       tag: "BESTSELLER"
@@ -24,6 +25,7 @@ export default function GuidesEbooks() {
       subtitle: "Le Guide Ultime 2026 de l'Immigration Stratégique",
       description: "15 Pays, 50+ Visas Décryptés - Votre Feuille de Route Complète vers la Mobilité Internationale",
       price: "9 897 FCFA",
+      priceEur: "15€",
       image: "/visa-pour-demain.png",
       link: "/shop/passeport-africain",
       tag: "NOUVEAU"
@@ -34,6 +36,7 @@ export default function GuidesEbooks() {
       subtitle: "Guide Complet & Pratique - Immigration & Carrière",
       description: "Stratégies d'Immigration, Reconnaissance des Diplômes & Opportunités de Carrière pour Juristes Africains",
       price: "9 897 FCFA",
+      priceEur: "15€",
       image: "/guide-juriste-europe.png",
       link: "/shop/guide-juriste-africain",
       tag: "PREMIUM"
@@ -44,6 +47,7 @@ export default function GuidesEbooks() {
       subtitle: "Qui Transforment les Africains Ordinaires en Millionnaires",
       description: "Stratégies Éprouvées, Mindset Gagnant & Actions Concrètes pour Bâtir Votre Fortune",
       price: "9 897 FCFA",
+      priceEur: "15€",
       image: "/habitudes-financieres.png",
       link: "/shop/habitudes-financieres",
       tag: "EXCLUSIF"
@@ -84,12 +88,12 @@ export default function GuidesEbooks() {
               {guides.map((guide) => (
                 <div 
                   key={guide.id}
-                  className="group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-gold/30"
+                  className="group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 border-gold/20 hover:border-gold/50"
                 >
                   {/* Image Container */}
                   <div className="relative aspect-[3/4] overflow-hidden bg-gradient-to-br from-navy/5 to-gold/5">
                     <div className="absolute top-4 right-4 z-10">
-                      <span className="px-4 py-2 bg-gold text-white text-xs font-bold rounded-full shadow-lg">
+                      <span className="px-4 py-2 bg-gradient-to-r from-gold to-gold/80 text-white text-xs font-bold rounded-full shadow-lg">
                         {guide.tag}
                       </span>
                     </div>
@@ -114,16 +118,21 @@ export default function GuidesEbooks() {
                     </p>
 
                     {/* Price */}
-                    <div className="mb-6">
-                      <span className="text-3xl font-bold text-gold">
-                        {guide.price}
-                      </span>
+                    <div className="mb-6 bg-gradient-to-r from-gold/10 to-gold/5 rounded-2xl p-4 border-l-4 border-gold">
+                      <div className="flex items-baseline gap-3">
+                        <span className="text-3xl font-bold text-gold">
+                          {guide.price}
+                        </span>
+                        <span className="text-lg text-navy/60">
+                          ({guide.priceEur})
+                        </span>
+                      </div>
                     </div>
 
                     {/* CTA */}
                     <Link href={guide.link}>
                       <Button 
-                        className="w-full bg-gradient-to-r from-navy to-navy/90 hover:from-gold hover:to-gold/90 text-white font-semibold py-6 rounded-2xl group/btn transition-all duration-300 shadow-lg hover:shadow-xl"
+                        className="w-full bg-gradient-to-r from-navy via-navy/95 to-navy/90 hover:from-gold hover:via-gold/95 hover:to-gold/90 text-white font-semibold py-6 rounded-2xl group/btn transition-all duration-300 shadow-lg hover:shadow-xl border-2 border-navy hover:border-gold"
                       >
                         Découvrir
                         <ArrowRight className="w-5 h-5 ml-2 group-hover/btn:translate-x-1 transition-transform" />
@@ -143,7 +152,7 @@ export default function GuidesEbooks() {
               Pourquoi choisir nos guides ?
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow">
+              <div className="p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow border-2 border-gold/20 hover:border-gold/40">
                 <div className="w-16 h-16 bg-gradient-to-br from-gold to-gold/70 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                   <span className="text-3xl">✓</span>
                 </div>
@@ -152,16 +161,16 @@ export default function GuidesEbooks() {
                   Rédigés par des experts de l'immigration et de la mobilité internationale
                 </p>
               </div>
-              <div className="p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow">
-                <div className="w-16 h-16 bg-gradient-to-br from-gold to-gold/70 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                  <span className="text-3xl">📚</span>
+              <div className="p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow border-2 border-navy/20 hover:border-navy/40">
+                <div className="w-16 h-16 bg-gradient-to-br from-navy to-navy/80 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                  <span className="text-3xl text-white">📚</span>
                 </div>
                 <h3 className="font-semibold text-xl text-navy mb-2">Contenu Actionable</h3>
                 <p className="text-navy/70">
                   Des stratégies concrètes et des actions immédiates à mettre en place
                 </p>
               </div>
-              <div className="p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow">
+              <div className="p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow border-2 border-gold/20 hover:border-gold/40">
                 <div className="w-16 h-16 bg-gradient-to-br from-gold to-gold/70 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                   <span className="text-3xl">🎯</span>
                 </div>
