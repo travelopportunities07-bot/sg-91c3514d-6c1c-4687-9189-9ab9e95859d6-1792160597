@@ -4,6 +4,7 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { ArrowRight, Check, Star, TrendingUp, Target, Shield, Zap } from "lucide-react";
+import Link from "next/link";
 
 export default function HabitudesFinancieres() {
   const features = [
@@ -130,12 +131,14 @@ export default function HabitudesFinancieres() {
                     <span className="text-3xl font-bold text-gold">9 897 FCFA</span>
                   </div>
                   <p className="text-center text-gold font-semibold mb-4">(≈15€)</p>
-                  <Button 
-                    className="w-full bg-gradient-to-r from-navy to-navy/90 hover:from-gold hover:to-gold/90 text-white font-bold py-6 rounded-2xl text-lg shadow-lg hover:shadow-xl transition-all group border-2 border-navy hover:border-gold"
-                  >
-                    Obtenir le Guide Maintenant
-                    <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-                  </Button>
+                  <Link href="/#contact" className="block">
+                    <Button 
+                      className="w-full bg-gradient-to-r from-navy to-navy/90 hover:from-gold hover:to-gold/90 text-white font-bold py-6 rounded-2xl text-lg shadow-lg hover:shadow-xl transition-all group border-2 border-navy hover:border-gold"
+                    >
+                      Obtenir le Guide Maintenant
+                      <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                    </Button>
+                  </Link>
                   <p className="text-center text-sm text-navy/60 mt-4">
                     💳 Paiement sécurisé • Accès immédiat
                   </p>
@@ -295,12 +298,14 @@ export default function HabitudesFinancieres() {
                   Un investissement qui peut changer toute votre trajectoire
                 </p>
               </div>
-              <Button 
-                className="bg-gold hover:bg-gold/90 text-navy font-bold py-6 px-12 rounded-2xl text-lg shadow-xl hover:shadow-2xl transition-all group border-2 border-gold/50 hover:border-amber-400"
-              >
-                Obtenir le Guide Maintenant
-                <ArrowRight className="w-6 h-6 ml-2 group-hover:translate-x-1 transition-transform" />
-              </Button>
+              <Link href="/#contact" className="inline-block">
+                <Button 
+                  className="bg-gold hover:bg-gold/90 text-navy font-bold py-6 px-12 rounded-2xl text-lg shadow-xl hover:shadow-2xl transition-all group border-2 border-gold/50 hover:border-amber-400"
+                >
+                  Obtenir le Guide Maintenant
+                  <ArrowRight className="w-6 h-6 ml-2 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
               <p className="text-white/60 mt-6 text-sm">
                 ✓ Téléchargement immédiat • ✓ Paiement 100% sécurisé • ✓ Garantie satisfait ou remboursé 30 jours
               </p>

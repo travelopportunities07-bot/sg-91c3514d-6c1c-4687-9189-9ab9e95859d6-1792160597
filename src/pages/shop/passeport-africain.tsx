@@ -4,6 +4,7 @@ import { Footer } from "@/components/Footer";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Check, Star, Globe, Target, Shield, ArrowRight, Plane, Briefcase, Heart, Zap } from "lucide-react";
+import Link from "next/link";
 
 export default function PasseportAfricain() {
   return (
@@ -313,10 +314,12 @@ export default function PasseportAfricain() {
                   ))}
                 </div>
 
-                <Button className="w-full bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-600 hover:from-indigo-700 hover:via-blue-700 hover:to-indigo-700 text-white font-bold py-8 text-2xl rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 group border-3 border-indigo-400/50 hover:border-indigo-500">
-                  Ajouter au Panier
-                  <ArrowRight className="w-7 h-7 ml-3 group-hover:translate-x-2 transition-transform" />
-                </Button>
+                <Link href="/#contact" className="block">
+                  <Button className="w-full bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-600 hover:from-indigo-700 hover:via-blue-700 hover:to-indigo-700 text-white font-bold py-8 text-2xl rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 group border-3 border-indigo-400/50 hover:border-indigo-500">
+                    Ajouter au Panier
+                    <ArrowRight className="w-7 h-7 ml-3 group-hover:translate-x-2 transition-transform" />
+                  </Button>
+                </Link>
 
                 <div className="mt-8 flex justify-center">
                   <div className="inline-block bg-gradient-to-r from-emerald-50 to-teal-50 px-10 py-5 rounded-3xl border-3 border-emerald-300 shadow-xl">
@@ -373,10 +376,12 @@ export default function PasseportAfricain() {
             <p className="text-xl text-white/80 mb-10 leading-relaxed">
               Chaque jour sans action, c'est un jour de plus à 200 000 FCFA au lieu de 2,5 millions.
             </p>
-            <Button className="bg-gradient-to-r from-amber-400 via-gold to-amber-400 hover:from-gold hover:via-amber-500 hover:to-gold text-navy font-bold py-7 px-14 text-xl rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 group">
-              Je démarre mon projet d'immigration
-              <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-2 transition-transform" />
-            </Button>
+            <Link href="/#contact" className="inline-block">
+              <Button className="bg-gradient-to-r from-amber-400 via-gold to-amber-400 hover:from-gold hover:via-amber-500 hover:to-gold text-navy font-bold py-7 px-14 text-xl rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 group">
+                Je démarre mon projet d'immigration
+                <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-2 transition-transform" />
+              </Button>
+            </Link>
             <div className="mt-8 flex justify-center">
               <div className="inline-block bg-gradient-to-r from-emerald-50 to-teal-50 px-10 py-5 rounded-3xl border-3 border-emerald-300 shadow-xl">
                 <div className="flex items-center gap-5">
