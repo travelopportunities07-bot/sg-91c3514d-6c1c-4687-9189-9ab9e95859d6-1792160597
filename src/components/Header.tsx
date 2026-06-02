@@ -6,6 +6,7 @@ import { ChevronDown } from "lucide-react";
 export function Header() {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isShopOpen, setIsShopOpen] = useState(false);
+  const [isAdminOpen, setIsAdminOpen] = useState(false);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border">
@@ -99,7 +100,7 @@ export function Header() {
                     href="/shop/guides-ebooks"
                     className="block px-6 py-3 text-navy hover:bg-gold/10 hover:text-gold transition-colors font-medium"
                   >
-                    Guides_Ebooks
+                    Guides & eBooks
                   </Link>
                 </div>
               )}
@@ -107,6 +108,33 @@ export function Header() {
             <Link href="/blog" className="text-navy hover:text-gold transition-colors font-medium">
               Blog
             </Link>
+            <div 
+              className="relative"
+              onMouseEnter={() => setIsAdminOpen(true)}
+              onMouseLeave={() => setIsAdminOpen(false)}
+            >
+              <button className="flex items-center gap-1 text-navy hover:text-gold transition-colors font-medium group">
+                Admin
+                <ChevronDown className="w-4 h-4 transition-transform group-hover:translate-y-0.5" />
+              </button>
+              
+              {isAdminOpen && (
+                <div className="absolute top-full right-0 mt-2 w-56 bg-white rounded-2xl shadow-2xl border border-gray-100 py-2 animate-in fade-in slide-in-from-top-2 duration-200">
+                  <Link 
+                    href="/admin/revenus"
+                    className="block px-6 py-3 text-navy hover:bg-gold/10 hover:text-gold transition-colors font-medium"
+                  >
+                    Mes Revenus
+                  </Link>
+                  <Link 
+                    href="/admin/analytics"
+                    className="block px-6 py-3 text-navy hover:bg-gold/10 hover:text-gold transition-colors font-medium"
+                  >
+                    Analytics
+                  </Link>
+                </div>
+              )}
+            </div>
             <Link href="/#contact" className="text-navy hover:text-gold transition-colors font-medium">
               Contactez-Nous
             </Link>
