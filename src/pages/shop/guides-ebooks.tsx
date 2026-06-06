@@ -10,6 +10,19 @@ export default function GuidesEbooks() {
   const guides = [
     {
       id: 1,
+      title: "Voyage et Opportunités pour la Suisse",
+      subtitle: "Ton Guide Complet pour Réussir ton Installation en Suisse",
+      description: "Stratégies Pratiques, Démarches Administratives & Opportunités Professionnelles - Tout pour Réussir ton Projet Suisse",
+      price: "12 950 FCFA",
+      priceEur: "19,74€",
+      originalPrice: "19 950 FCFA",
+      image: "/guide-suisse-mobile.png",
+      link: "/shop/guide-suisse",
+      tag: "NOUVEAU",
+      discount: "-35%"
+    },
+    {
+      id: 2,
       title: "Mine Your Future",
       subtitle: "Le Guide Stratégique Complet des Mines Australiennes",
       description: "De zéro à ton premier shift FIFO - Stratégies éprouvées pour décrocher un emploi bien rémunéré en Australie",
@@ -20,7 +33,7 @@ export default function GuidesEbooks() {
       tag: "BESTSELLER"
     },
     {
-      id: 2,
+      id: 3,
       title: "Votre Visa pour Demain",
       subtitle: "Le Guide Ultime 2026 de l'Immigration Stratégique",
       description: "15 Pays, 50+ Visas Décryptés - Votre Feuille de Route Complète vers la Mobilité Internationale",
@@ -28,10 +41,10 @@ export default function GuidesEbooks() {
       priceEur: "15€",
       image: "/visa-pour-demain.png",
       link: "/shop/passeport-africain",
-      tag: "NOUVEAU"
+      tag: "POPULAIRE"
     },
     {
-      id: 3,
+      id: 4,
       title: "Le Juriste en Europe",
       subtitle: "Guide Complet & Pratique - Immigration & Carrière",
       description: "Stratégies d'Immigration, Reconnaissance des Diplômes & Opportunités de Carrière pour Juristes Africains",
@@ -42,7 +55,7 @@ export default function GuidesEbooks() {
       tag: "PREMIUM"
     },
     {
-      id: 4,
+      id: 5,
       title: "Les 7 Habitudes Financières",
       subtitle: "Qui Transforment les Africains Ordinaires en Millionnaires",
       description: "Stratégies Éprouvées, Mindset Gagnant & Actions Concrètes pour Bâtir Votre Fortune",
@@ -120,6 +133,18 @@ export default function GuidesEbooks() {
                     {/* Price */}
                     <div className="mb-6 bg-gradient-to-r from-gold/10 to-gold/5 rounded-2xl p-4 border-l-4 border-gold">
                       <div className="flex items-baseline gap-3">
+                        {guide.originalPrice && (
+                          <div className="flex flex-col">
+                            <span className="text-sm text-navy/40 line-through">
+                              {guide.originalPrice}
+                            </span>
+                            {guide.discount && (
+                              <span className="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-1 rounded-full w-fit">
+                                {guide.discount}
+                              </span>
+                            )}
+                          </div>
+                        )}
                         <span className="text-3xl font-bold text-gold">
                           {guide.price}
                         </span>
