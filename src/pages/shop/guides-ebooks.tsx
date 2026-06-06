@@ -23,36 +23,42 @@ export default function GuidesEbooks() {
     },
     {
       id: 2,
-      title: "Mine Your Future",
+      title: "Opportunités et le travail dans les mines en Australie",
       subtitle: "Le Guide Stratégique Complet des Mines Australiennes",
       description: "De zéro à ton premier shift FIFO - Stratégies éprouvées pour décrocher un emploi bien rémunéré en Australie",
       price: "9 897 FCFA",
       priceEur: "15€",
+      originalPrice: "14 950 FCFA",
       image: "/mine-your-future.png",
       link: "/shop/guide-mines-australiennes",
-      tag: "BESTSELLER"
+      tag: "BESTSELLER",
+      discount: "-34%"
     },
     {
       id: 3,
-      title: "Votre Visa pour Demain",
+      title: "Opportunités de travail dans 15 destinations européennes",
       subtitle: "Le Guide Ultime 2026 de l'Immigration Stratégique",
       description: "15 Pays, 50+ Visas Décryptés - Votre Feuille de Route Complète vers la Mobilité Internationale",
       price: "9 897 FCFA",
       priceEur: "15€",
+      originalPrice: "15 950 FCFA",
       image: "/visa-pour-demain.png",
       link: "/shop/passeport-africain",
-      tag: "POPULAIRE"
+      tag: "POPULAIRE",
+      discount: "-38%"
     },
     {
       id: 4,
-      title: "Le Juriste en Europe",
+      title: "Opportunités de travail pour juriste africain",
       subtitle: "Guide Complet & Pratique - Immigration & Carrière",
       description: "Stratégies d'Immigration, Reconnaissance des Diplômes & Opportunités de Carrière pour Juristes Africains",
       price: "9 897 FCFA",
       priceEur: "15€",
+      originalPrice: "14 450 FCFA",
       image: "/guide-juriste-europe.png",
       link: "/shop/guide-juriste-africain",
-      tag: "PREMIUM"
+      tag: "PREMIUM",
+      discount: "-31%"
     },
     {
       id: 5,
@@ -61,9 +67,11 @@ export default function GuidesEbooks() {
       description: "Stratégies Éprouvées, Mindset Gagnant & Actions Concrètes pour Bâtir Votre Fortune",
       price: "9 897 FCFA",
       priceEur: "15€",
+      originalPrice: "13 950 FCFA",
       image: "/habitudes-financieres.png",
       link: "/shop/habitudes-financieres",
-      tag: "EXCLUSIF"
+      tag: "EXCLUSIF",
+      discount: "-29%"
     }
   ];
 
