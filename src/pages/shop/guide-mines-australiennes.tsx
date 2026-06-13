@@ -283,11 +283,11 @@ export default function GuideMinesAustraliennes() {
                 <div className="mb-10">
                   <div className="inline-block">
                     <span className="text-7xl md:text-8xl font-bold bg-gradient-to-r from-gold via-amber-500 to-gold bg-clip-text text-transparent">
-                      9 897
+                      9 826
                     </span>
                     <span className="text-3xl font-bold text-navy ml-2">FCFA</span>
                   </div>
-                  <p className="text-gold font-bold text-xl mt-2">(≈15€)</p>
+                  <p className="text-gold font-bold text-xl mt-2">(≈14,97€)</p>
                   <p className="text-navy/60 mt-3 text-lg">Soit moins qu'un repas au restaurant</p>
                 </div>
 

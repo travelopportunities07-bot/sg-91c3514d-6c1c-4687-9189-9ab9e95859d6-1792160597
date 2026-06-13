@@ -294,10 +294,10 @@ export default function GuideJuristeAfricain() {
               OFFRE SPÉCIALE JURISTES
             </div>
             <h2 className="font-serif text-5xl md:text-6xl text-navy mb-6">
-              9 897 FCFA
+              9 826 FCFA
             </h2>
             <p className="text-2xl text-navy font-bold mb-3">
-              (≈15€)
+              (≈14,97€)
             </p>
             <p className="text-3xl text-navy/70 mb-12 font-semibold">
               Le prix d'une plaidoirie... pour transformer ta carrière
@@ -309,11 +309,11 @@ export default function GuideJuristeAfricain() {
                 <div className="mb-10">
                   <div className="inline-block">
                     <span className="text-7xl md:text-8xl font-bold bg-gradient-to-r from-slate-700 via-navy to-slate-700 bg-clip-text text-transparent">
-                      9 897
+                      9 826
                     </span>
                     <span className="text-3xl font-bold text-navy ml-2">FCFA</span>
                   </div>
-                  <p className="text-gold font-bold text-xl mt-2">(≈15€)</p>
+                  <p className="text-gold font-bold text-xl mt-2">(≈14,97€)</p>
                   <p className="text-navy/60 mt-3 text-lg">Investissement unique, impact à vie</p>
                 </div>
 

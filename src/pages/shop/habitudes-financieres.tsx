@@ -128,9 +128,9 @@ export default function HabitudesFinancieres() {
                 <div className="bg-white rounded-2xl p-6 shadow-lg border-2 border-gold/30 hover:border-gold/50 transition-colors mb-8">
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-navy/60">Prix</span>
-                    <span className="text-3xl font-bold text-gold">9 897 FCFA</span>
+                    <span className="text-3xl font-bold text-gold">9 826 FCFA</span>
                   </div>
-                  <p className="text-center text-gold font-semibold mb-4">(≈15€)</p>
+                  <p className="text-center text-gold font-semibold mb-4">(≈14,97€)</p>
                   <a 
                     href="https://buy.stripe.com/eVq7sDdxR50S6cX3td1sQ0m"
                     target="_blank"
@@ -296,9 +296,9 @@ export default function HabitudesFinancieres() {
               <div className="bg-white/10 backdrop-blur rounded-2xl p-6 mb-8 max-w-md mx-auto border-2 border-gold/30 hover:border-gold/50 transition-colors">
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-white/80">Prix du Guide</span>
-                  <span className="text-4xl font-bold text-gold">9 897 FCFA</span>
+                  <span className="text-4xl font-bold text-gold">9 826 FCFA</span>
                 </div>
-                <p className="text-gold font-semibold mb-2 text-center">(≈15€)</p>
+                <p className="text-gold font-semibold mb-2 text-center">(≈14,97€)</p>
                 <p className="text-white/60 text-sm">
                   Un investissement qui peut changer toute votre trajectoire
                 </p>

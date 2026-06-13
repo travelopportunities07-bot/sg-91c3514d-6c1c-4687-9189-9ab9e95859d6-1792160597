@@ -434,11 +434,14 @@ export default function GuideSuisse() {
               <Badge className="bg-white text-red-600 border-0 text-base font-bold px-8 py-3 mb-8 shadow-xl">
                 ⚡ OFFRE LIMITÉE - 72H SEULEMENT
               </Badge>
-              <h2 className="font-serif text-4xl md:text-6xl mb-8 leading-tight">
-                Ton Investissement Aujourd'hui
+              <h2 className="font-serif text-5xl md:text-6xl text-navy mb-6">
+                Investis 9 826 FCFA aujourd'hui
               </h2>
-              <p className="text-2xl text-white/90 mb-8">
-                Moins que le coût d'une seule erreur administrative
+              <p className="text-2xl text-gold font-bold mb-3">
+                (≈14,97€)
+              </p>
+              <p className="text-3xl text-navy/70 mb-12 font-semibold">
+                Pour potentiellement gagner 5 à 8 millions FCFA par mois
               </p>
             </div>
 
@@ -447,19 +450,19 @@ export default function GuideSuisse() {
               
               <div className="relative text-center mb-10">
                 <div className="flex items-center justify-center gap-6 mb-6">
-                  <span className="text-3xl text-navy/40 line-through font-light">19 950 FCFA</span>
+                  <span className="text-3xl text-navy/40 line-through font-light">12 950 FCFA</span>
                   <Badge className="bg-gradient-to-r from-emerald-500 to-teal-500 text-white text-lg px-6 py-3 shadow-lg">
-                    -35% 🔥
+                    -24% 🔥
                   </Badge>
                 </div>
                 <div className="relative inline-block">
                   <div className="absolute inset-0 bg-gradient-to-r from-red-600 to-pink-500 blur-2xl opacity-30" />
                   <div className="relative text-7xl md:text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-red-500 to-pink-500">
-                    12 950 FCFA
+                    9 826 FCFA
                   </div>
                 </div>
                 <p className="text-2xl text-navy/70 mt-4 font-light">
-                  (19,74€ seulement)
+                  (14,97€ seulement)
                 </p>
               </div>
 
@@ -579,7 +582,7 @@ export default function GuideSuisse() {
                     className="bg-gradient-to-r from-gold via-amber-500 to-yellow-500 hover:from-gold/90 hover:via-amber-400 hover:to-yellow-400 text-navy font-bold py-8 px-12 rounded-2xl text-xl shadow-2xl hover:shadow-3xl transition-all group border-0"
                   >
                     <span className="flex items-center gap-3">
-                      J'assure mon pass pour la Suisse - 12 950 FCFA
+                      J'assure mon pass pour la Suisse - 9 826 FCFA
                       <ChevronRight className="w-7 h-7 group-hover:translate-x-2 transition-transform" />
                     </span>
                   </Button>

@@ -273,10 +273,10 @@ export default function PasseportAfricain() {
               PRIX DE LANCEMENT
             </div>
             <h2 className="font-serif text-5xl md:text-6xl text-navy mb-6">
-              9 897 FCFA seulement
+              9 826 FCFA seulement
             </h2>
             <p className="text-2xl text-indigo-600 font-bold mb-3">
-              (≈15€)
+              (≈14,97€)
             </p>
             <p className="text-3xl text-navy/70 mb-12 font-semibold">
               Moins que le prix d'une "consultation" avec une agence douteuse
@@ -288,12 +288,12 @@ export default function PasseportAfricain() {
                 <div className="mb-10">
                   <div className="inline-block">
                     <span className="text-7xl md:text-8xl font-bold bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-600 bg-clip-text text-transparent">
-                      9 897
+                      9 826
                     </span>
                     <span className="text-3xl font-bold text-navy ml-2">FCFA</span>
                   </div>
-                  <p className="text-indigo-600 font-bold text-xl mt-2">(≈15€)</p>
-                  <p className="text-navy/60 mt-3 text-lg line-through">Au lieu de 15 000 FCFA</p>
+                  <p className="text-indigo-600 font-bold text-xl mt-2">(≈14,97€)</p>
+                  <p className="text-navy/60 mt-3 text-lg line-through">Au lieu de 12 950 FCFA</p>
                 </div>
 
                 <div className="space-y-5 text-left mb-10">
