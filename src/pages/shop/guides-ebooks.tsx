@@ -13,70 +13,70 @@ export default function GuidesEbooks() {
       title: "Voyage et Opportunités pour la Suisse",
       subtitle: "Ton Guide Complet pour Réussir ton Installation en Suisse",
       description: "Stratégies Pratiques, Démarches Administratives & Opportunités Professionnelles - Tout pour Réussir ton Projet Suisse",
-      price: "12 950 FCFA",
-      priceEur: "19,74€",
-      originalPriceEur: "15€",
-      originalPrice: "9 897 FCFA",
+      price: "9 826 FCFA",
+      priceEur: "14,97€",
+      originalPriceEur: "19,74€",
+      originalPrice: "12 950 FCFA",
       image: "/guide-suisse-mobile.png",
       link: "/shop/guide-suisse",
       tag: "NOUVEAU",
-      discount: "+32%"
+      discount: "-24%"
     },
     {
       id: 2,
       title: "Opportunités et le travail dans les mines en Australie",
       subtitle: "Le Guide Stratégique Complet des Mines Australiennes",
       description: "De zéro à ton premier shift FIFO - Stratégies éprouvées pour décrocher un emploi bien rémunéré en Australie",
-      price: "12 950 FCFA",
-      priceEur: "19,74€",
-      originalPriceEur: "15€",
-      originalPrice: "9 897 FCFA",
+      price: "9 826 FCFA",
+      priceEur: "14,97€",
+      originalPriceEur: "19,74€",
+      originalPrice: "12 950 FCFA",
       image: "/mine-your-future.png",
       link: "/shop/guide-mines-australiennes",
       tag: "BESTSELLER",
-      discount: "+32%"
+      discount: "-24%"
     },
     {
       id: 3,
       title: "Opportunités de travail dans 15 destinations européennes",
       subtitle: "Le Guide Ultime 2026 de l'Immigration Stratégique",
       description: "15 Pays, 50+ Visas Décryptés - Votre Feuille de Route Complète vers la Mobilité Internationale",
-      price: "12 950 FCFA",
-      priceEur: "19,74€",
-      originalPriceEur: "15€",
-      originalPrice: "9 897 FCFA",
+      price: "9 826 FCFA",
+      priceEur: "14,97€",
+      originalPriceEur: "19,74€",
+      originalPrice: "12 950 FCFA",
       image: "/visa-pour-demain.png",
       link: "/shop/passeport-africain",
       tag: "POPULAIRE",
-      discount: "+32%"
+      discount: "-24%"
     },
     {
       id: 4,
       title: "Opportunités de travail pour juriste africain",
       subtitle: "Guide Complet & Pratique - Immigration & Carrière",
       description: "Stratégies d'Immigration, Reconnaissance des Diplômes & Opportunités de Carrière pour Juristes Africains",
-      price: "12 950 FCFA",
-      priceEur: "19,74€",
-      originalPriceEur: "15€",
-      originalPrice: "9 897 FCFA",
+      price: "9 826 FCFA",
+      priceEur: "14,97€",
+      originalPriceEur: "19,74€",
+      originalPrice: "12 950 FCFA",
       image: "/guide-juriste-europe.png",
       link: "/shop/guide-juriste-africain",
       tag: "PREMIUM",
-      discount: "+32%"
+      discount: "-24%"
     },
     {
       id: 5,
       title: "Les 7 Habitudes Financières",
       subtitle: "Qui Transforment les Africains Ordinaires en Millionnaires",
       description: "Stratégies Éprouvées, Mindset Gagnant & Actions Concrètes pour Bâtir Votre Fortune",
-      price: "12 950 FCFA",
-      priceEur: "19,74€",
-      originalPriceEur: "15€",
-      originalPrice: "9 897 FCFA",
+      price: "9 826 FCFA",
+      priceEur: "14,97€",
+      originalPriceEur: "19,74€",
+      originalPrice: "12 950 FCFA",
       image: "/habitudes-financieres.png",
       link: "/shop/habitudes-financieres",
       tag: "EXCLUSIF",
-      discount: "+32%"
+      discount: "-24%"
     }
   ];
 
@@ -90,8 +90,17 @@ export default function GuidesEbooks() {
       
       <main className="min-h-screen bg-gradient-to-b from-cream/30 to-white">
         {/* Hero Section */}
-        <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-7xl mx-auto text-center">
+        <section className="relative pt-32 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
+          <div className="absolute inset-0 z-0">
+            <Image
+              src="/generated/guides-ebooks-hero.png"
+              alt="Guides & Ebooks Hero"
+              fill
+              className="object-cover opacity-20"
+              priority
+            />
+          </div>
+          <div className="max-w-7xl mx-auto text-center relative z-10">
             <div className="inline-block px-6 py-2 bg-gold/10 rounded-full mb-6">
               <span className="text-gold font-semibold text-sm tracking-wide">SHOP EXCLUSIF</span>
             </div>
@@ -110,16 +119,16 @@ export default function GuidesEbooks() {
         {/* Products Grid */}
         <section className="py-16 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {guides.map((guide) => (
                 <div 
                   key={guide.id}
                   className="group bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 border-gold/20 hover:border-gold/50"
                 >
-                  {/* Image Container */}
-                  <div className="relative aspect-[3/4] overflow-hidden bg-gradient-to-br from-navy/5 to-gold/5">
-                    <div className="absolute top-4 right-4 z-10">
-                      <span className="px-4 py-2 bg-gradient-to-r from-gold to-gold/80 text-white text-xs font-bold rounded-full shadow-lg">
+                  {/* Image Container - 500x500px format */}
+                  <div className="relative aspect-square overflow-hidden bg-gradient-to-br from-navy/5 to-gold/5">
+                    <div className="absolute top-3 right-3 z-10">
+                      <span className="px-3 py-1 bg-gradient-to-r from-gold to-gold/80 text-white text-xs font-bold rounded-full shadow-lg">
                         {guide.tag}
                       </span>
                     </div>
@@ -127,42 +136,39 @@ export default function GuidesEbooks() {
                       src={guide.image}
                       alt={guide.title}
                       fill
-                      className="object-contain p-4 group-hover:scale-105 transition-transform duration-500"
+                      className="object-contain p-3 group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
 
                   {/* Content */}
-                  <div className="p-6">
-                    <h3 className="font-serif text-2xl text-navy mb-2 group-hover:text-gold transition-colors">
+                  <div className="p-5">
+                    <h3 className="font-serif text-xl text-navy mb-2 group-hover:text-gold transition-colors line-clamp-2">
                       {guide.title}
                     </h3>
-                    <p className="text-navy/70 mb-2 font-medium">
+                    <p className="text-navy/70 mb-2 font-medium text-sm line-clamp-2">
                       {guide.subtitle}
-                    </p>
-                    <p className="text-navy/60 text-sm mb-6 line-clamp-2">
-                      {guide.description}
                     </p>
 
                     {/* Price */}
-                    <div className="mb-6 bg-gradient-to-r from-gold/10 to-gold/5 rounded-2xl p-4 border-l-4 border-gold">
-                      <div className="flex items-baseline gap-3 flex-wrap">
+                    <div className="mb-4 bg-gradient-to-r from-gold/10 to-gold/5 rounded-xl p-3 border-l-4 border-gold">
+                      <div className="flex items-center gap-3 flex-wrap">
                         {guide.originalPriceEur && (
-                          <div className="flex flex-col gap-1">
+                          <div className="flex items-center gap-2">
                             <span className="text-sm text-navy/40 line-through">
                               {guide.originalPriceEur}
                             </span>
                             {guide.discount && (
-                              <span className="text-xs font-bold text-red-600 bg-red-50 px-2 py-1 rounded-full w-fit">
+                              <span className="text-xs font-bold text-red-600 bg-red-50 px-2 py-0.5 rounded-full">
                                 {guide.discount}
                               </span>
                             )}
                           </div>
                         )}
                         <div className="flex flex-col">
-                          <span className="text-3xl font-bold text-gold">
+                          <span className="text-2xl font-bold text-gold">
                             {guide.priceEur}
                           </span>
-                          <span className="text-sm text-navy/60">
+                          <span className="text-xs text-navy/60">
                             ({guide.price})
                           </span>
                         </div>
@@ -172,10 +178,10 @@ export default function GuidesEbooks() {
                     {/* CTA */}
                     <Link href={guide.link}>
                       <Button 
-                        className="w-full bg-gradient-to-r from-navy via-navy/95 to-navy/90 hover:from-gold hover:via-gold/95 hover:to-gold/90 text-white font-semibold py-6 rounded-2xl group/btn transition-all duration-300 shadow-lg hover:shadow-xl border-2 border-navy hover:border-gold"
+                        className="w-full bg-gradient-to-r from-navy via-navy/95 to-navy/90 hover:from-gold hover:via-gold/95 hover:to-gold/90 text-white font-semibold py-5 rounded-xl group/btn transition-all duration-300 shadow-lg hover:shadow-xl border-2 border-navy hover:border-gold"
                       >
                         Découvrir
-                        <ArrowRight className="w-5 h-5 ml-2 group-hover/btn:translate-x-1 transition-transform" />
+                        <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
                       </Button>
                     </Link>
                   </div>
