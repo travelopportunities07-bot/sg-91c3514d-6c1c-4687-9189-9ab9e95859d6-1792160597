@@ -479,14 +479,21 @@ export default function GuideSuisse() {
                 ))}
               </div>
 
-              <Button 
-                className="w-full bg-gradient-to-r from-red-600 via-red-500 to-pink-500 hover:from-red-700 hover:via-red-600 hover:to-pink-600 text-white font-bold py-8 rounded-2xl text-xl shadow-2xl hover:shadow-3xl transition-all group border-0 relative overflow-hidden"
+              <a 
+                href="https://buy.stripe.com/28E14falFdxo0SD1l51sQ0i"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
               >
-                <span className="relative z-10 flex items-center justify-center gap-3">
-                  J'assure mon pass pour la Suisse
-                  <ChevronRight className="w-7 h-7 group-hover:translate-x-2 transition-transform" />
-                </span>
-              </Button>
+                <Button 
+                  className="w-full bg-gradient-to-r from-red-600 via-red-500 to-pink-500 hover:from-red-700 hover:via-red-600 hover:to-pink-600 text-white font-bold py-8 rounded-2xl text-xl shadow-2xl hover:shadow-3xl transition-all group border-0 relative overflow-hidden"
+                >
+                  <span className="relative z-10 flex items-center justify-center gap-3">
+                    J'assure mon pass pour la Suisse
+                    <ChevronRight className="w-7 h-7 group-hover:translate-x-2 transition-transform" />
+                  </span>
+                </Button>
+              </a>
 
               <p className="text-center text-sm text-navy/60 mt-6 flex items-center justify-center gap-2">
                 <Shield className="w-4 h-4" />
@@ -563,14 +570,20 @@ export default function GuideSuisse() {
                   Rejoins les centaines de personnes qui ont déjà transformé leur vie grâce à ce guide
                 </p>
                 
-                <Button 
-                  className="bg-gradient-to-r from-gold via-amber-500 to-yellow-500 hover:from-gold/90 hover:via-amber-400 hover:to-yellow-400 text-navy font-bold py-8 px-12 rounded-2xl text-xl shadow-2xl hover:shadow-3xl transition-all group border-0"
+                <a 
+                  href="https://buy.stripe.com/28E14falFdxo0SD1l51sQ0i"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <span className="flex items-center gap-3">
-                    J'assure mon pass pour la Suisse - 12 950 FCFA
-                    <ChevronRight className="w-7 h-7 group-hover:translate-x-2 transition-transform" />
-                  </span>
-                </Button>
+                  <Button 
+                    className="bg-gradient-to-r from-gold via-amber-500 to-yellow-500 hover:from-gold/90 hover:via-amber-400 hover:to-yellow-400 text-navy font-bold py-8 px-12 rounded-2xl text-xl shadow-2xl hover:shadow-3xl transition-all group border-0"
+                  >
+                    <span className="flex items-center gap-3">
+                      J'assure mon pass pour la Suisse - 12 950 FCFA
+                      <ChevronRight className="w-7 h-7 group-hover:translate-x-2 transition-transform" />
+                    </span>
+                  </Button>
+                </a>
 
                 <p className="text-white/70 mt-8 text-sm flex items-center justify-center gap-2">
                   <Shield className="w-4 h-4" />

@@ -309,12 +309,17 @@ export default function GuideMinesAustraliennes() {
                   ))}
                 </div>
 
-                <Link href="/#contact" className="block">
+                <a 
+                  href="https://buy.stripe.com/5kQ5kvfFZgJAfNx9RB1sQ0j"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block"
+                >
                   <Button className="w-full bg-gradient-to-r from-gold via-amber-500 to-gold hover:from-amber-600 hover:via-gold hover:to-amber-600 text-navy font-bold py-8 text-2xl rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 group border-3 border-amber-600/50 hover:border-amber-600">
                     Ajouter au Panier
                     <ArrowRight className="w-7 h-7 ml-3 group-hover:translate-x-2 transition-transform" />
                   </Button>
-                </Link>
+                </a>
 
                 <div className="mt-8 flex justify-center">
                   <div className="inline-block bg-gradient-to-r from-emerald-50 to-teal-50 px-10 py-5 rounded-3xl border-3 border-emerald-300 shadow-xl">
@@ -371,12 +376,17 @@ export default function GuideMinesAustraliennes() {
             <p className="text-xl text-white/80 mb-10 leading-relaxed">
               Chaque jour qui passe, c'est un jour de moins pour commencer ta nouvelle vie en Australie. Chaque mois qui passe, c'est 5 à 8 millions FCFA que tu aurais pu gagner.
             </p>
-            <Link href="/#contact" className="inline-block">
+            <a 
+              href="https://buy.stripe.com/5kQ5kvfFZgJAfNx9RB1sQ0j"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block"
+            >
               <Button className="bg-gradient-to-r from-gold via-amber-500 to-gold hover:from-amber-600 hover:via-gold hover:to-amber-600 text-navy font-bold py-7 px-14 text-xl rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 group">
                 Je veux commencer maintenant
                 <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-2 transition-transform" />
               </Button>
-            </Link>
+            </a>
             <div className="mt-8 flex justify-center">
               <div className="inline-block bg-gradient-to-r from-emerald-50 to-teal-50 px-10 py-5 rounded-3xl border-3 border-emerald-300 shadow-xl">
                 <div className="flex items-center gap-5">
