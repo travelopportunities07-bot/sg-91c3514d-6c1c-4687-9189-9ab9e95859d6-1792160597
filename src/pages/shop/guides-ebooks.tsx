@@ -15,63 +15,68 @@ export default function GuidesEbooks() {
       description: "Stratégies Pratiques, Démarches Administratives & Opportunités Professionnelles - Tout pour Réussir ton Projet Suisse",
       price: "12 950 FCFA",
       priceEur: "19,74€",
-      originalPrice: "19 950 FCFA",
+      originalPriceEur: "15€",
+      originalPrice: "9 897 FCFA",
       image: "/guide-suisse-mobile.png",
       link: "/shop/guide-suisse",
       tag: "NOUVEAU",
-      discount: "-35%"
+      discount: "+32%"
     },
     {
       id: 2,
       title: "Opportunités et le travail dans les mines en Australie",
       subtitle: "Le Guide Stratégique Complet des Mines Australiennes",
       description: "De zéro à ton premier shift FIFO - Stratégies éprouvées pour décrocher un emploi bien rémunéré en Australie",
-      price: "9 897 FCFA",
-      priceEur: "15€",
-      originalPrice: "14 950 FCFA",
+      price: "12 950 FCFA",
+      priceEur: "19,74€",
+      originalPriceEur: "15€",
+      originalPrice: "9 897 FCFA",
       image: "/mine-your-future.png",
       link: "/shop/guide-mines-australiennes",
       tag: "BESTSELLER",
-      discount: "-34%"
+      discount: "+32%"
     },
     {
       id: 3,
       title: "Opportunités de travail dans 15 destinations européennes",
       subtitle: "Le Guide Ultime 2026 de l'Immigration Stratégique",
       description: "15 Pays, 50+ Visas Décryptés - Votre Feuille de Route Complète vers la Mobilité Internationale",
-      price: "9 897 FCFA",
-      priceEur: "15€",
-      originalPrice: "15 950 FCFA",
+      price: "12 950 FCFA",
+      priceEur: "19,74€",
+      originalPriceEur: "15€",
+      originalPrice: "9 897 FCFA",
       image: "/visa-pour-demain.png",
       link: "/shop/passeport-africain",
       tag: "POPULAIRE",
-      discount: "-38%"
+      discount: "+32%"
     },
     {
       id: 4,
       title: "Opportunités de travail pour juriste africain",
       subtitle: "Guide Complet & Pratique - Immigration & Carrière",
       description: "Stratégies d'Immigration, Reconnaissance des Diplômes & Opportunités de Carrière pour Juristes Africains",
-      price: "9 897 FCFA",
-      priceEur: "15€",
-      originalPrice: "14 450 FCFA",
+      price: "12 950 FCFA",
+      priceEur: "19,74€",
+      originalPriceEur: "15€",
+      originalPrice: "9 897 FCFA",
       image: "/guide-juriste-europe.png",
       link: "/shop/guide-juriste-africain",
       tag: "PREMIUM",
-      discount: "-31%"
+      discount: "+32%"
     },
     {
       id: 5,
       title: "Les 7 Habitudes Financières",
       subtitle: "Qui Transforment les Africains Ordinaires en Millionnaires",
       description: "Stratégies Éprouvées, Mindset Gagnant & Actions Concrètes pour Bâtir Votre Fortune",
-      price: "9 897 FCFA",
-      priceEur: "15€",
-      originalPrice: "13 950 FCFA",
+      price: "12 950 FCFA",
+      priceEur: "19,74€",
+      originalPriceEur: "15€",
+      originalPrice: "9 897 FCFA",
       image: "/habitudes-financieres.png",
       link: "/shop/habitudes-financieres",
       tag: "EXCLUSIF",
-      discount: "-29%"
+      discount: "+32%"
     }
   ];
 
@@ -140,25 +145,27 @@ export default function GuidesEbooks() {
 
                     {/* Price */}
                     <div className="mb-6 bg-gradient-to-r from-gold/10 to-gold/5 rounded-2xl p-4 border-l-4 border-gold">
-                      <div className="flex items-baseline gap-3">
-                        {guide.originalPrice && (
-                          <div className="flex flex-col">
+                      <div className="flex items-baseline gap-3 flex-wrap">
+                        {guide.originalPriceEur && (
+                          <div className="flex flex-col gap-1">
                             <span className="text-sm text-navy/40 line-through">
-                              {guide.originalPrice}
+                              {guide.originalPriceEur}
                             </span>
                             {guide.discount && (
-                              <span className="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-1 rounded-full w-fit">
+                              <span className="text-xs font-bold text-red-600 bg-red-50 px-2 py-1 rounded-full w-fit">
                                 {guide.discount}
                               </span>
                             )}
                           </div>
                         )}
-                        <span className="text-3xl font-bold text-gold">
-                          {guide.price}
-                        </span>
-                        <span className="text-lg text-navy/60">
-                          ({guide.priceEur})
-                        </span>
+                        <div className="flex flex-col">
+                          <span className="text-3xl font-bold text-gold">
+                            {guide.priceEur}
+                          </span>
+                          <span className="text-sm text-navy/60">
+                            ({guide.price})
+                          </span>
+                        </div>
                       </div>
                     </div>
 
