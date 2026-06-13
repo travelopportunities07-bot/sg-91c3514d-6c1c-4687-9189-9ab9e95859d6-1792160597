@@ -335,12 +335,17 @@ export default function GuideJuristeAfricain() {
                   ))}
                 </div>
 
-                <Link href="/#contact" className="block">
+                <a 
+                  href="https://buy.stripe.com/7sY8wH1P964W0SD0h11sQ0l"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block"
+                >
                   <Button className="w-full bg-gradient-to-r from-slate-700 via-navy to-slate-700 hover:from-navy hover:via-slate-700 hover:to-navy text-white font-bold py-8 text-2xl rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 group border-3 border-navy/50 hover:border-navy">
                     Ajouter au Panier
                     <ArrowRight className="w-7 h-7 ml-3 group-hover:translate-x-2 transition-transform" />
                   </Button>
-                </Link>
+                </a>
 
                 <div className="mt-8 flex justify-center">
                   <div className="inline-block bg-gradient-to-r from-emerald-50 to-teal-50 px-10 py-5 rounded-3xl border-3 border-emerald-300 shadow-xl">
@@ -397,12 +402,17 @@ export default function GuideJuristeAfricain() {
             <p className="text-xl text-white/80 mb-10 leading-relaxed">
               Ton expertise vaut 10× plus ailleurs. Les cabinets européens et canadiens cherchent des juristes africains bilingues, formés au droit civil et au droit OHADA.
             </p>
-            <Link href="/#contact" className="inline-block">
+            <a 
+              href="https://buy.stripe.com/7sY8wH1P964W0SD0h11sQ0l"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block"
+            >
               <Button className="bg-gradient-to-r from-gold via-amber-500 to-gold hover:from-amber-600 hover:via-gold hover:to-amber-600 text-navy font-bold py-7 px-14 text-xl rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 group">
                 Je lance ma carrière internationale
                 <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-2 transition-transform" />
               </Button>
-            </Link>
+            </a>
             <div className="mt-8 flex justify-center">
               <div className="inline-block bg-gradient-to-r from-emerald-50 to-teal-50 px-10 py-5 rounded-3xl border-3 border-emerald-300 shadow-xl">
                 <div className="flex items-center gap-5">
