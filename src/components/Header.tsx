@@ -1,11 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 
 export function Header() {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isShopOpen, setIsShopOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
+  const [isMobileShopOpen, setIsMobileShopOpen] = useState(false);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border">
@@ -111,7 +114,118 @@ export function Header() {
               Contactez-Nous
             </Link>
           </div>
+
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="lg:hidden p-2 text-navy hover:text-gold transition-colors"
+            aria-label="Menu"
+          >
+            {isMobileMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
+          </button>
         </div>
+
+        {isMobileMenuOpen && (
+          <div className="lg:hidden py-4 border-t border-border animate-in fade-in slide-in-from-top-2 duration-200">
+            <div className="flex flex-col gap-2">
+              <Link 
+                href="/" 
+                className="px-4 py-3 text-navy hover:bg-gold/10 hover:text-gold transition-colors font-medium rounded-lg"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Accueil
+              </Link>
+              <Link 
+                href="/about" 
+                className="px-4 py-3 text-navy hover:bg-gold/10 hover:text-gold transition-colors font-medium rounded-lg"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                À Propos
+              </Link>
+              
+              <div>
+                <button
+                  onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
+                  className="w-full flex items-center justify-between px-4 py-3 text-navy hover:bg-gold/10 hover:text-gold transition-colors font-medium rounded-lg"
+                >
+                  Nos Prestations
+                  <ChevronDown className={`w-4 h-4 transition-transform ${isMobileServicesOpen ? "rotate-180" : ""}`} />
+                </button>
+                {isMobileServicesOpen && (
+                  <div className="ml-4 mt-2 flex flex-col gap-2">
+                    <Link 
+                      href="/prestations/soutien-scolaire"
+                      className="px-4 py-2 text-navy hover:bg-gold/10 hover:text-gold transition-colors rounded-lg"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      Soutien Scolaire
+                    </Link>
+                    <Link 
+                      href="/prestations/preparation-certifications"
+                      className="px-4 py-2 text-navy hover:bg-gold/10 hover:text-gold transition-colors rounded-lg"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      Préparation Certifications
+                    </Link>
+                    <Link 
+                      href="/prestations/langues-carriere"
+                      className="px-4 py-2 text-navy hover:bg-gold/10 hover:text-gold transition-colors rounded-lg"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      Langues & Carrière
+                    </Link>
+                    <Link 
+                      href="/prestations/conseils-orientation"
+                      className="px-4 py-2 text-navy hover:bg-gold/10 hover:text-gold transition-colors rounded-lg"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      Conseils en Orientation
+                    </Link>
+                  </div>
+                )}
+              </div>
+
+              <div>
+                <button
+                  onClick={() => setIsMobileShopOpen(!isMobileShopOpen)}
+                  className="w-full flex items-center justify-between px-4 py-3 text-navy hover:bg-gold/10 hover:text-gold transition-colors font-medium rounded-lg"
+                >
+                  Shop
+                  <ChevronDown className={`w-4 h-4 transition-transform ${isMobileShopOpen ? "rotate-180" : ""}`} />
+                </button>
+                {isMobileShopOpen && (
+                  <div className="ml-4 mt-2 flex flex-col gap-2">
+                    <Link 
+                      href="/shop/guides-ebooks"
+                      className="px-4 py-2 text-navy hover:bg-gold/10 hover:text-gold transition-colors rounded-lg"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      Guides & eBooks
+                    </Link>
+                  </div>
+                )}
+              </div>
+
+              <Link 
+                href="/blog" 
+                className="px-4 py-3 text-navy hover:bg-gold/10 hover:text-gold transition-colors font-medium rounded-lg"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Blog
+              </Link>
+              <Link 
+                href="/#contact" 
+                className="px-4 py-3 text-navy hover:bg-gold/10 hover:text-gold transition-colors font-medium rounded-lg"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Contactez-Nous
+              </Link>
+            </div>
+          </div>
+        )}
       </nav>
     </header>
   );
