@@ -89,19 +89,17 @@ export default function GuidesEbooks() {
       <Header />
       
       <main className="min-h-screen bg-gradient-to-b from-cream/30 to-white">
-        {/* Hero Section with Video */}
+        {/* Hero Section with Image */}
         <section className="relative h-[600px] md:h-[700px] overflow-hidden">
-          {/* Video Background */}
+          {/* Image Background */}
           <div className="absolute inset-0 z-0">
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full h-full object-cover"
-            >
-              <source src="/hero_guide_ebooks.mp4" type="video/mp4" />
-            </video>
+            <Image
+              src="/guides-ebooks-hero.png"
+              alt="Guides & Ebooks Hero"
+              fill
+              className="object-cover"
+              priority
+            />
             {/* Overlay for better text readability */}
             <div className="absolute inset-0 bg-gradient-to-b from-navy/60 via-navy/40 to-navy/70" />
           </div>
