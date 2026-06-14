@@ -30,18 +30,20 @@ export function Footer() {
               <h3 className="font-heading font-semibold text-lg mb-4">Suivez-nous</h3>
               <div className="flex gap-4">
                 <a 
-                  href="https://facebook.com/powerlingua" 
+                  href="https://www.facebook.com/profile.php?id=61589548372517" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-white/10 hover:bg-gold flex items-center justify-center transition-all group"
+                  aria-label="Facebook"
                 >
                   <Facebook className="w-5 h-5 text-white group-hover:text-navy" />
                 </a>
                 <a 
-                  href="https://instagram.com/powerlingua" 
+                  href="https://www.instagram.com/power.lingua?igsh=MWliaWd6MXY1a2o2aA==" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-white/10 hover:bg-gold flex items-center justify-center transition-all group"
+                  aria-label="Instagram"
                 >
                   <Instagram className="w-5 h-5 text-white group-hover:text-navy" />
                 </a>
@@ -50,6 +52,7 @@ export function Footer() {
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-white/10 hover:bg-gold flex items-center justify-center transition-all group"
+                  aria-label="TikTok"
                 >
                   <Music className="w-5 h-5 text-white group-hover:text-navy" />
                 </a>

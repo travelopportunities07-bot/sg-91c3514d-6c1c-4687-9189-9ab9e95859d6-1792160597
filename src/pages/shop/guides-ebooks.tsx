@@ -89,30 +89,38 @@ export default function GuidesEbooks() {
       <Header />
       
       <main className="min-h-screen bg-gradient-to-b from-cream/30 to-white">
-        {/* Hero Section */}
-        <section className="relative pt-32 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        {/* Hero Section with Video */}
+        <section className="relative h-[600px] md:h-[700px] overflow-hidden">
+          {/* Video Background */}
           <div className="absolute inset-0 z-0">
-            <Image
-              src="/generated/guides-ebooks-hero.png"
-              alt="Guides & Ebooks Hero"
-              fill
-              className="object-cover opacity-20"
-              priority
-            />
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-cover"
+            >
+              <source src="/hero_guide_ebooks.mp4" type="video/mp4" />
+            </video>
+            {/* Overlay for better text readability */}
+            <div className="absolute inset-0 bg-gradient-to-b from-navy/60 via-navy/40 to-navy/70" />
           </div>
-          <div className="max-w-7xl mx-auto text-center relative z-10">
-            <div className="inline-block px-6 py-2 bg-gold/10 rounded-full mb-6">
-              <span className="text-gold font-semibold text-sm tracking-wide">SHOP EXCLUSIF</span>
+          
+          {/* Hero Content */}
+          <div className="relative z-10 h-full flex items-center justify-center px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto text-center">
+              <div className="inline-block px-6 py-2 bg-gold/20 backdrop-blur-sm rounded-full mb-6">
+                <span className="text-gold font-semibold text-sm tracking-wide">SHOP EXCLUSIF</span>
+              </div>
+              
+              <p className="text-3xl md:text-4xl lg:text-5xl text-sky-400 font-bold mb-6 leading-tight drop-shadow-lg">
+                Transformez votre carrière avec nos guides stratégiques exclusifs
+              </p>
+              
+              <p className="text-xl md:text-2xl text-sky-300 max-w-3xl mx-auto leading-relaxed drop-shadow-lg">
+                Des ressources éprouvées pour réussir votre mobilité internationale et votre liberté financière
+              </p>
             </div>
-            <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl text-navy mb-6 leading-tight">
-              Guides & Ebooks
-            </h1>
-            <p className="text-xl md:text-2xl text-navy/70 max-w-3xl mx-auto mb-4">
-              Transformez votre carrière avec nos guides stratégiques exclusifs
-            </p>
-            <p className="text-lg text-navy/60 max-w-2xl mx-auto">
-              Des ressources éprouvées pour réussir votre mobilité internationale et votre liberté financière
-            </p>
           </div>
         </section>
 
