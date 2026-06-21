@@ -316,6 +316,59 @@ export default function EtudesAllemagne() {
           </div>
         </section>
 
+        {/* FAQ Section */}
+        <section className="py-16 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-serif text-3xl md:text-4xl text-navy mb-12 text-center">
+              Questions Fréquentes 💬
+            </h2>
+            <div className="space-y-4">
+              {[
+                {
+                  emoji: "🎓",
+                  question: "Puis-je vraiment étudier gratuitement en Allemagne ?",
+                  answer: "Oui ! La majorité des universités publiques allemandes ne facturent pas de frais de scolarité, même pour les étudiants internationaux. Vous ne payez qu'une contribution semestrielle (environ 300€) qui inclut le transport public."
+                },
+                {
+                  emoji: "💰",
+                  question: "Combien coûte la vie étudiante dans ces pays ?",
+                  answer: "Le budget mensuel varie selon les pays : Allemagne 850-1000€, Suisse 1200-1500€, Autriche 800-950€, Luxembourg 1000-1200€. Le guide détaille comment réduire ces coûts et liste les bourses qui couvrent les frais de vie."
+                },
+                {
+                  emoji: "🗣️",
+                  question: "Dois-je parler allemand pour étudier dans ces pays ?",
+                  answer: "Pas forcément ! De nombreux programmes de Master et PhD sont proposés entièrement en anglais. Le guide liste ces programmes et vous donne des ressources pour apprendre l'allemand gratuitement si nécessaire."
+                },
+                {
+                  emoji: "⏰",
+                  question: "Quand dois-je commencer mes démarches ?",
+                  answer: "Idéalement 12-18 mois avant la rentrée souhaitée. Le guide contient un calendrier complet avec toutes les deadlines importantes pour chaque pays et chaque type de bourse."
+                },
+                {
+                  emoji: "📄",
+                  question: "Mon diplôme africain sera-t-il reconnu ?",
+                  answer: "Oui, la plupart des diplômes africains sont reconnus, mais certains nécessitent une évaluation d'équivalence. Le guide explique précisément les procédures de reconnaissance pour chaque pays et établissement."
+                }
+              ].map((faq, index) => (
+                <div key={index} className="bg-white rounded-2xl shadow-lg border-2 border-gold/10 overflow-hidden">
+                  <details className="group">
+                    <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-gold/5 transition-colors">
+                      <div className="flex items-center gap-4">
+                        <span className="text-3xl">{faq.emoji}</span>
+                        <h3 className="font-semibold text-lg text-navy">{faq.question}</h3>
+                      </div>
+                      <span className="text-gold text-2xl group-open:rotate-180 transition-transform">+</span>
+                    </summary>
+                    <div className="px-6 pb-6 pt-2">
+                      <p className="text-navy/70 leading-relaxed pl-14">{faq.answer}</p>
+                    </div>
+                  </details>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Final CTA */}
         <section className="py-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">

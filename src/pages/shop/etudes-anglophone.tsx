@@ -316,6 +316,59 @@ export default function EtudesAnglophone() {
           </div>
         </section>
 
+        {/* FAQ Section */}
+        <section className="py-16 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-serif text-3xl md:text-4xl text-navy mb-12 text-center">
+              Questions Fréquentes 💬
+            </h2>
+            <div className="space-y-4">
+              {[
+                {
+                  emoji: "🎯",
+                  question: "Les bourses Fulbright et Commonwealth sont-elles vraiment accessibles ?",
+                  answer: "Absolument ! Chaque année, des centaines d'étudiants africains obtiennent ces bourses prestigieuses. Le guide vous donne les stratégies exactes pour maximiser vos chances, y compris des exemples de candidatures réussies."
+                },
+                {
+                  emoji: "💵",
+                  question: "Combien coûtent réellement les études dans ces pays ?",
+                  answer: "Sans bourse, les frais peuvent atteindre 30 000-60 000$/an. Mais avec les bonnes bourses (listées dans le guide), vos études seront 100% financées incluant logement, assurance et allocation mensuelle."
+                },
+                {
+                  emoji: "📚",
+                  question: "Ai-je besoin de scores SAT/GRE/GMAT parfaits ?",
+                  answer: "Non ! Beaucoup de bourses acceptent des scores moyens si votre dossier global est solide. Le guide vous montre comment compenser des scores moyens et liste les programmes qui n'exigent pas ces tests."
+                },
+                {
+                  emoji: "🛂",
+                  question: "Comment obtenir mon visa étudiant facilement ?",
+                  answer: "Le guide contient des procédures détaillées étape par étape pour chaque type de visa (F-1, Tier 4, Study Permit). Vous saurez exactement quels documents préparer et comment éviter les refus."
+                },
+                {
+                  emoji: "⌚",
+                  question: "Est-il trop tard pour postuler pour 2027 ?",
+                  answer: "Pas du tout ! Certaines bourses ont des deadlines jusqu'en mars-avril 2027. Le guide inclut un calendrier complet avec toutes les deadlines pour vous aider à planifier vos candidatures efficacement."
+                }
+              ].map((faq, index) => (
+                <div key={index} className="bg-white rounded-2xl shadow-lg border-2 border-gold/10 overflow-hidden">
+                  <details className="group">
+                    <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-gold/5 transition-colors">
+                      <div className="flex items-center gap-4">
+                        <span className="text-3xl">{faq.emoji}</span>
+                        <h3 className="font-semibold text-lg text-navy">{faq.question}</h3>
+                      </div>
+                      <span className="text-gold text-2xl group-open:rotate-180 transition-transform">+</span>
+                    </summary>
+                    <div className="px-6 pb-6 pt-2">
+                      <p className="text-navy/70 leading-relaxed pl-14">{faq.answer}</p>
+                    </div>
+                  </details>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Final CTA */}
         <section className="py-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">

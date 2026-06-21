@@ -316,6 +316,59 @@ export default function EtudesFrancophone() {
           </div>
         </section>
 
+        {/* FAQ Section */}
+        <section className="py-16 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-serif text-3xl md:text-4xl text-navy mb-12 text-center">
+              Questions Fréquentes 💬
+            </h2>
+            <div className="space-y-4">
+              {[
+                {
+                  emoji: "🇫🇷",
+                  question: "La France offre-t-elle vraiment des études gratuites ?",
+                  answer: "Oui ! Les universités publiques françaises ont des frais très accessibles (environ 170-600€/an). De plus, de nombreuses bourses Campus France, Eiffel et CROUS peuvent couvrir 100% de vos frais de vie et d'études."
+                },
+                {
+                  emoji: "🍁",
+                  question: "Le Canada est-il accessible aux étudiants africains ?",
+                  answer: "Absolument ! Le Canada accueille des milliers d'étudiants africains chaque année. Le guide liste toutes les bourses disponibles et explique comment obtenir votre Study Permit facilement."
+                },
+                {
+                  emoji: "📝",
+                  question: "Comment passer par Campus France efficacement ?",
+                  answer: "Le guide décode toute la procédure Campus France étape par étape : création du dossier, choix des formations, entretien pédagogique et demande de visa. Vous saurez exactement quoi faire et quand."
+                },
+                {
+                  emoji: "💡",
+                  question: "Quelles sont mes chances d'obtenir une bourse Eiffel ?",
+                  answer: "Bien que compétitive, la bourse Eiffel est accessible avec une excellente candidature. Le guide vous donne les critères exacts de sélection et des stratégies pour vous démarquer des autres candidats."
+                },
+                {
+                  emoji: "🏠",
+                  question: "Comment trouver un logement abordable ?",
+                  answer: "Le guide liste toutes les options de logement étudiant : résidences CROUS en France, logements universitaires au Canada, colocations à Bruxelles, etc. Avec des fourchettes de prix réalistes et conseils pratiques."
+                }
+              ].map((faq, index) => (
+                <div key={index} className="bg-white rounded-2xl shadow-lg border-2 border-gold/10 overflow-hidden">
+                  <details className="group">
+                    <summary className="flex items-center justify-between p-6 cursor-pointer hover:bg-gold/5 transition-colors">
+                      <div className="flex items-center gap-4">
+                        <span className="text-3xl">{faq.emoji}</span>
+                        <h3 className="font-semibold text-lg text-navy">{faq.question}</h3>
+                      </div>
+                      <span className="text-gold text-2xl group-open:rotate-180 transition-transform">+</span>
+                    </summary>
+                    <div className="px-6 pb-6 pt-2">
+                      <p className="text-navy/70 leading-relaxed pl-14">{faq.answer}</p>
+                    </div>
+                  </details>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Final CTA */}
         <section className="py-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
