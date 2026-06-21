@@ -1,12 +1,107 @@
 import { SEO } from "@/components/SEO";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { CheckCircle2, Download, FileText, Star } from "lucide-react";
+import { CheckCircle2, Download, FileText, Star, AlertCircle, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 
 export default function ConfirmationEtudesFrancophone() {
-  const downloadLink = "https://drive.google.com/file/d/1Mh5EoboSoQFfOhL3UhxHEwJnIcE0vFoY/view?usp=drive_link";
+  const router = useRouter();
+  const { token } = router.query;
+  
+  const [loading, setLoading] = useState(true);
+  const [verified, setVerified] = useState(false);
+  const [error, setError] = useState("");
+  const [purchaseData, setPurchaseData] = useState<any>(null);
+
+  useEffect(() => {
+    if (token) {
+      verifyDownload();
+    }
+  }, [token]);
+
+  const verifyDownload = async () => {
+    try {
+      const response = await fetch("/api/verify-download", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ token })
+      });
+
+      const data = await response.json();
+
+      if (data.valid) {
+        setVerified(true);
+        setPurchaseData(data.purchase);
+      } else {
+        setError("Lien de téléchargement invalide ou expiré. Veuillez vérifier votre email.");
+      }
+    } catch (err) {
+      setError("Erreur de vérification. Veuillez réessayer.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  if (loading) {
+    return (
+      <>
+        <SEO 
+          title="Vérification en cours... | PowerLingua"
+          description="Vérification de votre achat en cours"
+        />
+        <Header />
+        <main className="min-h-screen bg-gradient-to-b from-cream/30 to-white flex items-center justify-center">
+          <div className="text-center">
+            <Loader2 className="w-16 h-16 text-gold animate-spin mx-auto mb-4" />
+            <p className="text-xl text-navy/70">Vérification de votre achat...</p>
+          </div>
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (error || !verified) {
+    return (
+      <>
+        <SEO 
+          title="Erreur de Vérification | PowerLingua"
+          description="Erreur lors de la vérification de votre achat"
+        />
+        <Header />
+        <main className="min-h-screen bg-gradient-to-b from-cream/30 to-white">
+          <section className="py-16 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-2xl mx-auto">
+              <div className="text-center mb-8">
+                <div className="inline-flex items-center justify-center w-24 h-24 bg-gradient-to-br from-red-500 to-red-600 rounded-full shadow-2xl mb-6">
+                  <AlertCircle className="w-14 h-14 text-white" />
+                </div>
+                <h1 className="font-serif text-3xl md:text-4xl text-navy mb-4">
+                  Lien Invalide
+                </h1>
+                <p className="text-lg text-navy/70 mb-6">
+                  {error}
+                </p>
+                <div className="bg-blue-50 border-2 border-blue-200 rounded-2xl p-6">
+                  <h3 className="font-semibold text-navy mb-3">Comment accéder à votre guide ?</h3>
+                  <ul className="text-left text-navy/70 space-y-2">
+                    <li>• Vérifiez l'email de confirmation que vous avez reçu</li>
+                    <li>• Utilisez le lien de téléchargement dans cet email</li>
+                    <li>• Si vous n'avez pas reçu l'email, vérifiez vos spams</li>
+                    <li>• Contactez-nous si le problème persiste</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+        <Footer />
+      </>
+    );
+  }
 
   return (
     <>
@@ -46,7 +141,7 @@ export default function ConfirmationEtudesFrancophone() {
                 </div>
                 <div className="flex-grow text-center md:text-left">
                   <h2 className="font-serif text-2xl text-navy mb-3">
-                    Comment Étudier Gratuitement en France, Belgique, Luxembourg, Suisse Romande et Canada
+                    {purchaseData?.productName || "Comment Étudier Gratuitement en France, Belgique, Luxembourg, Suisse Romande et Canada"}
                   </h2>
                   <p className="text-navy/70 mb-4">
                     Votre clé pour l'excellence académique dans l'espace francophone
@@ -62,7 +157,7 @@ export default function ConfirmationEtudesFrancophone() {
                 </div>
               </div>
 
-              {/* Download Button */}
+              {/* Download Button - Only shown if verified */}
               <div className="bg-gradient-to-br from-gold/10 to-gold/5 rounded-2xl p-6 border-2 border-gold/30">
                 <div className="flex items-center gap-3 mb-4">
                   <FileText className="w-6 h-6 text-gold" />
@@ -71,7 +166,7 @@ export default function ConfirmationEtudesFrancophone() {
                     <p className="text-sm text-navy/60">Accès immédiat et illimité</p>
                   </div>
                 </div>
-                <a href={downloadLink} target="_blank" rel="noopener noreferrer">
+                <a href={purchaseData?.pdfUrl} target="_blank" rel="noopener noreferrer">
                   <Button className="w-full bg-gradient-to-r from-navy to-navy/90 hover:from-gold hover:to-gold/90 text-white font-bold py-6 rounded-xl text-lg shadow-xl hover:shadow-2xl transition-all">
                     <Download className="w-5 h-5 mr-2" />
                     Télécharger Mon Guide
@@ -143,7 +238,7 @@ export default function ConfirmationEtudesFrancophone() {
             {/* Support Note */}
             <div className="mt-8 text-center">
               <p className="text-navy/60">
-                Vous avez perdu le lien de téléchargement ? Conservez cette page dans vos favoris.
+                Vous avez également reçu un email avec le lien de téléchargement. Conservez-le pour accéder à votre guide à tout moment.
               </p>
             </div>
           </div>
