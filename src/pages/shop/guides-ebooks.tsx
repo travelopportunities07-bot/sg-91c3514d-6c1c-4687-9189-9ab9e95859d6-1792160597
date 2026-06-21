@@ -77,6 +77,48 @@ export default function GuidesEbooks() {
       link: "/shop/habitudes-financieres",
       tag: "EXCLUSIF",
       discount: "-24%"
+    },
+    {
+      id: 6,
+      title: "Comment Étudier Gratuitement en Allemagne, Suisse, Autriche et Luxembourg",
+      subtitle: "Votre Passeport pour l'Excellence Académique Germanophone",
+      description: "Bourses d'Études, Démarches Administratives & Stratégies d'Admission - Tout pour Réussir vos Études dans les Pays Germanophones",
+      price: "9 826 FCFA",
+      priceEur: "14,97€",
+      originalPriceEur: "19,74€",
+      originalPrice: "12 950 FCFA",
+      image: "/etudes-allemagne-500.png",
+      link: "/shop/etudes-allemagne",
+      tag: "NOUVEAU",
+      discount: "-24%"
+    },
+    {
+      id: 7,
+      title: "Comment Étudier Gratuitement aux USA, Australie, Canada et Royaume-Uni",
+      subtitle: "Le Guide Ultime des Études dans les Pays Anglophones",
+      description: "Bourses Internationales, Visas Étudiants & Opportunités Académiques - Votre Feuille de Route vers les Meilleures Universités Anglophones",
+      price: "9 826 FCFA",
+      priceEur: "14,97€",
+      originalPriceEur: "19,74€",
+      originalPrice: "12 950 FCFA",
+      image: "/etudes-anglophone-500.png",
+      link: "/shop/etudes-anglophone",
+      tag: "POPULAIRE",
+      discount: "-24%"
+    },
+    {
+      id: 8,
+      title: "Comment Étudier Gratuitement en France, Belgique, Luxembourg, Suisse Romande et Canada",
+      subtitle: "Votre Clé pour l'Excellence Académique Francophone",
+      description: "Bourses d'Excellence, Programmes d'Admission & Opportunités Académiques - Le Guide Complet pour Étudier dans l'Espace Francophone",
+      price: "9 826 FCFA",
+      priceEur: "14,97€",
+      originalPriceEur: "19,74€",
+      originalPrice: "12 950 FCFA",
+      image: "/etudes-francophone-500.png",
+      link: "/shop/etudes-francophone",
+      tag: "BESTSELLER",
+      discount: "-24%"
     }
   ];
 
