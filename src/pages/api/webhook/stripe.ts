@@ -3,7 +3,7 @@ import { createClient } from "@supabase/supabase-js";
 import Stripe from "stripe";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: "2024-12-18.acacia"
+  apiVersion: "2025-02-24.acacia"
 });
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
@@ -50,6 +50,16 @@ function generateDownloadToken(): string {
   return `dl_${Date.now()}_${Math.random().toString(36).substring(2, 15)}`;
 }
 
+// Helper pour lire le body brut
+async function getRawBody(req: NextApiRequest): Promise<Buffer> {
+  return new Promise((resolve, reject) => {
+    const chunks: Buffer[] = [];
+    req.on("data", (chunk: Buffer) => chunks.push(chunk));
+    req.on("end", () => resolve(Buffer.concat(chunks)));
+    req.on("error", reject);
+  });
+}
+
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" });
@@ -63,8 +73,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   }
 
   try {
+    // Lire le body brut
+    const rawBody = await getRawBody(req);
+    
     const event = stripe.webhooks.constructEvent(
-      req.body,
+      rawBody,
       signature,
       webhookSecret
     );
@@ -88,15 +101,19 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         productId = session.metadata.product_id;
       } else {
         // Essayer d'identifier via l'URL du payment link
-        const paymentLinkMatch = session.payment_link?.toString().match(/plink_([a-zA-Z0-9]+)/);
-        if (paymentLinkMatch) {
-          productId = paymentLinkMatch[1];
+        const paymentLinkValue = session.payment_link;
+        if (typeof paymentLinkValue === "string") {
+          const paymentLinkMatch = paymentLinkValue.match(/plink_([a-zA-Z0-9]+)/);
+          if (paymentLinkMatch) {
+            productId = paymentLinkMatch[1];
+          }
         }
       }
 
       // Trouver les infos du produit
+      const paymentLinkStr = typeof session.payment_link === "string" ? session.payment_link : "";
       productInfo = Object.entries(PRODUCT_MAPPING).find(([key]) => 
-        key === productId || session.payment_link?.includes(key)
+        key === productId || paymentLinkStr.includes(key)
       )?.[1];
 
       if (!productInfo) {
