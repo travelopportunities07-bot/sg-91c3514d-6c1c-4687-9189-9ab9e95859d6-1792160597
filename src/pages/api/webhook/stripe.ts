@@ -162,16 +162,33 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       // Envoyer l'email de confirmation avec le lien de téléchargement
       const confirmationUrl = `${process.env.NEXT_PUBLIC_SITE_URL}/shop/confirmation/${productInfo.pageSlug}?token=${downloadToken}`;
       
-      await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/api/send-ebook-email`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          email: customerEmail,
-          productName: productInfo.name,
-          downloadToken: downloadToken,
-          confirmationUrl: confirmationUrl
-        })
-      });
+      console.log("Tentative d'envoi d'email à:", customerEmail);
+      console.log("URL de confirmation:", confirmationUrl);
+      
+      try {
+        const emailResponse = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/api/send-ebook-email`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            email: customerEmail,
+            productName: productInfo.name,
+            downloadToken: downloadToken,
+            confirmationUrl: confirmationUrl
+          })
+        });
+
+        const emailResult = await emailResponse.json();
+        
+        if (!emailResponse.ok) {
+          console.error("Erreur lors de l'envoi de l'email:", emailResult);
+          // Ne pas bloquer le webhook, mais logger l'erreur
+        } else {
+          console.log("Email envoyé avec succès à:", customerEmail);
+        }
+      } catch (emailError: any) {
+        console.error("Erreur fetch email API:", emailError.message);
+        // Ne pas bloquer le webhook même si l'email échoue
+      }
 
       console.log("Achat enregistré avec succès:", purchase.id);
       return res.status(200).json({ received: true, purchaseId: purchase.id });
