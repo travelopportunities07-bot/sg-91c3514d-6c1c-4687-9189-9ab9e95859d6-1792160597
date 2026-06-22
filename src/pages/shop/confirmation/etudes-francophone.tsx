@@ -19,6 +19,10 @@ export default function ConfirmationEtudesFrancophone() {
   useEffect(() => {
     if (token) {
       verifyDownload();
+    } else {
+      // Pas de token = accès direct depuis Stripe, afficher la page sans vérification
+      setLoading(false);
+      setVerified(false);
     }
   }, [token]);
 
@@ -58,6 +62,54 @@ export default function ConfirmationEtudesFrancophone() {
             <Loader2 className="w-16 h-16 text-gold animate-spin mx-auto mb-4" />
             <p className="text-xl text-navy/70">Vérification de votre achat...</p>
           </div>
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  // Si pas de token, afficher message d'attente de l'email
+  if (!token) {
+    return (
+      <>
+        <SEO 
+          title="Confirmation de Paiement - Guide Études Francophone | PowerLingua"
+          description="Votre paiement a été confirmé"
+        />
+        <Header />
+        <main className="min-h-screen bg-gradient-to-b from-cream/30 to-white">
+          <section className="py-16 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-2xl mx-auto">
+              <div className="text-center mb-8">
+                <div className="inline-flex items-center justify-center w-24 h-24 bg-gradient-to-br from-green-500 to-green-600 rounded-full shadow-2xl mb-6">
+                  <CheckCircle2 className="w-14 h-14 text-white" />
+                </div>
+                <h1 className="font-serif text-3xl md:text-4xl text-navy mb-4">
+                  Paiement Confirmé !
+                </h1>
+                <p className="text-lg text-navy/70 mb-6">
+                  Merci pour votre achat du guide "Comment Étudier Gratuitement en France, Belgique, Luxembourg, Suisse Romande et Canada"
+                </p>
+                <div className="bg-blue-50 border-2 border-blue-200 rounded-2xl p-6">
+                  <h3 className="font-semibold text-navy mb-3 flex items-center justify-center gap-2">
+                    <FileText className="w-6 h-6 text-gold" />
+                    Vérifiez Votre Email
+                  </h3>
+                  <p className="text-navy/70 mb-4">
+                    Nous venons de vous envoyer un email contenant :
+                  </p>
+                  <ul className="text-left text-navy/70 space-y-2 mb-4">
+                    <li>✅ Le lien de téléchargement direct de votre guide PDF</li>
+                    <li>✅ Un lien sécurisé pour accéder à cette page</li>
+                    <li>✅ Les instructions de téléchargement</li>
+                  </ul>
+                  <p className="text-sm text-navy/60 mt-4">
+                    💡 Si vous ne voyez pas l'email, vérifiez vos spams ou le dossier "Promotions"
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
         </main>
         <Footer />
       </>

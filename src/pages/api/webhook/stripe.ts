@@ -10,39 +10,47 @@ const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY!;
 const supabase = createClient(supabaseUrl, supabaseServiceKey);
 
-// Mapping des produits avec leurs informations
-const PRODUCT_MAPPING: Record<string, { name: string; pdfUrl: string }> = {
+// Mapping des produits avec leurs informations ET slugs de pages
+const PRODUCT_MAPPING: Record<string, { name: string; pdfUrl: string; pageSlug: string }> = {
   "5kQ3cn2TdctkatdbZJ1sQ0o": {
     name: "Comment Étudier Gratuitement en Allemagne, Suisse, Autriche et Luxembourg",
-    pdfUrl: "https://drive.google.com/file/d/1hIkNSknoH1ROUkLL2VpvTkKMzd7gcGDS/view?usp=drive_link"
+    pdfUrl: "https://drive.google.com/file/d/1hIkNSknoH1ROUkLL2VpvTkKMzd7gcGDS/view?usp=drive_link",
+    pageSlug: "etudes-allemagne"
   },
   "3cI7sDdxRfFw6cXgfZ1sQ0p": {
     name: "Comment Étudier Gratuitement aux USA, Australie, Canada et Royaume-Uni",
-    pdfUrl: "https://drive.google.com/file/d/1G7OHqdPXL03l8lgVwLvhgJa2GQkFd2y-/view?usp=drive_link"
+    pdfUrl: "https://drive.google.com/file/d/1G7OHqdPXL03l8lgVwLvhgJa2GQkFd2y-/view?usp=drive_link",
+    pageSlug: "etudes-anglophone"
   },
   "6oU00bfFZ3WO7h15Bl1sQ0q": {
     name: "Comment Étudier Gratuitement en France, Belgique, Luxembourg, Suisse Romande et Canada",
-    pdfUrl: "https://drive.google.com/file/d/1Mh5EoboSoQFfOhL3UhxHEwJnIcE0vFoY/view?usp=drive_link"
+    pdfUrl: "https://drive.google.com/file/d/1Mh5EoboSoQFfOhL3UhxHEwJnIcE0vFoY/view?usp=drive_link",
+    pageSlug: "etudes-francophone"
   },
   "price_guide_suisse": {
     name: "Voyage et Opportunités pour la Suisse",
-    pdfUrl: "https://drive.google.com/uc?export=download&id=1cLNtOGlR92fv0NjG8U0ATyUc3wHZm5L6"
+    pdfUrl: "https://drive.google.com/uc?export=download&id=1cLNtOGlR92fv0NjG8U0ATyUc3wHZm5L6",
+    pageSlug: "guide-suisse"
   },
   "price_guide_mines": {
     name: "Opportunités dans les Mines Australiennes",
-    pdfUrl: "https://drive.google.com/uc?export=download&id=VOTRE_ID_MINES"
+    pdfUrl: "https://drive.google.com/uc?export=download&id=VOTRE_ID_MINES",
+    pageSlug: "guide-mines-australiennes"
   },
   "price_passeport_africain": {
     name: "Passeport Africain - Immigration Stratégique",
-    pdfUrl: "https://drive.google.com/uc?export=download&id=VOTRE_ID_PASSEPORT"
+    pdfUrl: "https://drive.google.com/uc?export=download&id=VOTRE_ID_PASSEPORT",
+    pageSlug: "passeport-africain"
   },
   "price_guide_juriste": {
     name: "Guide Juriste Africain en Europe",
-    pdfUrl: "https://drive.google.com/uc?export=download&id=VOTRE_ID_JURISTE"
+    pdfUrl: "https://drive.google.com/uc?export=download&id=VOTRE_ID_JURISTE",
+    pageSlug: "guide-juriste-africain"
   },
   "price_habitudes_financieres": {
     name: "Les 7 Habitudes Financières",
-    pdfUrl: "https://drive.google.com/uc?export=download&id=VOTRE_ID_FINANCE"
+    pdfUrl: "https://drive.google.com/uc?export=download&id=VOTRE_ID_FINANCE",
+    pageSlug: "habitudes-financieres"
   }
 };
 
@@ -152,7 +160,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       }
 
       // Envoyer l'email de confirmation avec le lien de téléchargement
-      const confirmationUrl = `${process.env.NEXT_PUBLIC_SITE_URL}/shop/confirmation/${productId}?token=${downloadToken}`;
+      const confirmationUrl = `${process.env.NEXT_PUBLIC_SITE_URL}/shop/confirmation/${productInfo.pageSlug}?token=${downloadToken}`;
       
       await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/api/send-ebook-email`, {
         method: "POST",
