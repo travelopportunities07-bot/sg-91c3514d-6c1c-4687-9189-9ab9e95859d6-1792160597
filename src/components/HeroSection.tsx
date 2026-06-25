@@ -28,12 +28,12 @@ export function HeroSection() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-32 pb-20">
-      <div className="absolute inset-0 bg-gradient-to-br from-navy via-navy to-navy-dark">
+      <div className="absolute inset-0">
         {slides.map((slide, index) => (
           <div
             key={index}
             className={`absolute inset-0 transition-opacity duration-1000 ${
-              index === currentSlide ? "opacity-30" : "opacity-0"
+              index === currentSlide ? "opacity-100" : "opacity-0"
             }`}
           >
             <Image
@@ -43,6 +43,7 @@ export function HeroSection() {
               className="object-cover"
               priority={index === 0}
             />
+            <div className="absolute inset-0 bg-navy/40" />
           </div>
         ))}
       </div>
