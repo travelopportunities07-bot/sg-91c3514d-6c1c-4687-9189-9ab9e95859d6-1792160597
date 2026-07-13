@@ -4,7 +4,7 @@ import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { CheckCircle, Users, Video, BookOpen, Award, Shield } from "lucide-react";
+import { CheckCircle, Users, Video, BookOpen, Award, Shield, Sparkles } from "lucide-react";
 
 export default function DeutschPackages() {
   return (
@@ -19,17 +19,27 @@ export default function DeutschPackages() {
         <section className="pt-32 pb-20 bg-gradient-to-br from-red-50 to-orange-50">
           <div className="container mx-auto px-4 lg:px-8">
             <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-16">
-                <div className="inline-flex items-center gap-2 bg-red-100 px-6 py-3 rounded-full mb-6">
-                  <span className="text-2xl">🇩🇪</span>
-                  <span className="text-red-900 font-semibold">Deutsche Zertifizierung</span>
+              <div className="mb-16 relative">
+                <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+                  <img 
+                    src="/deutsch-packages-hero.png" 
+                    alt="Deutsch Lernen" 
+                    className="w-full h-auto"
+                  />
                 </div>
-                <h1 className="text-5xl md:text-6xl font-heading font-bold text-navy mb-6">
-                  Unsere Schulungspakete
-                </h1>
-                <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                  Einmalzahlung · Dauer 2 Monate · Skool-Ressourcen + Live-Austausch inklusive
-                </p>
+                
+                <div className="mt-12 text-center">
+                  <div className="inline-flex items-center gap-2 bg-red-100 px-6 py-3 rounded-full mb-6">
+                    <span className="text-2xl">🇩🇪</span>
+                    <span className="text-red-900 font-semibold">Deutsche Zertifizierung</span>
+                  </div>
+                  <h1 className="text-5xl md:text-6xl font-heading font-bold text-navy mb-6">
+                    Unsere Schulungspakete
+                  </h1>
+                  <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Einmalzahlung · Dauer 2 Monate · Skool-Ressourcen + Live-Austausch inklusive
+                  </p>
+                </div>
               </div>
 
               <div className="mb-20">
@@ -45,7 +55,7 @@ export default function DeutschPackages() {
                       </div>
                       <h3 className="text-2xl font-heading font-bold text-navy mb-2">Anfänger</h3>
                       <div className="flex items-baseline justify-center gap-2 mb-2">
-                        <span className="text-4xl font-bold text-red-600">129€</span>
+                        <span className="text-4xl font-bold text-red-600">59,97€</span>
                       </div>
                       <p className="text-sm text-gray-600">Einmalzahlung · ~2 Monate</p>
                     </div>
@@ -71,7 +81,7 @@ export default function DeutschPackages() {
 
                     <Link href="/#contact">
                       <Button className="w-full bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-bold rounded-xl py-4 text-sm shadow-lg">
-                        Dieses Angebot Nehmen
+                        Jetzt anmelden
                       </Button>
                     </Link>
                   </div>
@@ -83,7 +93,7 @@ export default function DeutschPackages() {
                       </div>
                       <h3 className="text-2xl font-heading font-bold text-navy mb-2">Grundstufe</h3>
                       <div className="flex items-baseline justify-center gap-2 mb-2">
-                        <span className="text-4xl font-bold text-red-600">149€</span>
+                        <span className="text-4xl font-bold text-red-600">59,97€</span>
                       </div>
                       <p className="text-sm text-gray-600">Einmalzahlung · ~2 Monate</p>
                     </div>
@@ -109,7 +119,7 @@ export default function DeutschPackages() {
 
                     <Link href="/#contact">
                       <Button className="w-full bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-bold rounded-xl py-4 text-sm shadow-lg">
-                        Dieses Angebot Nehmen
+                        Jetzt anmelden
                       </Button>
                     </Link>
                   </div>
@@ -121,7 +131,7 @@ export default function DeutschPackages() {
                       </div>
                       <h3 className="text-2xl font-heading font-bold text-navy mb-2">Mittelstufe</h3>
                       <div className="flex items-baseline justify-center gap-2 mb-2">
-                        <span className="text-4xl font-bold text-red-600">179€</span>
+                        <span className="text-4xl font-bold text-red-600">74,97€</span>
                       </div>
                       <p className="text-sm text-gray-600">Einmalzahlung · ~2 Monate</p>
                     </div>
@@ -147,7 +157,7 @@ export default function DeutschPackages() {
 
                     <Link href="/#contact">
                       <Button className="w-full bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-bold rounded-xl py-4 text-sm shadow-lg">
-                        Dieses Angebot Nehmen
+                        Jetzt anmelden
                       </Button>
                     </Link>
                   </div>
@@ -159,7 +169,7 @@ export default function DeutschPackages() {
                       </div>
                       <h3 className="text-2xl font-heading font-bold text-navy mb-2">Selbstständig</h3>
                       <div className="flex items-baseline justify-center gap-2 mb-2">
-                        <span className="text-4xl font-bold text-red-600">179€</span>
+                        <span className="text-4xl font-bold text-red-600">74,97€</span>
                       </div>
                       <p className="text-sm text-gray-600">Einmalzahlung · ~2 Monate</p>
                     </div>
@@ -185,9 +195,136 @@ export default function DeutschPackages() {
 
                     <Link href="/#contact">
                       <Button className="w-full bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-bold rounded-xl py-4 text-sm shadow-lg">
-                        Dieses Angebot Nehmen
+                        Jetzt anmelden
                       </Button>
                     </Link>
+                  </div>
+                </div>
+
+                <div className="mt-16">
+                  <h3 className="text-2xl font-heading font-bold text-navy mb-8 text-center flex items-center justify-center gap-2">
+                    <Sparkles className="w-6 h-6 text-gold" />
+                    Sparpakete für Mehrere Niveaus
+                    <Sparkles className="w-6 h-6 text-gold" />
+                  </h3>
+                  
+                  <div className="grid md:grid-cols-3 gap-6">
+                    <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-3xl p-6 shadow-xl border-2 border-red-300 hover:border-red-500 transition-all">
+                      <div className="text-center mb-6">
+                        <div className="inline-flex items-center gap-2 bg-red-200 px-4 py-2 rounded-full mb-4">
+                          <span className="text-sm font-semibold text-red-900">Pack A1 - A2</span>
+                        </div>
+                        <h3 className="text-xl font-heading font-bold text-navy mb-2">Anfänger bis Grundstufe</h3>
+                        <div className="flex items-baseline justify-center gap-2 mb-2">
+                          <span className="text-4xl font-bold text-red-600">109,97€</span>
+                        </div>
+                        <p className="text-sm text-gray-600 font-semibold">Einmalzahlung · 4 Monate</p>
+                      </div>
+
+                      <div className="space-y-3 mb-6">
+                        <div className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                          <span className="text-sm text-navy">A1 + A2 Niveaus komplett</span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                          <span className="text-sm text-navy">48h Austausch gesamt</span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                          <span className="text-sm text-navy">Alle Skool A1 & A2 Ressourcen</span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                          <span className="text-sm text-navy">10€ Ersparnis</span>
+                        </div>
+                      </div>
+
+                      <Link href="/#contact">
+                        <Button className="w-full bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-bold rounded-xl py-4 text-sm shadow-lg">
+                          Jetzt anmelden
+                        </Button>
+                      </Link>
+                    </div>
+
+                    <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-3xl p-6 shadow-xl border-2 border-red-300 hover:border-red-500 transition-all">
+                      <div className="text-center mb-6">
+                        <div className="inline-flex items-center gap-2 bg-red-200 px-4 py-2 rounded-full mb-4">
+                          <span className="text-sm font-semibold text-red-900">Pack B1 - B2</span>
+                        </div>
+                        <h3 className="text-xl font-heading font-bold text-navy mb-2">Mittelstufe bis Selbstständig</h3>
+                        <div className="flex items-baseline justify-center gap-2 mb-2">
+                          <span className="text-4xl font-bold text-red-600">109,97€</span>
+                        </div>
+                        <p className="text-sm text-gray-600 font-semibold">Einmalzahlung · 4 Monate</p>
+                      </div>
+
+                      <div className="space-y-3 mb-6">
+                        <div className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                          <span className="text-sm text-navy">B1 + B2 Niveaus komplett</span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                          <span className="text-sm text-navy">48h Austausch gesamt</span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                          <span className="text-sm text-navy">Alle Skool B1 & B2 Ressourcen</span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                          <span className="text-sm text-navy">40€ Ersparnis</span>
+                        </div>
+                      </div>
+
+                      <Link href="/#contact">
+                        <Button className="w-full bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-bold rounded-xl py-4 text-sm shadow-lg">
+                          Jetzt anmelden
+                        </Button>
+                      </Link>
+                    </div>
+
+                    <div className="bg-gradient-to-br from-gold to-orange-400 rounded-3xl p-6 shadow-2xl border-4 border-gold transform scale-105 relative">
+                      <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-white text-orange-900 px-4 py-1 rounded-full font-bold text-xs shadow-lg">
+                        BESTE WAHL
+                      </div>
+                      <div className="text-center mb-6">
+                        <div className="inline-flex items-center gap-2 bg-white/30 backdrop-blur-sm px-4 py-2 rounded-full mb-4">
+                          <span className="text-sm font-semibold text-white">Pack Komplett</span>
+                        </div>
+                        <h3 className="text-xl font-heading font-bold text-white mb-2">A1 bis B2 Komplett</h3>
+                        <div className="flex items-baseline justify-center gap-2 mb-2">
+                          <span className="text-4xl font-bold text-white">219,97€</span>
+                        </div>
+                        <p className="text-sm text-orange-100 font-semibold">Einmalzahlung · 8 Monate</p>
+                      </div>
+
+                      <div className="space-y-3 mb-6">
+                        <div className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-white mt-0.5 flex-shrink-0" />
+                          <span className="text-sm text-white font-semibold">A1 + A2 + B1 + B2 komplett</span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-white mt-0.5 flex-shrink-0" />
+                          <span className="text-sm text-white font-semibold">96h Austausch gesamt</span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-white mt-0.5 flex-shrink-0" />
+                          <span className="text-sm text-white font-semibold">Alle Skool-Ressourcen</span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-white mt-0.5 flex-shrink-0" />
+                          <span className="text-sm text-white font-semibold">50€ Ersparnis</span>
+                        </div>
+                      </div>
+
+                      <Link href="/#contact">
+                        <Button className="w-full bg-white hover:bg-gray-100 text-orange-900 font-bold rounded-xl py-4 text-sm shadow-lg">
+                          Jetzt anmelden
+                        </Button>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
