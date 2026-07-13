@@ -79,7 +79,7 @@ export default function DeutschPackages() {
                       </div>
                     </div>
 
-                    <Link href="/#contact">
+                    <Link href="https://buy.stripe.com/9B66ozgK39h86cX3td1sQ0r">
                       <Button className="w-full bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-bold rounded-xl py-4 text-sm shadow-lg">
                         Jetzt anmelden
                       </Button>
@@ -117,7 +117,7 @@ export default function DeutschPackages() {
                       </div>
                     </div>
 
-                    <Link href="/#contact">
+                    <Link href="https://buy.stripe.com/7sYeV58dxalcatd6Fp1sQ0s">
                       <Button className="w-full bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-bold rounded-xl py-4 text-sm shadow-lg">
                         Jetzt anmelden
                       </Button>
@@ -155,7 +155,7 @@ export default function DeutschPackages() {
                       </div>
                     </div>
 
-                    <Link href="/#contact">
+                    <Link href="https://buy.stripe.com/14A4greBVdxofNxgfZ1sQ0t">
                       <Button className="w-full bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-bold rounded-xl py-4 text-sm shadow-lg">
                         Jetzt anmelden
                       </Button>
@@ -193,7 +193,7 @@ export default function DeutschPackages() {
                       </div>
                     </div>
 
-                    <Link href="/#contact">
+                    <Link href="https://buy.stripe.com/7sY5kv0L58d48l55Bl1sQ0u">
                       <Button className="w-full bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-bold rounded-xl py-4 text-sm shadow-lg">
                         Jetzt anmelden
                       </Button>
@@ -240,7 +240,7 @@ export default function DeutschPackages() {
                         </div>
                       </div>
 
-                      <Link href="/#contact">
+                      <Link href="https://buy.stripe.com/bJe5kvalFfFw1WHbZJ1sQ0v">
                         <Button className="w-full bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-bold rounded-xl py-4 text-sm shadow-lg">
                           Jetzt anmelden
                         </Button>
@@ -278,7 +278,7 @@ export default function DeutschPackages() {
                         </div>
                       </div>
 
-                      <Link href="/#contact">
+                      <Link href="https://buy.stripe.com/4gM3cnbpJ64WeJt5Bl1sQ0w">
                         <Button className="w-full bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-bold rounded-xl py-4 text-sm shadow-lg">
                           Jetzt anmelden
                         </Button>
@@ -319,7 +319,7 @@ export default function DeutschPackages() {
                         </div>
                       </div>
 
-                      <Link href="/#contact">
+                      <Link href="https://buy.stripe.com/cNi8wH8dxbpg7h14xh1sQ0x">
                         <Button className="w-full bg-white hover:bg-gray-100 text-orange-900 font-bold rounded-xl py-4 text-sm shadow-lg">
                           Jetzt anmelden
                         </Button>
